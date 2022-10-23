@@ -1,0 +1,15 @@
+{
+	"pipeline": {
+		"start": {
+			"outputs": [
+				"dist/**"
+			]
+		},
+		"migrate": {
+			"outputs": []
+		},
+		"typecheck": {
+			"outputs": []
+		}
+	}
+}

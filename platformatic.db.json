@@ -1,0 +1,27 @@
+{
+  "server": {
+    "hostname": "127.0.0.1",
+    "port": 3042
+  },
+  "core": {
+    "connectionString": "sqlite://db.sqlite",
+    "graphql": true,
+    "ignore": {
+      "versions": true
+    }
+  },
+  "migrations": {
+    "dir": "migrations",
+    "table": "versions"
+  },
+  "types": {
+    "autogenerate": true
+  },
+  "typescript": {
+    "watch": true,
+    "outDir": "dist"
+  },
+  "plugin": {
+    "path": "plugin.ts"
+  }
+}

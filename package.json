@@ -1,0 +1,22 @@
+{
+  "name": "platformatic-demo",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo run migrate start",
+    "typecheck": "tsc --noEmit",
+    "start": "npx platformatic db start",
+    "migrate": "npx platformatic db migrate"
+  },
+  "dependencies": {
+    "@platformatic/sql-graphql": "0.4.0",
+    "@platformatic/sql-mapper": "0.4.0",
+    "fastify": "4.9.2",
+    "platformatic": "^0.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.3",
+    "turbo": "^1.6.1"
+  }
+}
