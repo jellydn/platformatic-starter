@@ -505,7 +505,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^18.11.3":
+"@types/node@*", "@types/node@18.11.3":
   version "18.11.3"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.3.tgz#78a6d7ec962b596fc2d2ec102c4dd3ef073fea6a"
   integrity sha512-fNjDQzzOsZeKZu5NATgXUPsaFaTxeRgFXoosrHivTl8RGeV733OLawXsGfEk9a8/tySyZUyiZ6E8LcjPFZ2y1A==
@@ -2829,7 +2829,7 @@ turbo-windows-arm64@1.6.1:
   resolved "https://registry.yarnpkg.com/turbo-windows-arm64/-/turbo-windows-arm64-1.6.1.tgz#e9144112a0a5ffc29c3dfb99f3979ac89daf4ad1"
   integrity sha512-vOqw/iPgLjkwpni2vNFK9YO19lN9QZ8JG8v1unvL09/rnXyKpHygrYECj+efJptEVJKBG2xLIauJYmZ/2LV1Uw==
 
-turbo@^1.6.1:
+turbo@1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/turbo/-/turbo-1.6.1.tgz#f0f3f0b9232f11b66129438a47d8480bd94dbe9f"
   integrity sha512-CkcJo17cbwfTzmxtxJo2AbbeVqaz1yQotBUqVwZDdcrVSNKci2nvw+JHJ3sy/z9YY9xOJmoRaZifbkja3UXUWA==
