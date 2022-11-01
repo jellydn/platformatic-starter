@@ -4,10 +4,13 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "dev": "turbo run migrate start",
-    "typecheck": "tsc --noEmit",
+    "dev": "concurrently 'npm:migrate' 'npm:start'",
+    "format": "prettier --write \"**/*.ts\" \"*.ts\"",
+    "postinstall": "npx husky install",
+    "lint": "eslint \"**/*.ts\" \"*.ts\" --fix",
+    "migrate": "npx platformatic db migrate",
     "start": "npx platformatic db start",
-    "migrate": "npx platformatic db migrate"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@platformatic/sql-graphql": "0.4.0",
@@ -18,7 +21,23 @@
     "platformatic": "^0.4.0"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.4.0",
     "@types/node": "18.11.9",
-    "turbo": "1.6.3"
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "concurrently": "^7.5.0",
+    "eslint": "8.26.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-xo": "0.42.0",
+    "eslint-config-xo-typescript": "0.53.0",
+    "husky": "^8.0.1",
+    "nano-staged": "^0.8.0",
+    "prettier": "^2.7.1",
+    "sort-package-json": "^2.0.0"
+  },
+  "nano-staged": {
+    "*.{js,ts}": "eslint --cache --fix",
+    "*.{js,ts,css,md}": "prettier --write",
+    "package.json": "sort-package-json"
   }
 }

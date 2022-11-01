@@ -1,16 +1,20 @@
 {
   "server": {
-    "hostname": "127.0.0.1",
-    "port": 3042
+    "logger": {
+      "level": "{PLT_SERVER_LOGGER_LEVEL}"
+    },
+    "hostname": "{PLT_SERVER_HOSTNAME}",
+    "port": "{PORT}"
   },
   "core": {
-    "connectionString": "sqlite://db.sqlite",
+    "connectionString": "{DATABASE_URL}",
     "graphql": true,
     "ignore": {
       "versions": true
     }
   },
   "migrations": {
+    "autoApply": true,
     "dir": "migrations",
     "table": "versions"
   },

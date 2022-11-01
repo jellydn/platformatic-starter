@@ -1,12 +1,14 @@
+// eslint-disable-next-line @typescript-eslint/triple-slash-reference
 /// <reference path="./global.d.ts" />
-import { FastifyInstance } from "fastify";
-import S from "fluent-json-schema";
 import Ajv from "ajv";
+import type { FastifyInstance } from "fastify";
+
+import { counterService } from "./services/counterService";
 
 export default async function (app: FastifyInstance) {
   app.log.info("plugin loaded");
 
-  // setup validator
+  // Setup validator
   const ajv = new Ajv({
     removeAdditional: "all",
     useDefaults: true,
@@ -14,35 +16,9 @@ export default async function (app: FastifyInstance) {
   });
   app.setValidatorCompiler(({ schema }) => ajv.compile(schema));
 
-  // simpler counter service
-  let counter = 0;
-  app.get("/counter", {}, async function (_request, _response) {
-    return { counter };
-  });
+  // Simpler counter service
+  counterService(app);
 
-  const schema = {
-    querystring: S.object().prop(
-      "type",
-      S.string().enum(["increase", "descrease"]).required()
-    ),
-  };
-  app.post<{
-    Querystring: {
-      type: string;
-    };
-  }>(
-    "/counter",
-    {
-      schema,
-    },
-    async function (request, _reply) {
-      if (request.query.type === "increase") {
-        counter++;
-      } else {
-        counter--;
-      }
-
-      return { counter };
-    }
-  );
+  // Health check
+  app.get("/health/check", () => ({ ok: true }));
 }
