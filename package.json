@@ -4,6 +4,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "build": "npx platformatic db compile",
     "dev": "concurrently 'npm:migrate' 'npm:start'",
     "format": "prettier --write \"**/*.ts\" \"*.ts\"",
     "postinstall": "npx husky install",

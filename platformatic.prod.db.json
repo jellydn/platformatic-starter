@@ -1,0 +1,31 @@
+{
+  "server": {
+    "logger": {
+      "level": "{PLT_SERVER_LOGGER_LEVEL}"
+    },
+    "hostname": "{PLT_SERVER_HOSTNAME}",
+    "port": "{PORT}"
+  },
+  "core": {
+    "connectionString": "{DATABASE_URL}",
+    "graphql": true,
+    "ignore": {
+      "versions": true
+    }
+  },
+  "migrations": {
+    "autoApply": true,
+    "dir": "migrations",
+    "table": "versions"
+  },
+  "types": {
+    "autogenerate": true
+  },
+  "typescript": {
+    "watch": false,
+    "outDir": "dist"
+  },
+  "plugin": {
+    "path": "plugin.ts"
+  }
+}

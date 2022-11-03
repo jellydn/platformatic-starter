@@ -6,13 +6,23 @@ WORKDIR /app
 RUN apk upgrade --no-cache -U && \
   apk add --no-cache git
 
-COPY package.json yarn.lock tsconfig.json plugin.ts platformatic.db.json global.d.ts ./
+COPY package.json yarn.lock tsconfig.json plugin.ts ./
 COPY migrations migrations
 COPY types types
 COPY services services
+COPY platformatic.prod.db.json platformatic.db.json 
 
 RUN yarn install
-ENV NODE_ENV=production
+ENV PORT=3042
+ENV PLT_SERVER_HOSTNAME=127.0.0.1
+ENV PLT_SERVER_LOGGER_LEVEL=debug
+ENV DATABASE_URL=sqlite://.platformatic/data/db.sqlite
+RUN yarn build
+
+# Copy the build output
+FROM jellydn/alpine-nodejs:18
+WORKDIR /app
+COPY --from=builder /app .
 
 EXPOSE 8080
 CMD ["yarn", "start"]
