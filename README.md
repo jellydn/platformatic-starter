@@ -20,7 +20,7 @@ yarn dev
 
 ## Deployment
 
-This template comes with two GitHub Actions that handle automatically deploying your app to production and staging environments.
+This template comes with two GitHub Actions that handle automatically deploying your app to production environment.
 
 Prior to your first deployment, you'll need to do a few things:
 
@@ -42,7 +42,7 @@ Prior to your first deployment, you'll need to do a few things:
 
 - Add a `FLY_API_TOKEN` to your GitHub repo. To do this, go to your user settings on Fly and create a new [token](https://web.fly.io/user/personal_access_tokens/new), then add it to [your repo secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) with the name `FLY_API_TOKEN`.
 
-- Create a persistent volume for the sqlite database for both your app. Run the following:
+- Create a persistent volume for the sqlite database for your app. Run the following:
 
   ```sh
   fly volumes create data --size 1 --app platformatic-starter
