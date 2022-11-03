@@ -3,11 +3,6 @@ FROM jellydn/alpine-nodejs:18 as builder
 RUN mkdir /app
 WORKDIR /app
 
-# Setup sqlite viewer
-RUN apk add sqlite
-ENV DSN "/app/.platformatic/data/movies.db"
-COPY db-cli.sh /usr/local/bin/db-cli
-RUN chmod +x /usr/local/bin/db-cli
 RUN apk upgrade --no-cache -U && \
   apk add --no-cache git
 
@@ -28,6 +23,12 @@ RUN yarn build
 FROM jellydn/alpine-nodejs:18
 WORKDIR /app
 COPY --from=builder /app .
+
+# Setup sqlite viewer
+RUN apk add sqlite
+ENV DSN "/app/.platformatic/data/movies.db"
+COPY db-cli.sh /usr/local/bin/db-cli
+RUN chmod +x /usr/local/bin/db-cli
 
 EXPOSE 8080
 CMD ["yarn", "start"]
