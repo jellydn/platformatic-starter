@@ -6,7 +6,7 @@ WORKDIR /app
 RUN apk upgrade --no-cache -U && \
   apk add --no-cache git
 
-COPY package.json yarn.lock tsconfig.json plugin.ts ./
+COPY package.json yarn.lock tsconfig.json plugin.ts global.d.ts ./
 COPY migrations migrations
 COPY types types
 COPY services services
