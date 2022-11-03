@@ -3,6 +3,11 @@ FROM jellydn/alpine-nodejs:18 as builder
 RUN mkdir /app
 WORKDIR /app
 
+# Setup sqlite viewer
+RUN apk add sqlite
+ENV DSN "/app/.platformatic/data/movies.db"
+COPY db-cli.sh /usr/local/bin/db-cli
+RUN chmod +x /usr/local/bin/db-cli
 RUN apk upgrade --no-cache -U && \
   apk add --no-cache git
 
@@ -16,7 +21,7 @@ RUN yarn install
 ENV PORT=3042
 ENV PLT_SERVER_HOSTNAME=127.0.0.1
 ENV PLT_SERVER_LOGGER_LEVEL=debug
-ENV DATABASE_URL=sqlite://.platformatic/data/db.sqlite
+ENV DATABASE_URL=sqlite://.platformatic/data/movies.db
 RUN yarn build
 
 # Copy the build output
