@@ -21,11 +21,11 @@
   "types": {
     "autogenerate": true
   },
-  "typescript": {
+ "plugin": {
+    "path": "plugin.ts",
     "watch": true,
-    "outDir": "dist"
-  },
-  "plugin": {
-    "path": "plugin.ts"
+    "typescript": {
+      "outDir": "dist"
+    }
   }
 }
