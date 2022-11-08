@@ -796,6 +796,19 @@
     inflected "^2.1.0"
     mercurius "^11.2.0"
 
+"@platformatic/sql-graphql@0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@platformatic/sql-graphql/-/sql-graphql-0.5.1.tgz#666a3579713a124433535d0c2c3d1177b7d9a553"
+  integrity sha512-t8znYPgZGPUuE6etHQRQ8l4ahZ5WtKXo0D3nrYFbLwlfHRUt/2ukR9qVtW4GcpDMDx770KJJX1peiisLqTVz2g==
+  dependencies:
+    camelcase "^6.0.0"
+    fastify-plugin "^4.1.0"
+    graphql "^16.6.0"
+    graphql-scalars "^1.13.1"
+    graphql-type-json "^0.3.2"
+    inflected "^2.1.0"
+    mercurius "^11.2.0"
+
 "@platformatic/sql-json-schema-mapper@0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@platformatic/sql-json-schema-mapper/-/sql-json-schema-mapper-0.5.0.tgz#9b342a1203994b9bcdf72e67bac6e489d97f5bc8"
