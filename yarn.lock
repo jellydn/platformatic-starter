@@ -814,6 +814,19 @@
     fastify-plugin "^4.1.0"
     inflected "^2.1.0"
 
+"@platformatic/sql-mapper@0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@platformatic/sql-mapper/-/sql-mapper-0.5.1.tgz#7edd3a8063d0ccef9b0c780e6cb7fd8bb4180e6e"
+  integrity sha512-2edvYTmJqd+EaLgEbu53qk0Ytn+cP9HCpdHonHQh/XZ5Sgow9iQdziDkTPh/oaxfjwSyO8nmwPM5L7orVtnPhA==
+  dependencies:
+    "@databases/mysql" "^5.2.0"
+    "@databases/pg" "^5.3.0"
+    "@databases/sql" "^3.2.0"
+    "@databases/sqlite" "^4.0.2"
+    camelcase "^6.0.0"
+    fastify-plugin "^4.1.0"
+    inflected "^2.1.0"
+
 "@platformatic/sql-openapi@0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@platformatic/sql-openapi/-/sql-openapi-0.5.0.tgz#dcac8d0946b54b1b7517b8fb22fa132cf18c69de"
