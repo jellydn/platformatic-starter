@@ -18,6 +18,14 @@ yarn install
 yarn dev
 ```
 
+### Microservices (Beta)
+
+[Platformatic Service](https://github.com/platformatic/platformatic/blob/main/docs/reference/service/introduction.md) in public beta.
+
+```sh
+yarn service
+```
+
 ## Deployment
 
 This template comes with two GitHub Actions that handle automatically deploying your app to production environment.

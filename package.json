@@ -10,6 +10,7 @@
     "postinstall": "npx husky install",
     "lint": "eslint \"**/*.ts\" \"*.ts\" --fix",
     "migrate": "npx platformatic db migrate",
+    "service": "npx platformatic service start",
     "start": "npx platformatic db start",
     "typecheck": "tsc --noEmit"
   },
