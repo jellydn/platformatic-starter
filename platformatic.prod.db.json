@@ -23,9 +23,8 @@
   },
   "plugin": {
     "path": "./dist/plugin.js",
-        "options": {
+    "options": {
       "hello": "world"
-    },
-
+    }
   }
 }
