@@ -67,7 +67,8 @@ We use GitHub Actions for continuous integration and deployment. Anything that g
 - [Quick Start Guide](https://oss.platformatic.dev/docs/getting-started/quick-start-guide)
 - [Movie Quotes App Tutorial](https://oss.platformatic.dev/docs/getting-started/movie-quotes-app-tutorial)
 - [Add Custom Functionality](https://oss.platformatic.dev/docs/guides/add-custom-functionality/introduction)
-- [Deploy to Fly.io](https://oss.platformatic.dev/docs/next/guides/deployment/deploy-to-fly-io-with-sqlite)
+- [Deploy to Fly.io](https://oss.platformatic.dev/docs/guides/deployment/deploy-to-fly-io-with-sqlite)
+- [GraphQL subscriptions & microservice](https://blog.platformatic.dev/platformatic-v050-graphql-subscriptions-microservice-tool)
 
 ## Author
 
