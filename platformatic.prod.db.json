@@ -22,6 +22,10 @@
     "autogenerate": true
   },
   "plugin": {
-    "path": "./dist/plugin.js"
+    "path": "./dist/plugin.js",
+        "options": {
+      "hello": "world"
+    },
+
   }
 }

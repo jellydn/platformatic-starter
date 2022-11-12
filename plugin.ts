@@ -1,12 +1,16 @@
 // eslint-disable-next-line @typescript-eslint/triple-slash-reference
 /// <reference path="./global.d.ts" />
 import Ajv from "ajv";
-import type { FastifyInstance } from "fastify";
+import type { FastifyInstance, FastifyPluginOptions } from "fastify";
 
-import { counterService } from "./services/counterService";
+import { counterService } from "./services/counter.service";
 
-export default async function (app: FastifyInstance) {
+export default async function (
+  app: FastifyInstance,
+  opts: FastifyPluginOptions
+) {
   app.log.info("plugin loaded");
+  app.log.info(`plugin options: ${JSON.stringify(opts)}`);
 
   // Setup validator
   const ajv = new Ajv({
