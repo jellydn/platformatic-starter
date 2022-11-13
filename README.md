@@ -6,6 +6,8 @@
 
 > platformatic quick start demo app
 
+[![IT Man - Tech #28 - Platformatic DB - Automatic OpenAPI/GraphQL API generation  [Vietnamese]](https://i.ytimg.com/vi/GqTa8lgVyZI/hqdefault.jpg)](https://www.youtube.com/watch?v=GqTa8lgVyZI)
+
 ## Install
 
 ```sh
