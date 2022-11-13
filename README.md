@@ -88,6 +88,8 @@ We use GitHub Actions for continuous integration and deployment. Anything that g
 
 ## Show your support
 
+[![Stargazers repo roster for @jellydn/platformatic-starter](https://reporoster.com/stars/jellydn/platformatic-starter)](https://github.com/jellydn/platformatic-starter/stargazers)
+
 Give a ⭐️ if this project helped you!
 
 ---
