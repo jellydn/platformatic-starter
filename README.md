@@ -8,6 +8,12 @@
 
 [![IT Man - Tech #28 - Platformatic DB - Automatic OpenAPI/GraphQL API generation  [Vietnamese]](https://i.ytimg.com/vi/GqTa8lgVyZI/hqdefault.jpg)](https://www.youtube.com/watch?v=GqTa8lgVyZI)
 
+## ✨ [Demo](https://platformatic-starter.fly.dev/)
+
+## Prerequisites
+
+- Node.js >= v16.17.0 or >= v18.8.0
+
 ## Install
 
 ```sh
