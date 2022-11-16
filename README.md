@@ -77,6 +77,7 @@ We use GitHub Actions for continuous integration and deployment. Anything that g
 - [Add Custom Functionality](https://oss.platformatic.dev/docs/guides/add-custom-functionality/introduction)
 - [Deploy to Fly.io](https://oss.platformatic.dev/docs/guides/deployment/deploy-to-fly-io-with-sqlite)
 - [GraphQL subscriptions & microservice](https://blog.platformatic.dev/platformatic-v050-graphql-subscriptions-microservice-tool)
+- [Platformatic v0.7.0 - New dashboard for Platformatic DB](https://blog.platformatic.dev/platformatic-v070-an-oldnew-dashboard-for-platformatic-db)
 
 ## Author
 
