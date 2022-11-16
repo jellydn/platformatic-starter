@@ -21,6 +21,8 @@
   "types": {
     "autogenerate": true
   },
+  "dashboard": true,
+  "metrics": true,
   "plugin": {
     "path": "./dist/plugin.js",
     "options": {

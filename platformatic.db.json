@@ -21,7 +21,9 @@
   "types": {
     "autogenerate": true
   },
- "plugin": {
+  "dashboard": true,
+  "metrics": true,
+  "plugin": {
     "path": "plugin.ts",
     "watch": true,
     "options": {

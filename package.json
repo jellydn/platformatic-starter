@@ -15,18 +15,18 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@platformatic/sql-graphql": "0.6.1",
-    "@platformatic/sql-mapper": "0.6.1",
-    "ajv": "8.11.0",
+    "@platformatic/sql-graphql": "0.7.0",
+    "@platformatic/sql-mapper": "0.7.0",
+    "ajv": "8.11.2",
     "fastify": "4.9.2",
     "fluent-json-schema": "4.0.0",
-    "platformatic": "0.6.1"
+    "platformatic": "0.7.0"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "3.4.0",
     "@types/node": "18.11.9",
-    "@typescript-eslint/eslint-plugin": "5.42.1",
-    "@typescript-eslint/parser": "5.42.1",
+    "@typescript-eslint/eslint-plugin": "5.43.0",
+    "@typescript-eslint/parser": "5.43.0",
     "concurrently": "7.5.0",
     "eslint": "8.27.0",
     "eslint-config-prettier": "8.5.0",
