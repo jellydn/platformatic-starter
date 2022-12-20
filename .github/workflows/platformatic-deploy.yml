@@ -20,7 +20,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           platformatic_api_key: ${{ secrets.PLATFORMATIC_API_KEY }}
-          platformatic_config_path: ./platformatic.db.json
+          platformatic_config_path: ./platformatic.prod.db.json
         env:
           DATABASE_URL: sqlite://.platformatic/data/db.sqlite
           PLT_SERVER_LOGGER_LEVEL: info 
