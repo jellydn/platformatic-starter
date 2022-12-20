@@ -1,6 +1,10 @@
 {
   "$schema": "./platformatic.db.schema.json",
   "server": {
+    "cors": {
+      "origin": "https://platformatic.cloud",
+      "methods": ["GET", "POST", "PUT", "DELETE"]
+    },
     "logger": {
       "level": "{PLT_SERVER_LOGGER_LEVEL}"
     },
