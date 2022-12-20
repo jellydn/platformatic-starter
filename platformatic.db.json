@@ -9,6 +9,10 @@
   },
   "core": {
     "connectionString": "{DATABASE_URL}",
+    "autoTimestamp": {
+      "createdAt": "created_at",
+      "updatedAt": "updated_at"
+    },
     "openapi": true,
     "graphql": true,
     "ignore": {
