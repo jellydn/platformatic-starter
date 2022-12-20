@@ -1,4 +1,5 @@
 {
+  "$schema": "./platformatic.db.schema.json",
   "server": {
     "logger": {
       "level": "{PLT_SERVER_LOGGER_LEVEL}"
@@ -8,24 +9,22 @@
   },
   "core": {
     "connectionString": "{DATABASE_URL}",
+    "openapi": true,
     "graphql": true,
     "ignore": {
       "versions": true
     }
-  },
-  "migrations": {
-    "autoApply": true,
-    "dir": "migrations",
-    "table": "versions"
   },
   "types": {
     "autogenerate": true
   },
   "dashboard": true,
   "metrics": true,
+  "migrations": {
+    "dir": "migrations"
+  },
   "plugin": {
     "path": "plugin.ts",
-    "watch": true,
     "options": {
       "hello": "world"
     },
