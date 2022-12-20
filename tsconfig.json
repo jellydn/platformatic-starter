@@ -4,6 +4,7 @@
     "esModuleInterop": true,
     "target": "es6",
     "sourceMap": true,
+    "strictNullChecks": true,
     "pretty": true,
     "noEmitOnError": true,
     "outDir": "dist"
@@ -13,9 +14,6 @@
     "watchDirectory": "fixedPollingInterval",
     "fallbackPolling": "dynamicPriority",
     "synchronousWatchDirectory": true,
-    "excludeDirectories": [
-      "**/node_modules",
-      "dist"
-    ]
+    "excludeDirectories": ["**/node_modules", "dist"]
   }
 }
