@@ -17,6 +17,11 @@ jobs:
         run: npm install --omit=dev
       - name: npm build
         run:  npm run build
+        env:
+          DATABASE_URL: sqlite://.platformatic/data/db.sqlite
+          PLT_SERVER_LOGGER_LEVEL: info 
+          PORT: 3042 
+          PLT_SERVER_HOSTNAME: 127.0.0.1 
       - name: Deploy project
         uses: platformatic/onestep@latest
         with:
