@@ -21,7 +21,7 @@
     "ajv": "8.11.2",
     "fastify": "4.10.2",
     "fluent-json-schema": "4.0.0",
-    "typescript": "^4.9.4"
+    "typescript": "4.9.4"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "4.0.0",
