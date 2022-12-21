@@ -11,8 +11,8 @@
     "postinstall": "npx husky install",
     "lint": "eslint \"**/*.ts\" \"*.ts\" --fix",
     "migrate": "npx platformatic db migrations apply",
-    "service": "platformatic service start",
-    "start": "platformatic db start",
+    "service": "npx platformatic service start",
+    "start": "npx platformatic db start",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -21,7 +21,7 @@
     "ajv": "8.11.2",
     "fastify": "4.10.2",
     "fluent-json-schema": "4.0.0",
-    "platformatic": "0.11.0"
+    "typescript": "^4.9.4"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "4.0.0",
@@ -35,6 +35,7 @@
     "eslint-config-xo-typescript": "0.55.1",
     "husky": "8.0.2",
     "nano-staged": "0.8.0",
+    "platformatic": "0.11.0",
     "prettier": "2.8.1",
     "sort-package-json": "2.1.0"
   },

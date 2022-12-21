@@ -9,18 +9,27 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.9.1
       - name: Checkout application project repository
         uses: actions/checkout@v3
       - name: npm install --omit=dev
         run: npm install --omit=dev
+      - name: npm build
+        run:  npm run build
+        env:
+          DATABASE_URL: sqlite://.platformatic/data/db.sqlite
+          PLT_SERVER_LOGGER_LEVEL: info 
+          PORT: 3042 
+          PLT_SERVER_HOSTNAME: 127.0.0.1 
       - name: Deploy project
         uses: platformatic/onestep@latest
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           platformatic_api_key: ${{ secrets.PLATFORMATIC_API_KEY }}
-          platformatic_config_path: ./platformatic.db.json
+          platformatic_config_path: ./platformatic.prod.db.json
         env:
-          DATABASE_URL: sqlite://./db.sqlite 
+          DATABASE_URL: sqlite://.platformatic/data/db.sqlite
           PLT_SERVER_LOGGER_LEVEL: info 
           PORT: 3042 
           PLT_SERVER_HOSTNAME: 127.0.0.1 
