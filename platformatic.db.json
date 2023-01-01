@@ -27,13 +27,31 @@
   "migrations": {
     "dir": "migrations"
   },
-  "plugin": {
-    "path": "plugin.ts",
-    "options": {
-      "hello": "world"
+  "plugin": [
+    {
+      "path": "./plugins/rate-limit.ts",
+      "options": {
+        "max": 100,
+        "timeWindow": "1 minute"
+      },
+      "typescript": {
+        "outDir": "dist"
+      }
     },
-    "typescript": {
-      "outDir": "dist"
+    {
+      "path": "./plugins/helmet.ts",
+      "typescript": {
+        "outDir": "dist"
+      }
+    },
+    {
+      "path": "plugin.ts",
+      "options": {
+        "hello": "world"
+      },
+      "typescript": {
+        "outDir": "dist"
+      }
     }
-  }
+  ]
 }
