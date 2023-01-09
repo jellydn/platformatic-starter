@@ -10,6 +10,7 @@ COPY package.json yarn.lock tsconfig.json plugin.ts global.d.ts ./
 COPY migrations migrations
 COPY types types
 COPY services services
+COPY plugins plugins
 COPY platformatic.prod.db.json platformatic.db.json 
 
 RUN yarn install

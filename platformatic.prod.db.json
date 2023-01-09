@@ -31,10 +31,22 @@
   },
   "dashboard": true,
   "metrics": true,
-  "plugin": {
-    "path": "./dist/plugin.js",
-    "options": {
-      "hello": "world"
+  "plugin": [
+    {
+      "path": "./dist/plugins/rate-limit.js",
+      "options": {
+        "max": 100,
+        "timeWindow": "1 minute"
+      }
+    },
+    {
+      "path": "./dist/plugins/helmet.js"
+    },
+    {
+      "path": "./dist/plugin.js",
+      "options": {
+        "hello": "world"
+      }
     }
-  }
+  ]
 }
