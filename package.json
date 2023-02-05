@@ -18,28 +18,28 @@
   "dependencies": {
     "@fastify/helmet": "10.1.0",
     "@fastify/rate-limit": "7.6.0",
-    "@platformatic/sql-graphql": "0.12.1",
-    "@platformatic/sql-mapper": "0.12.1",
-    "ajv": "8.11.2",
-    "fastify": "4.10.2",
+    "@platformatic/sql-graphql": "0.14.0",
+    "@platformatic/sql-mapper": "0.14.0",
+    "ajv": "8.12.0",
+    "fastify": "4.12.0",
     "fluent-json-schema": "4.0.0",
-    "typescript": "4.9.4"
+    "typescript": "4.9.5"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "4.0.0",
-    "@types/node": "18.11.18",
-    "@typescript-eslint/eslint-plugin": "5.47.1",
-    "@typescript-eslint/parser": "5.47.1",
+    "@types/node": "18.11.19",
+    "@typescript-eslint/eslint-plugin": "5.50.0",
+    "@typescript-eslint/parser": "5.50.0",
     "concurrently": "7.6.0",
-    "eslint": "8.31.0",
-    "eslint-config-prettier": "8.5.0",
+    "eslint": "8.33.0",
+    "eslint-config-prettier": "8.6.0",
     "eslint-config-xo": "0.43.1",
     "eslint-config-xo-typescript": "0.55.1",
-    "husky": "8.0.2",
+    "husky": "8.0.3",
     "nano-staged": "0.8.0",
-    "platformatic": "0.12.1",
-    "prettier": "2.8.1",
-    "sort-package-json": "2.1.0"
+    "platformatic": "0.14.0",
+    "prettier": "2.8.3",
+    "sort-package-json": "2.4.1"
   },
   "engines": {
     "node": "^16.17.0 || ^18.8.0 || >=19"
