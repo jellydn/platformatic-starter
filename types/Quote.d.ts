@@ -10,5 +10,4 @@ declare interface Quote {
     createdAt?: string | null;
     updatedAt?: string | null;
 }
-
 export { Quote };
