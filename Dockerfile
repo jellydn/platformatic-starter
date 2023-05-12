@@ -1,4 +1,4 @@
-FROM jellydn/alpine-nodejs:18 as builder
+FROM jellydn/alpine-nodejs:20 as builder
 # Build the image
 RUN mkdir /app
 WORKDIR /app
@@ -21,7 +21,7 @@ ENV DATABASE_URL=sqlite://.platformatic/data/movies.db
 RUN yarn build
 
 # Copy the build output
-FROM jellydn/alpine-nodejs:18
+FROM jellydn/alpine-nodejs:20
 WORKDIR /app
 COPY --from=builder /app .
 
