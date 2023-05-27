@@ -23,10 +23,11 @@ jobs:
           PORT: 3042 
           PLT_SERVER_HOSTNAME: 127.0.0.1 
       - name: Deploy project
-        uses: platformatic/onestep@latest
+        uses: platformatic/onestep@v1.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          platformatic_api_key: ${{ secrets.PLATFORMATIC_API_KEY }}
+          platformatic_workspace_id: ${{ vars.PLATFORMATIC_WORKSPACE_ID }}
+          platformatic_workspace_key: ${{ secrets.PLATFORMATIC_WORKSPACE_API_KEY }}
           platformatic_config_path: ./platformatic.prod.db.json
         env:
           DATABASE_URL: sqlite://.platformatic/data/db.sqlite
