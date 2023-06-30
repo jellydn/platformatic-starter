@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@fastify/helmet": "10.1.1",
+    "@fastify/helmet": "11.0.0",
     "@fastify/rate-limit": "8.0.0",
     "@platformatic/sql-graphql": "0.26.1",
     "@platformatic/sql-mapper": "0.26.1",
