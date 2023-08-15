@@ -38,7 +38,7 @@
     "husky": "8.0.3",
     "nano-staged": "0.8.0",
     "platformatic": "0.29.0",
-    "prettier": "2.8.8",
+    "prettier": "3.0.2",
     "sort-package-json": "2.5.0"
   },
   "engines": {
