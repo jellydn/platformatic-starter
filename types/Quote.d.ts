@@ -4,10 +4,10 @@
  */
 declare interface Quote {
     id?: number;
-    movieId: number;
     character: string;
-    quote: string;
     createdAt?: string | null;
+    movieId: number;
+    quote: string;
     updatedAt?: string | null;
 }
 export { Quote };

@@ -8,7 +8,7 @@ export function counterService(app: FastifyInstance) {
   const schema = {
     querystring: S.object().prop(
       "type",
-      S.string().enum(["increase", "decrease"]).required()
+      S.string().enum(["increase", "decrease"]).required(),
     ),
   };
   app.post<{
@@ -28,6 +28,6 @@ export function counterService(app: FastifyInstance) {
       }
 
       return { counter };
-    }
+    },
   );
 }
