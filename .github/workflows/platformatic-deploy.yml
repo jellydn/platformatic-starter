@@ -12,7 +12,7 @@ jobs:
       - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.9.1
       - name: Checkout application project repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: npm install --omit=dev
         run: npm install --omit=dev
       - name: npm build
