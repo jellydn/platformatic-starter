@@ -602,6 +602,11 @@
     basic-auth "^2.0.1"
     fastify-plugin "^4.0.0"
 
+"@fastify/busboy@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@fastify/busboy/-/busboy-2.0.0.tgz#f22824caff3ae506b18207bad4126dbc6ccdb6b8"
+  integrity sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==
+
 "@fastify/cors@^8.3.0":
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/@fastify/cors/-/cors-8.3.0.tgz#f03d745731b770793a1a15344da7220ca0d19619"
@@ -624,6 +629,11 @@
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@fastify/error/-/error-3.2.1.tgz#5d1cb182a8bb9b103c556b0da35fd77f319fc15e"
   integrity sha512-scZVbcpPNWw/yyFmzzO7cf1daTeJp53spN2n7dBTHZd+cV7791fcWJCPP1Tfhdbre+8vDiCyQyqqXfQnYMntYQ==
+
+"@fastify/error@^3.3.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@fastify/error/-/error-3.4.0.tgz#30df6601f4edce57a05ec5caaa90a28025a8554a"
+  integrity sha512-e/mafFwbK3MNqxUcFBLgHhgxsF8UT1m8aj0dAlqEa2nJEgPsRtpHTZ3ObgrgkZ2M1eJHPTwgyUl/tXkvabsZdQ==
 
 "@fastify/fast-json-stringify-compiler@^4.3.0":
   version "4.3.0"
@@ -1316,6 +1326,22 @@
     inflected "^2.1.0"
     mercurius "^13.0.0"
 
+"@platformatic/sql-graphql@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@platformatic/sql-graphql/-/sql-graphql-1.2.0.tgz#1dee42d7f7ce14dbfb4bb60275ea2ffa53f7188d"
+  integrity sha512-SdGcj0iAL0t8mHN5srfJUX2vnnMvtKNd5gB0Fj0aEeHiZH+5kMREZ3pSFZTPDdEvxZyB3W6MxhvnbJVuqeJWjA==
+  dependencies:
+    "@fastify/error" "^3.3.0"
+    "@mercuriusjs/federation" "^2.0.0"
+    "@platformatic/utils" "1.2.0"
+    camelcase "^6.3.0"
+    fastify-plugin "^4.5.1"
+    graphql "^16.8.1"
+    graphql-scalars "^1.22.2"
+    graphql-type-json "^0.3.2"
+    inflected "^2.1.0"
+    mercurius "^13.1.0"
+
 "@platformatic/sql-json-schema-mapper@0.35.4":
   version "0.35.4"
   resolved "https://registry.yarnpkg.com/@platformatic/sql-json-schema-mapper/-/sql-json-schema-mapper-0.35.4.tgz#053f77fc8830ece4ec4123aabc731a786a4001d8"
@@ -1392,6 +1418,17 @@
   dependencies:
     "@fastify/deepmerge" "^1.3.0"
     minimatch "^8.0.4"
+
+"@platformatic/utils@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@platformatic/utils/-/utils-1.2.0.tgz#6519f03df3fbae0dd388abf2e3f9d9361cf860b8"
+  integrity sha512-yhYfTTnLSnIvyOuAu7q40UehSQGDYa848+AzdbiaD7vwFS/cntjNhkJBdkIVETp5dNxiMGk8G7uvBQQFa+RJjw==
+  dependencies:
+    "@fastify/deepmerge" "^1.3.0"
+    "@fastify/error" "^3.3.0"
+    leven "~3.1.0"
+    minimatch "^8.0.4"
+    undici "^5.25.4"
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
@@ -3251,6 +3288,11 @@ fastify-plugin@^4.0.0, fastify-plugin@^4.2.0, fastify-plugin@^4.2.1, fastify-plu
   resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-4.5.0.tgz#8b853923a0bba6ab6921bb8f35b81224e6988d91"
   integrity sha512-79ak0JxddO0utAXAQ5ccKhvs6vX2MGyHHMMsmZkBANrq3hXc1CHzvNPHOcvTsVMEPl5I+NT+RO4YKMGehOfSIg==
 
+fastify-plugin@^4.5.1:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-4.5.1.tgz#44dc6a3cc2cce0988bc09e13f160120bbd91dbee"
+  integrity sha512-stRHYGeuqpEZTL1Ef0Ovr2ltazUT9g844X5z/zEBFLG8RYlpDiOCIG+ATvYEp+/zmc7sN29mcIMp8gvYplYPIQ==
+
 fastify-print-routes@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/fastify-print-routes/-/fastify-print-routes-2.1.0.tgz#d881c1efefcd03ecb39df0f7b18cdaddf28d2c45"
@@ -3763,6 +3805,11 @@ graphql@^16.0.0, graphql@^16.6.0:
   version "16.6.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.6.0.tgz#c2dcffa4649db149f6282af726c8c83f1c7c5fdb"
   integrity sha512-KPIBPDlW7NxrbT/eh4qPXz5FiFdL5UbaA0XUNz2Rp3Z3hqBSkbj0GVjwFDztsWVauZUWsbKHgMg++sk8UX0bkw==
+
+graphql@^16.8.1:
+  version "16.8.1"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.8.1.tgz#1930a965bef1170603702acdb68aedd3f3cf6f07"
+  integrity sha512-59LZHPdGZVh695Ud9lRzPBVTtlX9ZCV150Er2W43ro37wVof0ctenSaskPPjN7lVTIN8mSZt8PHUNKZuNQUuxw==
 
 has-bigints@^1.0.1, has-bigints@^1.0.2:
   version "1.0.2"
@@ -4677,6 +4724,26 @@ mercurius@^13.0.0:
     "@fastify/websocket" "^8.0.0"
     fastify-plugin "^4.2.0"
     graphql "^16.0.0"
+    graphql-jit "^0.8.0"
+    mqemitter "^5.0.0"
+    p-map "^4.0.0"
+    readable-stream "^4.0.0"
+    safe-stable-stringify "^2.3.0"
+    secure-json-parse "^2.7.0"
+    single-user-cache "^0.6.0"
+    tiny-lru "^11.0.0"
+    undici "^5.0.0"
+    ws "^8.2.2"
+
+mercurius@^13.1.0:
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/mercurius/-/mercurius-13.1.0.tgz#73083117ec69f84ecd566971faae6d690085a46d"
+  integrity sha512-MDCmgNLk77f6Epe4af78Z36XChQ/TeHIO3l8Aoyj3whEqzlXxODNaNHt4vEfLDHCSbuLoLJTaK6bpWN0MtomUA==
+  dependencies:
+    "@fastify/error" "^3.0.0"
+    "@fastify/static" "^6.0.0"
+    "@fastify/websocket" "^8.0.0"
+    fastify-plugin "^4.2.0"
     graphql-jit "^0.8.0"
     mqemitter "^5.0.0"
     p-map "^4.0.0"
@@ -6673,6 +6740,13 @@ undici@^5.0.0, undici@^5.19.1, undici@^5.21.2, undici@^5.22.0, undici@^5.22.1:
   integrity sha512-Ji2IJhFXZY0x/0tVBXeQwgPlLWw13GVzpsWPQ3rV50IFMMof2I55PZZxtm4P6iNq+L5znYN9nSTAq0ZyE6lSJw==
   dependencies:
     busboy "^1.6.0"
+
+undici@^5.25.4:
+  version "5.25.4"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.25.4.tgz#7d8ef81d94f84cd384986271e5e5599b6dff4296"
+  integrity sha512-450yJxT29qKMf3aoudzFpIciqpx6Pji3hEWaXqXmanbXF58LTAGCKxcJjxMXWu3iG+Mudgo3ZUfDB6YDFd/dAw==
+  dependencies:
+    "@fastify/busboy" "^2.0.0"
 
 unicode-length@^2.0.2:
   version "2.1.0"
