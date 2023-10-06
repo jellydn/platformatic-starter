@@ -602,6 +602,11 @@
     basic-auth "^2.0.1"
     fastify-plugin "^4.0.0"
 
+"@fastify/busboy@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@fastify/busboy/-/busboy-2.0.0.tgz#f22824caff3ae506b18207bad4126dbc6ccdb6b8"
+  integrity sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==
+
 "@fastify/cors@^8.3.0":
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/@fastify/cors/-/cors-8.3.0.tgz#f03d745731b770793a1a15344da7220ca0d19619"
@@ -624,6 +629,11 @@
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@fastify/error/-/error-3.2.1.tgz#5d1cb182a8bb9b103c556b0da35fd77f319fc15e"
   integrity sha512-scZVbcpPNWw/yyFmzzO7cf1daTeJp53spN2n7dBTHZd+cV7791fcWJCPP1Tfhdbre+8vDiCyQyqqXfQnYMntYQ==
+
+"@fastify/error@^3.3.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@fastify/error/-/error-3.4.0.tgz#30df6601f4edce57a05ec5caaa90a28025a8554a"
+  integrity sha512-e/mafFwbK3MNqxUcFBLgHhgxsF8UT1m8aj0dAlqEa2nJEgPsRtpHTZ3ObgrgkZ2M1eJHPTwgyUl/tXkvabsZdQ==
 
 "@fastify/fast-json-stringify-compiler@^4.3.0":
   version "4.3.0"
@@ -1339,6 +1349,23 @@
     fastify-plugin "^4.5.0"
     inflected "^2.1.0"
 
+"@platformatic/sql-mapper@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@platformatic/sql-mapper/-/sql-mapper-1.2.0.tgz#413c9a7754a59c687d583e16cfbb75b581f5e4ab"
+  integrity sha512-5NusgN24Cwco03NcWS218zBdR6lyimha03S2FcbWFMmDuMGqS8CHC+ylws8dmdjyIHTQVzo41wkHzK68erix8Q==
+  dependencies:
+    "@databases/mysql" "^6.0.0"
+    "@databases/pg" "^5.4.1"
+    "@databases/sql" "^3.3.0"
+    "@fastify/error" "^3.3.0"
+    "@hapi/topo" "^6.0.2"
+    "@matteo.collina/sqlite-pool" "^0.3.0"
+    "@platformatic/utils" "1.2.0"
+    async-cache-dedupe "^2.0.0"
+    camelcase "^6.3.0"
+    fastify-plugin "^4.5.1"
+    inflected "^2.1.0"
+
 "@platformatic/sql-openapi@0.35.4":
   version "0.35.4"
   resolved "https://registry.yarnpkg.com/@platformatic/sql-openapi/-/sql-openapi-0.35.4.tgz#5ad73d52e14c2915316662508899454686d4f458"
@@ -1392,6 +1419,17 @@
   dependencies:
     "@fastify/deepmerge" "^1.3.0"
     minimatch "^8.0.4"
+
+"@platformatic/utils@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@platformatic/utils/-/utils-1.2.0.tgz#6519f03df3fbae0dd388abf2e3f9d9361cf860b8"
+  integrity sha512-yhYfTTnLSnIvyOuAu7q40UehSQGDYa848+AzdbiaD7vwFS/cntjNhkJBdkIVETp5dNxiMGk8G7uvBQQFa+RJjw==
+  dependencies:
+    "@fastify/deepmerge" "^1.3.0"
+    "@fastify/error" "^3.3.0"
+    leven "~3.1.0"
+    minimatch "^8.0.4"
+    undici "^5.25.4"
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
@@ -1892,6 +1930,14 @@ astral-regex@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==
+
+async-cache-dedupe@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/async-cache-dedupe/-/async-cache-dedupe-2.0.0.tgz#ac530f914d83ad7c7a30dcd0b3403d3d9633602c"
+  integrity sha512-SrW6PbmCHRQBSpPG8mkPIZZC5AgC08sbzl56GyGemBLVdVUl8mQW4+WCYHp5XZfixIdkL40jKf3UlT/P6Q3p5w==
+  dependencies:
+    mnemonist "^0.39.5"
+    safe-stable-stringify "^2.4.3"
 
 async-hook-domain@^2.0.4:
   version "2.0.4"
@@ -3250,6 +3296,11 @@ fastify-plugin@^4.0.0, fastify-plugin@^4.2.0, fastify-plugin@^4.2.1, fastify-plu
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-4.5.0.tgz#8b853923a0bba6ab6921bb8f35b81224e6988d91"
   integrity sha512-79ak0JxddO0utAXAQ5ccKhvs6vX2MGyHHMMsmZkBANrq3hXc1CHzvNPHOcvTsVMEPl5I+NT+RO4YKMGehOfSIg==
+
+fastify-plugin@^4.5.1:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-4.5.1.tgz#44dc6a3cc2cce0988bc09e13f160120bbd91dbee"
+  integrity sha512-stRHYGeuqpEZTL1Ef0Ovr2ltazUT9g844X5z/zEBFLG8RYlpDiOCIG+ATvYEp+/zmc7sN29mcIMp8gvYplYPIQ==
 
 fastify-print-routes@^2.1.0:
   version "2.1.0"
@@ -5915,7 +5966,7 @@ safe-regex2@^2.0.0:
   dependencies:
     ret "~0.2.0"
 
-safe-stable-stringify@^2.0.0, safe-stable-stringify@^2.3.0, safe-stable-stringify@^2.3.1:
+safe-stable-stringify@^2.0.0, safe-stable-stringify@^2.3.0, safe-stable-stringify@^2.3.1, safe-stable-stringify@^2.4.3:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/safe-stable-stringify/-/safe-stable-stringify-2.4.3.tgz#138c84b6f6edb3db5f8ef3ef7115b8f55ccbf886"
   integrity sha512-e2bDA2WJT0wxseVd4lsDP4+3ONX6HpMXQa1ZhFQ7SU+GjvORCmShbCMltrtIDfkYhVHrOcPtj+KhmDBdPdZD1g==
@@ -6673,6 +6724,13 @@ undici@^5.0.0, undici@^5.19.1, undici@^5.21.2, undici@^5.22.0, undici@^5.22.1:
   integrity sha512-Ji2IJhFXZY0x/0tVBXeQwgPlLWw13GVzpsWPQ3rV50IFMMof2I55PZZxtm4P6iNq+L5znYN9nSTAq0ZyE6lSJw==
   dependencies:
     busboy "^1.6.0"
+
+undici@^5.25.4:
+  version "5.25.4"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-5.25.4.tgz#7d8ef81d94f84cd384986271e5e5599b6dff4296"
+  integrity sha512-450yJxT29qKMf3aoudzFpIciqpx6Pji3hEWaXqXmanbXF58LTAGCKxcJjxMXWu3iG+Mudgo3ZUfDB6YDFd/dAw==
+  dependencies:
+    "@fastify/busboy" "^2.0.0"
 
 unicode-length@^2.0.2:
   version "2.1.0"
