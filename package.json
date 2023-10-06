@@ -38,7 +38,7 @@
     "eslint-config-xo-typescript": "0.57.0",
     "husky": "8.0.3",
     "nano-staged": "0.8.0",
-    "platformatic": "0.35.4",
+    "platformatic": "1.2.0",
     "prettier": "3.0.2",
     "sort-package-json": "2.5.1"
   },
