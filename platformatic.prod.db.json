@@ -1,5 +1,5 @@
 {
-  "$schema": "./platformatic.db.schema.json",
+  "$schema": "https://platformatic.dev/schemas/v1.2.0/db",
   "server": {
     "cors": {
       "origin": "https://platformatic.cloud",
@@ -11,7 +11,7 @@
     "hostname": "{PLT_SERVER_HOSTNAME}",
     "port": "{PORT}"
   },
-  "core": {
+  "db": {
     "connectionString": "{DATABASE_URL}",
     "autoTimestamp": {
       "createdAt": "created_at",
@@ -29,24 +29,25 @@
   "types": {
     "autogenerate": true
   },
-  "dashboard": true,
   "metrics": true,
-  "plugin": [
-    {
-      "path": "./dist/plugins/rate-limit.js",
-      "options": {
-        "max": 100,
-        "timeWindow": "1 minute"
+  "plugins": {
+    "paths": [
+      {
+        "path": "./dist/plugins/rate-limit.js",
+        "options": {
+          "max": 100,
+          "timeWindow": "1 minute"
+        }
+      },
+      {
+        "path": "./dist/plugins/helmet.js"
+      },
+      {
+        "path": "./dist/plugin.js",
+        "options": {
+          "hello": "world"
+        }
       }
-    },
-    {
-      "path": "./dist/plugins/helmet.js"
-    },
-    {
-      "path": "./dist/plugin.js",
-      "options": {
-        "hello": "world"
-      }
-    }
-  ]
+    ]
+  }
 }

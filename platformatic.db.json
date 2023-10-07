@@ -1,5 +1,5 @@
 {
-  "$schema": "./platformatic.db.schema.json",
+  "$schema": "https://platformatic.dev/schemas/v1.2.0/db",
   "server": {
     "logger": {
       "level": "{PLT_SERVER_LOGGER_LEVEL}"
@@ -7,7 +7,7 @@
     "hostname": "{PLT_SERVER_HOSTNAME}",
     "port": "{PORT}"
   },
-  "core": {
+  "db": {
     "connectionString": "{DATABASE_URL}",
     "autoTimestamp": {
       "createdAt": "created_at",
@@ -26,31 +26,34 @@
   "migrations": {
     "dir": "migrations"
   },
-  "plugin": [
-    {
-      "path": "./plugins/rate-limit.ts",
-      "options": {
-        "max": 100,
-        "timeWindow": "1 minute"
+  "plugins": {
+    "paths": [
+      {
+        "path": "./plugins/rate-limit.ts",
+        "options": {
+          "max": 100,
+          "timeWindow": "1 minute"
+        },
+        "typescript": {
+          "outDir": "dist"
+        }
       },
-      "typescript": {
-        "outDir": "dist"
-      }
-    },
-    {
-      "path": "./plugins/helmet.ts",
-      "typescript": {
-        "outDir": "dist"
-      }
-    },
-    {
-      "path": "plugin.ts",
-      "options": {
-        "hello": "world"
+      {
+        "path": "./plugins/helmet.ts",
+        "typescript": {
+          "outDir": "dist"
+        }
       },
-      "typescript": {
-        "outDir": "dist"
+      {
+        "path": "plugin.ts",
+        "options": {
+          "hello": "world"
+        },
+        "typescript": {
+          "outDir": "dist"
+        }
       }
-    }
-  ]
+    ],
+    "typescript": true
+  }
 }

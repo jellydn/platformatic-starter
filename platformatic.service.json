@@ -1,5 +1,5 @@
 {
-  "$schema": "./platformatic.db.schema.json",
+  "$schema": "https://platformatic.dev/schemas/v1.2.0/service",
   "server": {
     "logger": {
       "level": "{PLT_SERVER_LOGGER_LEVEL}"
@@ -10,31 +10,33 @@
       "interval": 2000
     }
   },
-  "plugin": [
-    {
-      "path": "./plugins/rate-limit.ts",
-      "options": {
-        "max": 100,
-        "timeWindow": "1 minute"
+  "plugins": {
+    "paths": [
+      {
+        "path": "./plugins/rate-limit.ts",
+        "options": {
+          "max": 100,
+          "timeWindow": "1 minute"
+        },
+        "typescript": {
+          "outDir": "dist"
+        }
       },
-      "typescript": {
-        "outDir": "dist"
-      }
-    },
-    {
-      "path": "./plugins/helmet.ts",
-      "typescript": {
-        "outDir": "dist"
-      }
-    },
-    {
-      "path": "micro.ts",
-      "options": {
-        "hello": "microservices"
+      {
+        "path": "./plugins/helmet.ts",
+        "typescript": {
+          "outDir": "dist"
+        }
       },
-      "typescript": {
-        "outDir": "dist"
+      {
+        "path": "micro.ts",
+        "options": {
+          "hello": "microservices"
+        },
+        "typescript": {
+          "outDir": "dist"
+        }
       }
-    }
-  ]
+    ]
+  }
 }
