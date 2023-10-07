@@ -12,18 +12,18 @@
 
 ## Prerequisites
 
-- Node.js >= v16.17.0 or >= v18.8.0
+- Node.js >= v18.17.0 or >= v20.8.0
 
 ## Install
 
 ```sh
-yarn install
+pnpm install
 ```
 
 ## Usage
 
 ```sh
-yarn dev
+pnpm run dev
 ```
 
 ### Microservices (Beta)
@@ -31,7 +31,7 @@ yarn dev
 [Platformatic Service](https://github.com/platformatic/platformatic/blob/main/docs/reference/service/introduction.md) in public beta.
 
 ```sh
-yarn service
+pnpm run service
 ```
 
 ## Deployment
