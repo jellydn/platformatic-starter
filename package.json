@@ -12,7 +12,7 @@
     "lint": "eslint \"**/*.ts\" \"*.ts\" --fix",
     "migrate": "npx platformatic db migrations apply",
     "service": "npx platformatic service start",
-    "start": "npx platformatic db start",
+    "start": "npx platformatic start",
     "typecheck": "tsc --noEmit"
   },
   "nano-staged": {
