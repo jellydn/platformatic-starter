@@ -22,7 +22,6 @@
   "types": {
     "autogenerate": true
   },
-  "dashboard": true,
   "metrics": true,
   "migrations": {
     "dir": "migrations"
