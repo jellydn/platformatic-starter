@@ -19,13 +19,16 @@ jobs:
       - name: ⎔ Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
+
+      - name: 📥 Install pnpm
+        run: npm install -g pnpm
 
       - name: 📥 Download deps
-        uses: bahmutov/npm-install@v1
+        run: pnpm install
 
       - name: 🔎 Type check
-        run: npm run typecheck --if-present
+        run: pnpm run typecheck
 
   lint:
     name: ⬣ ESLint
@@ -42,13 +45,16 @@ jobs:
       - name: 🛠 Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
+
+      - name: 📥 Install pnpm
+        run: npm install -g pnpm
 
       - name: 📥 Download deps
-        uses: bahmutov/npm-install@v1
+        run: pnpm install
 
       - name: 🔬 Lint
-        run: npm run lint
+        run: pnpm run lint
 
   build:
     name: 🐳 Build
