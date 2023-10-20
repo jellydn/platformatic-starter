@@ -1,4 +1,4 @@
-FROM node:20-alpine as builder
+FROM node:21-alpine as builder
 # Build the image
 RUN mkdir /app
 WORKDIR /app
@@ -22,7 +22,7 @@ ENV DATABASE_URL=sqlite://.platformatic/data/movies.db
 RUN pnpm run build
 
 # Copy the build output
-FROM node:20-alpine
+FROM node:21-alpine
 WORKDIR /app
 COPY --from=builder /app .
 
