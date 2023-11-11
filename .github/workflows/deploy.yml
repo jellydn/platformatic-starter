@@ -2,8 +2,7 @@ name: 🚀 Deploy
 on:
   push:
     branches:
-      - main
-      - dev
+      - release
 
 jobs:
   typecheck:
