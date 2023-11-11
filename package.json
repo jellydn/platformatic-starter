@@ -15,7 +15,7 @@
     "start": "npx platformatic db start",
     "typecheck": "tsc --noEmit",
     "ci:server": "npm run dev",
-    "ci:test": "wait-on http://127.0.0.1:3042 && hurl --test tests/*.hurl"
+    "ci:test": "wait-on -l http://127.0.0.1:3042 && hurl --test tests/*.hurl"
   },
   "nano-staged": {
     "*.{js,ts}": "eslint --cache --fix",

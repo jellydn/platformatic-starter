@@ -1,0 +1,41 @@
+name: Test
+on:
+  push:
+    branches:
+      - main
+      - dev
+
+jobs:
+  test-ci:
+    name: Test CI
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 📥 Install pnpm
+        run: npm install -g pnpm
+
+      - name: 📥 Download deps
+        run: pnpm install
+
+      - name: Create Database Directory
+        run: |
+          mkdir -p db
+          touch db/movies.sqlite
+
+      - name: Install hurl
+        run: pnpm add @orangeopensource/hurl
+
+      - name: Run test
+        env:
+          DATABASE_URL: sqlite://db/movies.sqlite
+          PLT_SERVER_LOGGER_LEVEL: info
+          PORT: 3042
+          PLT_SERVER_HOSTNAME: 127.0.0.1
+        run: make test-ci
