@@ -6,9 +6,60 @@ on:
       - dev
 
 jobs:
+  typecheck:
+    name: ʦ TypeScript
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑 Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.12.0
+
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 📥 Install pnpm
+        run: npm install -g pnpm
+
+      - name: 📥 Download deps
+        run: pnpm install
+
+      - name: 🔎 Type check
+        run: pnpm run typecheck
+
+  lint:
+    name: ⬣ ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑 Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.12.0
+
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: "50"
+
+      - name: 🛠 Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 📥 Install pnpm
+        run: npm install -g pnpm
+
+      - name: 📥 Download deps
+        run: pnpm install
+
+      - name: 🔬 Lint
+        run: pnpm run lint
+
   test-ci:
     name: Test CI
     runs-on: ubuntu-latest
+    needs: [typecheck, lint]
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
