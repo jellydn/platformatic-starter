@@ -174,3 +174,4 @@ Huynh
 kofi
 buymeacoffee
 automerge
+graphiql

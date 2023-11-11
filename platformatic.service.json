@@ -8,6 +8,10 @@
     "port": "{PORT}",
     "healthCheck": {
       "interval": 2000
+    },
+    "cors": {
+      "origin": "*",
+      "methods": ["GET", "POST", "PUT", "DELETE"]
     }
   },
   "plugins": {

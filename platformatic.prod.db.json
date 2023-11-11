@@ -2,7 +2,7 @@
   "$schema": "https://platformatic.dev/schemas/v1.2.0/db",
   "server": {
     "cors": {
-      "origin": "https://platformatic.cloud",
+      "origin": "*",
       "methods": ["GET", "POST", "PUT", "DELETE"]
     },
     "logger": {

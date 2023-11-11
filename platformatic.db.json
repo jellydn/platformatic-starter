@@ -1,6 +1,10 @@
 {
   "$schema": "https://platformatic.dev/schemas/v1.2.0/db",
   "server": {
+    "cors": {
+      "origin": "*",
+      "methods": ["GET", "POST", "PUT", "DELETE"]
+    },
     "logger": {
       "level": "{PLT_SERVER_LOGGER_LEVEL}"
     },
@@ -13,6 +17,7 @@
       "createdAt": "created_at",
       "updatedAt": "updated_at"
     },
+    "graphiql": true,
     "openapi": true,
     "graphql": true,
     "ignore": {
@@ -45,7 +50,7 @@
         }
       },
       {
-        "path": "plugin.ts",
+        "path": "./plugin.ts",
         "options": {
           "hello": "world"
         },

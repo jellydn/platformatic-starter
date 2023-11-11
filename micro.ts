@@ -11,4 +11,6 @@ export default async function (
 
   // Simpler counter service
   counterService(app);
+
+  app.log.info("micro service started");
 }
