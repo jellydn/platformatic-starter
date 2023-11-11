@@ -33,6 +33,12 @@
         }
       },
       {
+        "path": "./plugins/routes.ts",
+        "typescript": {
+          "outDir": "dist"
+        }
+      },
+      {
         "path": "micro.ts",
         "options": {
           "hello": "microservices"

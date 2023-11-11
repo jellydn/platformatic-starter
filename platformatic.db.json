@@ -50,6 +50,12 @@
         }
       },
       {
+        "path": "./plugins/routes.ts",
+        "typescript": {
+          "outDir": "dist"
+        }
+      },
+      {
         "path": "./plugin.ts",
         "options": {
           "hello": "world"

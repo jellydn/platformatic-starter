@@ -43,6 +43,12 @@
         "path": "./dist/plugins/helmet.js"
       },
       {
+        "path": "./plugins/routes.ts",
+        "typescript": {
+          "outDir": "dist"
+        }
+      },
+      {
         "path": "./dist/plugin.js",
         "options": {
           "hello": "world"
