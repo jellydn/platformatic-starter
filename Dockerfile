@@ -32,5 +32,5 @@ ENV DSN "/app/.platformatic/data/movies.db"
 COPY db-cli.sh /usr/local/bin/db-cli
 RUN chmod +x /usr/local/bin/db-cli
 
-EXPOSE 8080
+EXPOSE 3042
 CMD ["npm", "start"]
