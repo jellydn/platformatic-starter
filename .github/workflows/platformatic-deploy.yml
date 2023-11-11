@@ -24,15 +24,21 @@ jobs:
           PLT_SERVER_LOGGER_LEVEL: info
           PORT: 3042
           PLT_SERVER_HOSTNAME: 127.0.0.1
-      - name: Deploy project
-        uses: platformatic/onestep@v1.1.0
+      - name: Deploy app
+        id: deploy-app
+        uses: platformatic/onestep@latest
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           platformatic_workspace_id: ${{ vars.PLATFORMATIC_WORKSPACE_ID }}
           platformatic_workspace_key: ${{ secrets.PLATFORMATIC_WORKSPACE_API_KEY }}
-          platformatic_config_path: ./platformatic.prod.db.json
+          platformatic_config_path: ./platformatic.db.json
+          post_pr_comment: false
+          label: ${{ github.event.inputs.label }}
         env:
           DATABASE_URL: sqlite://.platformatic/data/db.sqlite
           PLT_SERVER_LOGGER_LEVEL: info
           PORT: 3042
           PLT_SERVER_HOSTNAME: 127.0.0.1
+
+      - name: Output deployed app URL
+        run: echo '${{ steps.deploy-app.outputs.platformatic_app_url }}'
