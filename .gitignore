@@ -133,3 +133,4 @@ dist
 db.sqlite
 .envrc
 data
+test-report
