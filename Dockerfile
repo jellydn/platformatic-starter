@@ -33,4 +33,4 @@ COPY db-cli.sh /usr/local/bin/db-cli
 RUN chmod +x /usr/local/bin/db-cli
 
 EXPOSE 8080
-CMD ["pnpm", "start"]
+CMD ["npm", "start"]
