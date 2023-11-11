@@ -23,6 +23,6 @@ services:
       - ./data:/app/.platformatic/data
     environment:
       PORT: 3042
-      PLT_SERVER_HOSTNAME: 127.0.0.1
+      PLT_SERVER_HOSTNAME: 0.0.0.0
       PLT_SERVER_LOGGER_LEVEL: debug
       DATABASE_URL: sqlite:///app/.platformatic/data/movies.sqlite
