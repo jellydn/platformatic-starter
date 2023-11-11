@@ -34,7 +34,7 @@ jobs:
           platformatic_config_path: ./platformatic.db.json
           post_pr_comment: true
         env:
-          DATABASE_URL: sqlite://.platformatic/data/db.sqlite
+          DATABASE_URL: sqlite://.platformatic/data/movies.sqlite
           PLT_SERVER_LOGGER_LEVEL: info
           PORT: 3042
           PLT_SERVER_HOSTNAME: 127.0.0.1
