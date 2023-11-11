@@ -18,7 +18,7 @@ RUN pnpm install
 ENV PORT=3042
 ENV PLT_SERVER_HOSTNAME=127.0.0.1
 ENV PLT_SERVER_LOGGER_LEVEL=debug
-ENV DATABASE_URL=sqlite://.platformatic/data/movies.db
+ENV DATABASE_URL=sqlite://.platformatic/data/movies.sqlite
 RUN pnpm run build
 
 # Copy the build output

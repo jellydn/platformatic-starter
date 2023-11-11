@@ -1,16 +1,28 @@
 version: "3.8"
 
 services:
-  app:
+  reverse-proxy:
+    image: traefik:3.0@sha256:a25aa319fe3cc8095e4b1dcd8394430103a2e324e1af321312b45c266ba3e129
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker"
+    ports:
+      - "80:80" # The HTTP port
+      - "8081:8080" # The Web UI (enabled by --api.insecure=true)
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # So that Traefik can listen to the Docker events
+
+  platformatic-app:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "8080:8080"
+    labels:
+      - "traefik.http.routers.platformatic-app.rule=Host(`platformatic-app.local`)"
+      - "traefik.http.services.platformatic-app.loadbalancer.server.port=3042"
     volumes:
       - ./data:/app/.platformatic/data
     environment:
       PORT: 3042
       PLT_SERVER_HOSTNAME: 127.0.0.1
       PLT_SERVER_LOGGER_LEVEL: debug
-      DATABASE_URL: sqlite:///app/.platformatic/data/movies.db
+      DATABASE_URL: sqlite:///app/.platformatic/data/movies.sqlite

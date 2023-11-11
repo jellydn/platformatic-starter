@@ -132,3 +132,4 @@ dist
 # DB
 db.sqlite
 .envrc
+data
