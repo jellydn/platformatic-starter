@@ -26,7 +26,7 @@ pnpm install
 pnpm run dev
 ```
 
-### Microservices (Beta)
+### Microservices
 
 [Platformatic Service](https://github.com/platformatic/platformatic/blob/main/docs/reference/service/introduction.md) in public beta.
 
