@@ -32,8 +32,7 @@ jobs:
           platformatic_workspace_id: ${{ vars.PLATFORMATIC_WORKSPACE_ID }}
           platformatic_workspace_key: ${{ secrets.PLATFORMATIC_WORKSPACE_API_KEY }}
           platformatic_config_path: ./platformatic.db.json
-          post_pr_comment: false
-          label: ${{ github.event.inputs.label }}
+          post_pr_comment: true
         env:
           DATABASE_URL: sqlite://.platformatic/data/db.sqlite
           PLT_SERVER_LOGGER_LEVEL: info
