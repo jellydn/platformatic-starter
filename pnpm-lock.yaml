@@ -403,8 +403,8 @@ packages:
       '@fastify/error': 3.4.1
       fastify-plugin: 4.5.1
 
-  /@fastify/busboy@2.0.0:
-    resolution: {integrity: sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==}
+  /@fastify/busboy@2.1.0:
+    resolution: {integrity: sha512-+KpH+QxZU7O4675t3mnkQKcZZg56u+K/Ct2K+N2AZYNVK8kyeo/bI18tI8aPm3tvNNRyTWfj6s5tnGNlcbQRsA==}
     engines: {node: '>=14'}
 
   /@fastify/cors@8.4.1:
@@ -443,8 +443,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@fastify/jwt@7.2.2:
-    resolution: {integrity: sha512-ZF0lyEjEIJnwqe0zjeSQkjfpAIrKdZfhTwUM+Z74NFEN+WodDi12cjABFPm2CrI8jtc4KInytSA74bN2jJ0MGQ==}
+  /@fastify/jwt@7.2.3:
+    resolution: {integrity: sha512-UPHS7E6tmDWMYspq9znKZ54NwN0F+vcQ9e8okkl4iE+bDMaWCoPChL/lUmKLFepU6/Van3grjshmNviQ8oLVwA==}
     dependencies:
       '@fastify/error': 3.4.1
       '@lukeed/ms': 2.0.1
@@ -946,7 +946,7 @@ packages:
     resolution: {integrity: sha512-OF21I/fYh61keJW/LNFgntAG09UOJX66yALSpGua3xmserLCxaKwaNYT9CDifRG+f10ClXXt9XUoG68O/8CV5g==}
     dependencies:
       '@fastify/error': 3.4.1
-      '@fastify/jwt': 7.2.2
+      '@fastify/jwt': 7.2.3
       fastify-plugin: 4.5.1
       fastify-user: 0.3.1
       get-jwks: 8.3.1
@@ -1281,8 +1281,8 @@ packages:
   /@protobufjs/utf8@1.1.0:
     resolution: {integrity: sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==}
 
-  /@seriousme/openapi-schema-validator@2.1.2:
-    resolution: {integrity: sha512-1qQg8gb1rzuw4XFeIgmxW0tpLoz6l6dNoM65e1/kOxat75Vq9vIQYbvYElwOW3k6gYpjFpCABsiXDtgZbluUBw==}
+  /@seriousme/openapi-schema-validator@2.1.3:
+    resolution: {integrity: sha512-GwyU/bphdbFge+/FxR9TYvYgF37DUW9PvciYtJeDuY60x/4fBh7nsHX8oai71RKD28waqpbyaku9ROTwwIri7w==}
     hasBin: true
     dependencies:
       ajv: 8.12.0
@@ -2855,7 +2855,7 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
-      '@seriousme/openapi-schema-validator': 2.1.2
+      '@seriousme/openapi-schema-validator': 2.1.3
       fastify-plugin: 4.5.1
       js-yaml: 4.1.0
       minimist: 1.2.8
@@ -2882,7 +2882,7 @@ packages:
     resolution: {integrity: sha512-Gx6FxRjoPWKZMmpAmHmCwhkwgJpdBLXuko09Z6T4rLOw+YR67znjbv35Ec4r0g3L5tsOKc8hDPz6L0tZQlX9Ww==}
     dependencies:
       '@fastify/error': 3.4.1
-      '@fastify/jwt': 7.2.2
+      '@fastify/jwt': 7.2.3
       fastify: 4.24.3
       fastify-plugin: 4.5.1
       get-jwks: 8.3.1
@@ -2941,7 +2941,7 @@ packages:
     resolution: {integrity: sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==}
     engines: {node: ^10.12.0 || >=12.0.0}
     dependencies:
-      flat-cache: 3.1.1
+      flat-cache: 3.2.0
     dev: true
 
   /file-uri-to-path@1.0.0:
@@ -2978,9 +2978,9 @@ packages:
       path-exists: 5.0.0
     dev: true
 
-  /flat-cache@3.1.1:
-    resolution: {integrity: sha512-/qM2b3LUIaIgviBQovTLvijfyOQXPtSRnRK26ksj2J7rzPIecePUIpJsZ4T02Qg+xiAEKIs5K8dsHEd+VaKa/Q==}
-    engines: {node: '>=12.0.0'}
+  /flat-cache@3.2.0:
+    resolution: {integrity: sha512-CYcENa+FtcUKLmhhqyctpclsq7QF38pKjZHsGNiSQF5r4FtoKDWabFDl3hzaEQMvT1LHEysw5twgLvpYYb4vbw==}
+    engines: {node: ^10.12.0 || >=12.0.0}
     dependencies:
       flatted: 3.2.9
       keyv: 4.5.4
@@ -5536,7 +5536,7 @@ packages:
     resolution: {integrity: sha512-iS857PdOEy/y3wlM3yRp+6SNQQ6xU0mmZcwRSriqk+et/cwWAtwmIGf6WkoDN2EK/AMdCO/dfXzIwi+rFMrjjQ==}
     engines: {node: '>=14.0'}
     dependencies:
-      '@fastify/busboy': 2.0.0
+      '@fastify/busboy': 2.1.0
 
   /uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
