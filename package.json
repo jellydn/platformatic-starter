@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@fastify/helmet": "11.1.1",
-    "@fastify/rate-limit": "8.1.1",
+    "@fastify/rate-limit": "9.0.0",
     "@platformatic/db": "1.11.0",
     "@platformatic/sql-graphql": "1.11.0",
     "@platformatic/sql-mapper": "1.11.0",
