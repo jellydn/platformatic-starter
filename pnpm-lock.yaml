@@ -12,14 +12,14 @@ dependencies:
     specifier: 9.0.1
     version: 9.0.1
   '@platformatic/db':
-    specifier: 1.13.3
-    version: 1.13.3(typescript@5.3.2)
+    specifier: 1.13.6
+    version: 1.13.6(typescript@5.3.2)
   '@platformatic/sql-graphql':
-    specifier: 1.13.3
-    version: 1.13.3
+    specifier: 1.13.6
+    version: 1.13.6
   '@platformatic/sql-mapper':
-    specifier: 1.13.3
-    version: 1.13.3(typescript@5.3.2)
+    specifier: 1.13.6
+    version: 1.13.6(typescript@5.3.2)
   ajv:
     specifier: 8.12.0
     version: 8.12.0
@@ -44,11 +44,11 @@ devDependencies:
     specifier: 20.10.3
     version: 20.10.3
   '@typescript-eslint/eslint-plugin':
-    specifier: 6.13.1
-    version: 6.13.1(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
+    specifier: 6.13.2
+    version: 6.13.2(@typescript-eslint/parser@6.13.2)(eslint@8.55.0)(typescript@5.3.2)
   '@typescript-eslint/parser':
-    specifier: 6.13.1
-    version: 6.13.1(eslint@8.55.0)(typescript@5.3.2)
+    specifier: 6.13.2
+    version: 6.13.2(eslint@8.55.0)(typescript@5.3.2)
   concurrently:
     specifier: 8.2.2
     version: 8.2.2
@@ -57,7 +57,7 @@ devDependencies:
     version: 8.55.0
   eslint-config-productsway:
     specifier: 1.3.1
-    version: 1.3.1(@typescript-eslint/eslint-plugin@6.13.1)(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.2)
+    version: 1.3.1(@typescript-eslint/eslint-plugin@6.13.2)(@typescript-eslint/parser@6.13.2)(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.2)
   husky:
     specifier: 8.0.3
     version: 8.0.3
@@ -68,8 +68,8 @@ devDependencies:
     specifier: 4.1.5
     version: 4.1.5
   platformatic:
-    specifier: 1.13.3
-    version: 1.13.3(typescript@5.3.2)
+    specifier: 1.13.6
+    version: 1.13.6(typescript@5.3.2)
   prettier:
     specifier: 3.1.0
     version: 3.1.0
@@ -807,11 +807,11 @@ packages:
     resolution: {integrity: sha512-+NLGHr6VZwcgE/2lw8zDIufOCGnzsA5CbQIMleXZTrgkBd0TanCX+MiDYJ1TOS4KL/Tqk0nFRxawnaYr6pkZkA==}
     engines: {node: '>=14'}
 
-  /@platformatic/authenticate@1.13.3:
-    resolution: {integrity: sha512-Bgb2sC9fbnUs8WkUXGLWf98C4qXMFjI3L/P+m7jjMbqMYJ1svlrxh6d6QMg+hn2gas8vBL6VxQl35fvA2oWqWA==}
+  /@platformatic/authenticate@1.13.6:
+    resolution: {integrity: sha512-Rs2ODpShCoZRl1nJRNNQiLSIpl0tK4IvvRwHJjuhm7XtQpito9aSeqjoWRgMC/kEuUdfh/5TFrDbuGFWlKuleQ==}
     dependencies:
       '@fastify/error': 3.4.1
-      '@platformatic/config': 1.13.3
+      '@platformatic/config': 1.13.6
       colorette: 2.0.20
       commist: 3.2.0
       es-main: 1.3.0
@@ -823,14 +823,14 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@platformatic/client-cli@1.13.3:
-    resolution: {integrity: sha512-UewqwwNxlPe9Dws2zp9HnfQ1XxoFOIa0Kz6xC0NsSyrtGoWoSk1RVyxEGhNZHTJ+Tvc/tT/UYjeXczauV+kN/Q==}
+  /@platformatic/client-cli@1.13.6:
+    resolution: {integrity: sha512-DOxkIM+8qWmmZuAstD9r7KNpvOYs7tcFtzbb+WAFfdRiuAlutfFLcucHqVbDxLaGK+yJdutEyHgPm0IBbDjkeA==}
     hasBin: true
     dependencies:
       '@fastify/error': 3.4.1
-      '@platformatic/client': 1.13.3
-      '@platformatic/config': 1.13.3
-      '@platformatic/metaconfig': 1.13.3
+      '@platformatic/client': 1.13.6
+      '@platformatic/config': 1.13.6
+      '@platformatic/metaconfig': 1.13.6
       abstract-logging: 2.0.1
       camelcase: 6.3.0
       code-block-writer: 12.0.0
@@ -847,8 +847,8 @@ packages:
       yaml: 2.3.4
     dev: true
 
-  /@platformatic/client@1.13.3:
-    resolution: {integrity: sha512-TcGFL52u3Gs1qYK/CabU3fBomL6jcpJKpk89xwA3XMgA3r9b4zo6u4hW2Kr6LX+6YFFip3IyRST6iFMqX4tdgA==}
+  /@platformatic/client@1.13.6:
+    resolution: {integrity: sha512-JF2BFVZh+pD/sxdomJAOBzFEFaMeXdqmMiYZke060UcVNXt34v1CnH9RQnvyt5LSQ+pTa2CxBl09FkavSZ239A==}
     dependencies:
       '@apidevtools/json-schema-ref-parser': 11.1.0
       '@fastify/error': 3.4.1
@@ -858,8 +858,8 @@ packages:
       jsonpointer: 5.0.1
       undici: 5.28.2
 
-  /@platformatic/composer@1.13.3:
-    resolution: {integrity: sha512-pWsF5G9KtZJiPob6kYEWbgGnC/GE4O4GG+5ZlyuIf7tQWS61tPMmysTAs1bXM+jrWMy+9FGVOoXqPtHQAhFT2A==}
+  /@platformatic/composer@1.13.6:
+    resolution: {integrity: sha512-WdxeJ5/HNrbyHPHm+UScAce8kpnPSi/HTO5b04AZaMvFJiC5WwD5oQPMcmG16Uu4rZkpWaNLNo21Xon9I33mEA==}
     hasBin: true
     dependencies:
       '@fastify/error': 3.4.1
@@ -868,11 +868,11 @@ packages:
       '@fastify/static': 6.12.0
       '@fastify/swagger': 8.12.0
       '@fastify/swagger-ui': 1.10.2
-      '@platformatic/config': 1.13.3
-      '@platformatic/generators': 1.13.3
-      '@platformatic/service': 1.13.3
-      '@platformatic/swagger-ui-theme': 1.13.3
-      '@platformatic/telemetry': 1.13.3
+      '@platformatic/config': 1.13.6
+      '@platformatic/generators': 1.13.6
+      '@platformatic/service': 1.13.6
+      '@platformatic/swagger-ui-theme': 1.13.6
+      '@platformatic/telemetry': 1.13.6
       ajv: 8.12.0
       commist: 3.2.0
       desm: 1.3.0
@@ -895,13 +895,13 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@platformatic/config@1.13.3:
-    resolution: {integrity: sha512-V7BtCxLmVsKcXd+KP5NYWtcapGb22Yf1ycZqJLYD5LCC/J2EFHQMa7+E9o9xRbwqWsr7RKEPiTGzEY4D1gOTpw==}
+  /@platformatic/config@1.13.6:
+    resolution: {integrity: sha512-QaD2cKdJNuG1o0lHixQffI7sco7enxOqTNohW2egGfQtgLKnmyUwT2V6PvNxzcZ0G/YsGjRhqRQjDhLnQGt5aA==}
     dependencies:
       '@fastify/deepmerge': 1.3.0
       '@fastify/error': 3.4.1
-      '@platformatic/metaconfig': 1.13.3
-      '@platformatic/utils': 1.13.3
+      '@platformatic/metaconfig': 1.13.6
+      '@platformatic/utils': 1.13.6
       ajv: 8.12.0
       dotenv: 16.3.1
       minimist: 1.2.8
@@ -909,8 +909,8 @@ packages:
       semver: 7.5.4
       undici: 5.28.2
 
-  /@platformatic/db-authorization@1.13.3:
-    resolution: {integrity: sha512-7aIeN/9MaWgAtCwTehjZ/+mtv1KrRAOhf9XMjaWg3xee7CXoOz37pas6V9farXW9QRdLxhiu9Gp9QN4iJzAyzw==}
+  /@platformatic/db-authorization@1.13.6:
+    resolution: {integrity: sha512-5TJ03zK/CdKM7AulKpn1fMGFHHA02fZBVkP6qzb/q+Mtl39umjtpawqZERluriy4RAkvkiochGFzHnEthJl33A==}
     dependencies:
       '@fastify/error': 3.4.1
       '@fastify/jwt': 7.2.4
@@ -923,13 +923,13 @@ packages:
       - encoding
       - supports-color
 
-  /@platformatic/db-core@1.13.3(typescript@5.3.2):
-    resolution: {integrity: sha512-/4oPeXmLlRmcFn2KLctt9KDsAWrBJvs5ecV4ZTxr8N0n45u7OmX5bDV/eRI09Kt+fBeVYenBeaL+EmYKa418Bw==}
+  /@platformatic/db-core@1.13.6(typescript@5.3.2):
+    resolution: {integrity: sha512-cWYsk+A50ONrNFb0U4sHZyv2Mw746cUCty8sRPjjm6gobwDmnHgKztSy1cO5tHWpaOQEWiRvYfv1BjyjReptXQ==}
     dependencies:
-      '@platformatic/sql-events': 1.13.3
-      '@platformatic/sql-graphql': 1.13.3
-      '@platformatic/sql-mapper': 1.13.3(typescript@5.3.2)
-      '@platformatic/sql-openapi': 1.13.3
+      '@platformatic/sql-events': 1.13.6
+      '@platformatic/sql-graphql': 1.13.6
+      '@platformatic/sql-mapper': 1.13.6(typescript@5.3.2)
+      '@platformatic/sql-openapi': 1.13.6
       fastify-plugin: 4.5.1
     transitivePeerDependencies:
       - bufferutil
@@ -938,8 +938,8 @@ packages:
       - typescript
       - utf-8-validate
 
-  /@platformatic/db@1.13.3(typescript@5.3.2):
-    resolution: {integrity: sha512-BSrp7jOQREb1XaMyuA49ivS4EIXudZIzgi4HKmxP+//LP40AARkrl9RP6q1aQT6m8BhAsW/NCVDR5NZ4YKIg+Q==}
+  /@platformatic/db@1.13.6(typescript@5.3.2):
+    resolution: {integrity: sha512-qWjNTeQuhmI89CHnhGrsVz1PKpFYspMklbeAhv8CQKio7IcicWHv0524J0Fb3fWetCGrM1lmBvzN7PTlKTS8NQ==}
     hasBin: true
     dependencies:
       '@fastify/accepts': 4.3.0
@@ -949,18 +949,18 @@ packages:
       '@fastify/error': 3.4.1
       '@fastify/static': 6.12.0
       '@fastify/swagger': 8.12.0
-      '@platformatic/config': 1.13.3
-      '@platformatic/db-authorization': 1.13.3
-      '@platformatic/db-core': 1.13.3(typescript@5.3.2)
-      '@platformatic/generators': 1.13.3
-      '@platformatic/service': 1.13.3
-      '@platformatic/sql-events': 1.13.3
-      '@platformatic/sql-graphql': 1.13.3
-      '@platformatic/sql-json-schema-mapper': 1.13.3
-      '@platformatic/sql-mapper': 1.13.3(typescript@5.3.2)
-      '@platformatic/sql-openapi': 1.13.3
-      '@platformatic/telemetry': 1.13.3
-      '@platformatic/utils': 1.13.3
+      '@platformatic/config': 1.13.6
+      '@platformatic/db-authorization': 1.13.6
+      '@platformatic/db-core': 1.13.6(typescript@5.3.2)
+      '@platformatic/generators': 1.13.6
+      '@platformatic/service': 1.13.6
+      '@platformatic/sql-events': 1.13.6
+      '@platformatic/sql-graphql': 1.13.6
+      '@platformatic/sql-json-schema-mapper': 1.13.6
+      '@platformatic/sql-mapper': 1.13.6(typescript@5.3.2)
+      '@platformatic/sql-openapi': 1.13.6
+      '@platformatic/telemetry': 1.13.6
+      '@platformatic/utils': 1.13.6
       camelcase: 6.3.0
       close-with-grace: 1.2.0
       code-block-writer: 12.0.0
@@ -989,13 +989,13 @@ packages:
       - typescript
       - utf-8-validate
 
-  /@platformatic/deploy-client@1.13.3(typescript@5.3.2):
-    resolution: {integrity: sha512-YyuQb2gZH1N3uA07X8RL0PABCdBe+k8iNup1V0rL4v6TjUx+6EKmVNOLnWIqkUqTl7zziwQEadNaOhYnD+cEFA==}
+  /@platformatic/deploy-client@1.13.6(typescript@5.3.2):
+    resolution: {integrity: sha512-BCLu2sJRvxPhYUoIYBJHZaBrI6xXXA7Yq9MWF7lEyiR9nDDue2oQ0yRW0yh3cC5tBCji/JiPZuUi69UY/vgYdA==}
     dependencies:
       '@fastify/error': 3.4.1
-      '@platformatic/config': 1.13.3
-      '@platformatic/runtime': 1.13.3(typescript@5.3.2)
-      '@platformatic/service': 1.13.3
+      '@platformatic/config': 1.13.6
+      '@platformatic/runtime': 1.13.6(typescript@5.3.2)
+      '@platformatic/service': 1.13.6
       pretty-bytes: 6.1.1
       tar: 6.2.0
       undici: 5.28.2
@@ -1008,11 +1008,11 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@platformatic/frontend-template@1.13.3(typescript@5.3.2):
-    resolution: {integrity: sha512-PG2vn6I6XxnjlxTY9wyUmC5y4TQHm0qhfA1SiK6yPyDTYoemzVTqc3phEEV7SntYXjN+Fg948b0eb6xNEjY/YQ==}
+  /@platformatic/frontend-template@1.13.6(typescript@5.3.2):
+    resolution: {integrity: sha512-9j2sKEupE9P0pKR0rf8SjU+RMTF1/FIb/9RZXYUAgRsP4kycZDC33T+UAMx+WfFLjTs/RTc5FdHDc/+rOuSLlg==}
     dependencies:
-      '@platformatic/client': 1.13.3
-      '@platformatic/db': 1.13.3(typescript@5.3.2)
+      '@platformatic/client': 1.13.6
+      '@platformatic/db': 1.13.6(typescript@5.3.2)
       camelcase: 8.0.0
       code-block-writer: 12.0.0
       desm: 1.3.0
@@ -1031,8 +1031,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@platformatic/generators@1.13.3:
-    resolution: {integrity: sha512-HTVpmUduOoUnW9DB26niaUjVtEv2TS8o0x5d0JO7/IvgngLwmtasU2DteY1i/k9OBldN7masqkVbyzHJkesJdQ==}
+  /@platformatic/generators@1.13.6:
+    resolution: {integrity: sha512-baQt1Wsl2jodEj7mx7TRy0b5Zc8Kt9ct/khpJ9fDUO7OCURzr0gBxv/n65c2LhhJYhSLS6Tu7kI35X1GQvom7w==}
     dependencies:
       '@fastify/error': 3.4.1
       boring-name-generator: 1.0.3
@@ -1041,8 +1041,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@platformatic/metaconfig@1.13.3:
-    resolution: {integrity: sha512-Jd1EQ68Qk4TfWYEgXccPRVndarfE5lWJq5dcQnxlFmhm6tBMiQZp3m5Hx2vgh21HZdGTZmGkH+3Lr8xQwb4HSQ==}
+  /@platformatic/metaconfig@1.13.6:
+    resolution: {integrity: sha512-T0FI7NKWNb0h5TgER7/uPYzkoslMfBDVcIXBOoYPRnCdfqPZjRlxkMJ1IubAmpJJwkzBvp75KFLeoPeDcmWKXg==}
     dependencies:
       '@fastify/error': 3.4.1
       '@iarna/toml': 2.2.5
@@ -1051,19 +1051,19 @@ packages:
       semver: 7.5.4
       yaml: 2.3.4
 
-  /@platformatic/runtime@1.13.3(typescript@5.3.2):
-    resolution: {integrity: sha512-Piecb+spG4vVRVpH5wiVJON6Gb0/JmzaERLWjTFHq4rG01fA2yh2kQjKdF0CJ6t3sw8CmP7E+WH0i9HmwxK6EQ==}
+  /@platformatic/runtime@1.13.6(typescript@5.3.2):
+    resolution: {integrity: sha512-zbM8lNll2V5AOzxTMf/YQaPynafc7c2qq6tA7tz8iFV3k546hB/1dj3IiZx28OpRWGSDIg1BPCSMB2zj+L8EhA==}
     hasBin: true
     dependencies:
       '@fastify/error': 3.4.1
       '@hapi/topo': 6.0.2
-      '@platformatic/composer': 1.13.3
-      '@platformatic/config': 1.13.3
-      '@platformatic/db': 1.13.3(typescript@5.3.2)
-      '@platformatic/generators': 1.13.3
-      '@platformatic/service': 1.13.3
-      '@platformatic/telemetry': 1.13.3
-      '@platformatic/utils': 1.13.3
+      '@platformatic/composer': 1.13.6
+      '@platformatic/config': 1.13.6
+      '@platformatic/db': 1.13.6(typescript@5.3.2)
+      '@platformatic/generators': 1.13.6
+      '@platformatic/service': 1.13.6
+      '@platformatic/telemetry': 1.13.6
+      '@platformatic/utils': 1.13.6
       boring-name-generator: 1.0.3
       close-with-grace: 1.2.0
       commist: 3.2.0
@@ -1088,8 +1088,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@platformatic/service@1.13.3:
-    resolution: {integrity: sha512-YhReSCeIdEGO9NxhBjSxLZEOm/B3+jjD3Pj5owaTzYCxUlp9uMcDnQ2FioHm6+Cg/6o/SqMfZv7Ug0XHpS9yyw==}
+  /@platformatic/service@1.13.6:
+    resolution: {integrity: sha512-7ZJLVQ+d77jxDnqW01F0WLqLtzacYQnG4XO7CCo5Ut2davvVIyoCtyACxFzgElq77T5OiVZ2LUa4dZvzuvE//A==}
     hasBin: true
     dependencies:
       '@fastify/accepts': 4.3.0
@@ -1103,12 +1103,12 @@ packages:
       '@fastify/swagger-ui': 1.10.2
       '@fastify/under-pressure': 8.3.0
       '@mercuriusjs/federation': 2.0.0
-      '@platformatic/client': 1.13.3
-      '@platformatic/config': 1.13.3
-      '@platformatic/generators': 1.13.3
-      '@platformatic/swagger-ui-theme': 1.13.3
-      '@platformatic/telemetry': 1.13.3
-      '@platformatic/utils': 1.13.3
+      '@platformatic/client': 1.13.6
+      '@platformatic/config': 1.13.6
+      '@platformatic/generators': 1.13.6
+      '@platformatic/swagger-ui-theme': 1.13.6
+      '@platformatic/telemetry': 1.13.6
+      '@platformatic/utils': 1.13.6
       '@types/ws': 8.5.10
       ajv: 8.12.0
       close-with-grace: 1.2.0
@@ -1133,8 +1133,8 @@ packages:
       - supports-color
       - utf-8-validate
 
-  /@platformatic/sql-events@1.13.3:
-    resolution: {integrity: sha512-gFbMeG8B4BLbczFnvEitEyQrIVYxHBrcmgtG6WFTwawM+1wKLJfSD4HFXAZnQE+ADxFJS6TFySCWslHZCE666Q==}
+  /@platformatic/sql-events@1.13.6:
+    resolution: {integrity: sha512-TZtUJuWSiKsOBr5Vg4Yk30wwDY5ftjCjmMecwfWtlTeD0+rUx/HcYYK9OERAp6j8rzoRKG6p8PmP6W3soyNXxw==}
     dependencies:
       '@fastify/error': 3.4.1
       camelcase: 6.3.0
@@ -1144,12 +1144,12 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@platformatic/sql-graphql@1.13.3:
-    resolution: {integrity: sha512-vYTxVz/rfo1DsIyxeWCGI1z7NyaiX6VqVEBRTbNUACMv48gE8ViFgzVCRZ6yInakxjRRfA4u4dZ7WCtUV9XHVQ==}
+  /@platformatic/sql-graphql@1.13.6:
+    resolution: {integrity: sha512-eQrAHlcY6AjoNIv3eOuidST8OuLG/uAxk/xuaKCIGkowF8IALxlwXByT78usqA+nc5Dghc41Rk/YIDIcF0xrew==}
     dependencies:
       '@fastify/error': 3.4.1
       '@mercuriusjs/federation': 2.0.0
-      '@platformatic/utils': 1.13.3
+      '@platformatic/utils': 1.13.6
       camelcase: 6.3.0
       fastify-plugin: 4.5.1
       graphql: 16.8.1
@@ -1161,14 +1161,14 @@ packages:
       - bufferutil
       - utf-8-validate
 
-  /@platformatic/sql-json-schema-mapper@1.13.3:
-    resolution: {integrity: sha512-gfS+KxYcFd+YKtxnT/TOtUqHMShGX8XL3J3zCJuid4F3Tyn/ejqhUsXvgRsFRPajucajh99xFxx0aIPONq6etg==}
+  /@platformatic/sql-json-schema-mapper@1.13.6:
+    resolution: {integrity: sha512-aMuYdXgO/40F4pZJIQoJgi08zL00uG/0RgVx4ZQiyH8GdROmyIFEISQHRXch/96D22/9uxsRoH95ZlIDQ7uJcg==}
     dependencies:
       code-block-writer: 12.0.0
       safe-identifier: 0.4.2
 
-  /@platformatic/sql-mapper@1.13.3(typescript@5.3.2):
-    resolution: {integrity: sha512-TxWpW9XeNMNwT+5pykCZRNK9qgyxtRwgfLVXoiBmcvo0Hj6H8KdPisgEb3isrTBBj/OSKoTUAdAkFMFg9k8pXw==}
+  /@platformatic/sql-mapper@1.13.6(typescript@5.3.2):
+    resolution: {integrity: sha512-qNUtw6BIwnvZEn7oFlj7iddbwhzwFV8Z3+Gcg7Uy6qE8JjNDOiJrt4017o9ArTjAKfp0gQIui61H5eavTJ8/qQ==}
     dependencies:
       '@databases/mysql': 6.0.0(typescript@5.3.2)
       '@databases/pg': 5.5.0(typescript@5.3.2)
@@ -1176,7 +1176,7 @@ packages:
       '@fastify/error': 3.4.1
       '@hapi/topo': 6.0.2
       '@matteo.collina/sqlite-pool': 0.3.0
-      '@platformatic/utils': 1.13.3
+      '@platformatic/utils': 1.13.6
       async-cache-dedupe: 2.0.0
       camelcase: 6.3.0
       fastify-plugin: 4.5.1
@@ -1185,27 +1185,27 @@ packages:
       - pg-native
       - typescript
 
-  /@platformatic/sql-openapi@1.13.3:
-    resolution: {integrity: sha512-mRvcQyofR1WRW5rljKk0x9g/7dw7cbYRxLeeP8XvkSz507TxOphOKZ9SBg3TD70M9rEVxQLDiPTmJmen6t5D+A==}
+  /@platformatic/sql-openapi@1.13.6:
+    resolution: {integrity: sha512-qXqsq3kc/iXD6RrhxMyjmA8xNQCo3B8UCZhyKcBUWsgUpkKS1V+iRJ8PYlfPIxV+tsxAUl7PWbEp4OWmffGqxQ==}
     dependencies:
       '@fastify/deepmerge': 1.3.0
       '@fastify/error': 3.4.1
       '@fastify/swagger': 8.12.0
       '@fastify/swagger-ui': 1.10.2
-      '@platformatic/sql-json-schema-mapper': 1.13.3
-      '@platformatic/swagger-ui-theme': 1.13.3
-      '@platformatic/utils': 1.13.3
+      '@platformatic/sql-json-schema-mapper': 1.13.6
+      '@platformatic/swagger-ui-theme': 1.13.6
+      '@platformatic/utils': 1.13.6
       camelcase: 6.3.0
       fastify-plugin: 4.5.1
       inflected: 2.1.0
     transitivePeerDependencies:
       - supports-color
 
-  /@platformatic/swagger-ui-theme@1.13.3:
-    resolution: {integrity: sha512-SNoBy2wr6ucFtm8gPvM9DZA52iI9CE5Dm6B6/yci3xsS0XOv974R7WFoEgGJfw2SuOBqQVXGX8ZpPs9IrS/N5Q==}
+  /@platformatic/swagger-ui-theme@1.13.6:
+    resolution: {integrity: sha512-EPATb4WMFnEUqyPtupLXPPF8DyI40KYSW956G95E3wPQwMqxLV2zXd6zuxy66njMRMR2X5nXtQvDBqUtV+hCtQ==}
 
-  /@platformatic/telemetry@1.13.3:
-    resolution: {integrity: sha512-Ie5nmGa/iHZ3wx2DMNAMG0klgQGKpuzTQFNiFGJJUg34FsszBOrrnhByBvFA1eMu91ysU02QYIe3nTUEP/eZOg==}
+  /@platformatic/telemetry@1.13.6:
+    resolution: {integrity: sha512-DpWtMYYZg+sJQ3dTpci6r5zJ65miYs0Yl9tGS8NcbiJJ5QmltR5P6EsavUOs8FMumq94d32WisQKe7WTyfwWsA==}
     dependencies:
       '@fastify/swagger': 8.12.0
       '@opentelemetry/api': 1.7.0
@@ -1220,8 +1220,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@platformatic/utils@1.13.3:
-    resolution: {integrity: sha512-KTEEsuE4PrmhzPXen6VsoAHxOzlzZJxfSZmZ89jxUsNEi2gMLVRBzNRhnvspGK4PTqNZiR7GWhBygCu/b5mnpA==}
+  /@platformatic/utils@1.13.6:
+    resolution: {integrity: sha512-CE9IuoDjrfDcMDnDlv5W8ne5HthFf/wVUGDVkrmlzeEdvceie1c6bxbe0X+0J8dT/1DL6j1tFoyWY3Px6UByBw==}
     dependencies:
       '@fastify/deepmerge': 1.3.0
       '@fastify/error': 3.4.1
@@ -1345,8 +1345,8 @@ packages:
     dependencies:
       '@types/node': 20.10.3
 
-  /@typescript-eslint/eslint-plugin@6.13.1(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2):
-    resolution: {integrity: sha512-5bQDGkXaxD46bPvQt08BUz9YSaO4S0fB1LB5JHQuXTfkGPI3+UUeS387C/e9jRie5GqT8u5kFTrMvAjtX4O5kA==}
+  /@typescript-eslint/eslint-plugin@6.13.2(@typescript-eslint/parser@6.13.2)(eslint@8.55.0)(typescript@5.3.2):
+    resolution: {integrity: sha512-3+9OGAWHhk4O1LlcwLBONbdXsAhLjyCFogJY/cWy2lxdVJ2JrcTF2pTGMaLl2AE7U1l31n8Py4a8bx5DLf/0dQ==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
       '@typescript-eslint/parser': ^6.0.0 || ^6.0.0-alpha
@@ -1357,11 +1357,11 @@ packages:
         optional: true
     dependencies:
       '@eslint-community/regexpp': 4.10.0
-      '@typescript-eslint/parser': 6.13.1(eslint@8.55.0)(typescript@5.3.2)
-      '@typescript-eslint/scope-manager': 6.13.1
-      '@typescript-eslint/type-utils': 6.13.1(eslint@8.55.0)(typescript@5.3.2)
-      '@typescript-eslint/utils': 6.13.1(eslint@8.55.0)(typescript@5.3.2)
-      '@typescript-eslint/visitor-keys': 6.13.1
+      '@typescript-eslint/parser': 6.13.2(eslint@8.55.0)(typescript@5.3.2)
+      '@typescript-eslint/scope-manager': 6.13.2
+      '@typescript-eslint/type-utils': 6.13.2(eslint@8.55.0)(typescript@5.3.2)
+      '@typescript-eslint/utils': 6.13.2(eslint@8.55.0)(typescript@5.3.2)
+      '@typescript-eslint/visitor-keys': 6.13.2
       debug: 4.3.4
       eslint: 8.55.0
       graphemer: 1.4.0
@@ -1374,8 +1374,8 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/parser@6.13.1(eslint@8.55.0)(typescript@5.3.2):
-    resolution: {integrity: sha512-fs2XOhWCzRhqMmQf0eicLa/CWSaYss2feXsy7xBD/pLyWke/jCIVc2s1ikEAtSW7ina1HNhv7kONoEfVNEcdDQ==}
+  /@typescript-eslint/parser@6.13.2(eslint@8.55.0)(typescript@5.3.2):
+    resolution: {integrity: sha512-MUkcC+7Wt/QOGeVlM8aGGJZy1XV5YKjTpq9jK6r6/iLsGXhBVaGP5N0UYvFsu9BFlSpwY9kMretzdBH01rkRXg==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0
@@ -1384,10 +1384,10 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@typescript-eslint/scope-manager': 6.13.1
-      '@typescript-eslint/types': 6.13.1
-      '@typescript-eslint/typescript-estree': 6.13.1(typescript@5.3.2)
-      '@typescript-eslint/visitor-keys': 6.13.1
+      '@typescript-eslint/scope-manager': 6.13.2
+      '@typescript-eslint/types': 6.13.2
+      '@typescript-eslint/typescript-estree': 6.13.2(typescript@5.3.2)
+      '@typescript-eslint/visitor-keys': 6.13.2
       debug: 4.3.4
       eslint: 8.55.0
       typescript: 5.3.2
@@ -1395,16 +1395,16 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/scope-manager@6.13.1:
-    resolution: {integrity: sha512-BW0kJ7ceiKi56GbT2KKzZzN+nDxzQK2DS6x0PiSMPjciPgd/JRQGMibyaN2cPt2cAvuoH0oNvn2fwonHI+4QUQ==}
+  /@typescript-eslint/scope-manager@6.13.2:
+    resolution: {integrity: sha512-CXQA0xo7z6x13FeDYCgBkjWzNqzBn8RXaE3QVQVIUm74fWJLkJkaHmHdKStrxQllGh6Q4eUGyNpMe0b1hMkXFA==}
     engines: {node: ^16.0.0 || >=18.0.0}
     dependencies:
-      '@typescript-eslint/types': 6.13.1
-      '@typescript-eslint/visitor-keys': 6.13.1
+      '@typescript-eslint/types': 6.13.2
+      '@typescript-eslint/visitor-keys': 6.13.2
     dev: true
 
-  /@typescript-eslint/type-utils@6.13.1(eslint@8.55.0)(typescript@5.3.2):
-    resolution: {integrity: sha512-A2qPlgpxx2v//3meMqQyB1qqTg1h1dJvzca7TugM3Yc2USDY+fsRBiojAEo92HO7f5hW5mjAUF6qobOPzlBCBQ==}
+  /@typescript-eslint/type-utils@6.13.2(eslint@8.55.0)(typescript@5.3.2):
+    resolution: {integrity: sha512-Qr6ssS1GFongzH2qfnWKkAQmMUyZSyOr0W54nZNU1MDfo+U4Mv3XveeLZzadc/yq8iYhQZHYT+eoXJqnACM1tw==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0
@@ -1413,8 +1413,8 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@typescript-eslint/typescript-estree': 6.13.1(typescript@5.3.2)
-      '@typescript-eslint/utils': 6.13.1(eslint@8.55.0)(typescript@5.3.2)
+      '@typescript-eslint/typescript-estree': 6.13.2(typescript@5.3.2)
+      '@typescript-eslint/utils': 6.13.2(eslint@8.55.0)(typescript@5.3.2)
       debug: 4.3.4
       eslint: 8.55.0
       ts-api-utils: 1.0.3(typescript@5.3.2)
@@ -1423,13 +1423,13 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/types@6.13.1:
-    resolution: {integrity: sha512-gjeEskSmiEKKFIbnhDXUyiqVma1gRCQNbVZ1C8q7Zjcxh3WZMbzWVfGE9rHfWd1msQtPS0BVD9Jz9jded44eKg==}
+  /@typescript-eslint/types@6.13.2:
+    resolution: {integrity: sha512-7sxbQ+EMRubQc3wTfTsycgYpSujyVbI1xw+3UMRUcrhSy+pN09y/lWzeKDbvhoqcRbHdc+APLs/PWYi/cisLPg==}
     engines: {node: ^16.0.0 || >=18.0.0}
     dev: true
 
-  /@typescript-eslint/typescript-estree@6.13.1(typescript@5.3.2):
-    resolution: {integrity: sha512-sBLQsvOC0Q7LGcUHO5qpG1HxRgePbT6wwqOiGLpR8uOJvPJbfs0mW3jPA3ujsDvfiVwVlWUDESNXv44KtINkUQ==}
+  /@typescript-eslint/typescript-estree@6.13.2(typescript@5.3.2):
+    resolution: {integrity: sha512-SuD8YLQv6WHnOEtKv8D6HZUzOub855cfPnPMKvdM/Bh1plv1f7Q/0iFUDLKKlxHcEstQnaUU4QZskgQq74t+3w==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
       typescript: '*'
@@ -1437,8 +1437,8 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@typescript-eslint/types': 6.13.1
-      '@typescript-eslint/visitor-keys': 6.13.1
+      '@typescript-eslint/types': 6.13.2
+      '@typescript-eslint/visitor-keys': 6.13.2
       debug: 4.3.4
       globby: 11.1.0
       is-glob: 4.0.3
@@ -1449,8 +1449,8 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/utils@6.13.1(eslint@8.55.0)(typescript@5.3.2):
-    resolution: {integrity: sha512-ouPn/zVoan92JgAegesTXDB/oUp6BP1v8WpfYcqh649ejNc9Qv+B4FF2Ff626kO1xg0wWwwG48lAJ4JuesgdOw==}
+  /@typescript-eslint/utils@6.13.2(eslint@8.55.0)(typescript@5.3.2):
+    resolution: {integrity: sha512-b9Ptq4eAZUym4idijCRzl61oPCwwREcfDI8xGk751Vhzig5fFZR9CyzDz4Sp/nxSLBYxUPyh4QdIDqWykFhNmQ==}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0
@@ -1458,9 +1458,9 @@ packages:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.55.0)
       '@types/json-schema': 7.0.15
       '@types/semver': 7.5.6
-      '@typescript-eslint/scope-manager': 6.13.1
-      '@typescript-eslint/types': 6.13.1
-      '@typescript-eslint/typescript-estree': 6.13.1(typescript@5.3.2)
+      '@typescript-eslint/scope-manager': 6.13.2
+      '@typescript-eslint/types': 6.13.2
+      '@typescript-eslint/typescript-estree': 6.13.2(typescript@5.3.2)
       eslint: 8.55.0
       semver: 7.5.4
     transitivePeerDependencies:
@@ -1468,11 +1468,11 @@ packages:
       - typescript
     dev: true
 
-  /@typescript-eslint/visitor-keys@6.13.1:
-    resolution: {integrity: sha512-NDhQUy2tg6XGNBGDRm1XybOHSia8mcXmlbKWoQP+nm1BIIMxa55shyJfZkHpEBN62KNPLrocSM2PdPcaLgDKMQ==}
+  /@typescript-eslint/visitor-keys@6.13.2:
+    resolution: {integrity: sha512-OGznFs0eAQXJsp+xSd6k/O1UbFi/K/L7WjqeRoFE7vadjAF9y0uppXhYNQNEqygjou782maGClOoZwPqF0Drlw==}
     engines: {node: ^16.0.0 || >=18.0.0}
     dependencies:
-      '@typescript-eslint/types': 6.13.1
+      '@typescript-eslint/types': 6.13.2
       eslint-visitor-keys: 3.4.3
     dev: true
 
@@ -2041,12 +2041,12 @@ packages:
       path-type: 4.0.0
       typescript: 5.3.2
 
-  /create-platformatic@1.13.3:
-    resolution: {integrity: sha512-jx5CKcWPbwyPO1BHWM8AIwmDo2aPsyQyLE+oUnUpjppRYlHkocO5I7nhCh3AOvrxBgjTyFGMK38XQ8/IMlwp4g==}
+  /create-platformatic@1.13.6:
+    resolution: {integrity: sha512-zkkypXLGnmsZClAVbkGFpEtnz6SJtXNM7cQ3RkggMzwCVbuMi0NYK2ZUDipP2LKZtb8CWAazN2KfgvJycNlIvw==}
     hasBin: true
     dependencies:
-      '@platformatic/config': 1.13.3
-      '@platformatic/utils': 1.13.3
+      '@platformatic/config': 1.13.6
+      '@platformatic/utils': 1.13.6
       '@types/node': 20.10.3
       boring-name-generator: 1.0.3
       chalk: 5.3.0
@@ -2409,7 +2409,7 @@ packages:
       eslint: 8.55.0
     dev: true
 
-  /eslint-config-productsway@1.3.1(@typescript-eslint/eslint-plugin@6.13.1)(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.2):
+  /eslint-config-productsway@1.3.1(@typescript-eslint/eslint-plugin@6.13.2)(@typescript-eslint/parser@6.13.2)(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.2):
     resolution: {integrity: sha512-8OYAmktcxBoUaZwWYpck4ciIeRr78MsK2vLeO8rbWlf2owAtRP9q1aM1CPI+1dPU7/SNZslTq2kDkzg44ZTweg==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -2418,14 +2418,14 @@ packages:
       eslint: ^8
       prettier: ^3
     dependencies:
-      '@typescript-eslint/eslint-plugin': 6.13.1(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
-      '@typescript-eslint/parser': 6.13.1(eslint@8.55.0)(typescript@5.3.2)
+      '@typescript-eslint/eslint-plugin': 6.13.2(@typescript-eslint/parser@6.13.2)(eslint@8.55.0)(typescript@5.3.2)
+      '@typescript-eslint/parser': 6.13.2(eslint@8.55.0)(typescript@5.3.2)
       eslint: 8.55.0
       eslint-config-prettier: 9.0.0(eslint@8.55.0)
       eslint-config-xo: 0.43.1(eslint@8.55.0)
       eslint-config-xo-react: 0.27.0(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.33.2)(eslint@8.55.0)
-      eslint-config-xo-typescript: 1.0.1(@typescript-eslint/eslint-plugin@6.13.1)(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
-      eslint-plugin-import: 2.29.0(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)
+      eslint-config-xo-typescript: 1.0.1(@typescript-eslint/eslint-plugin@6.13.2)(@typescript-eslint/parser@6.13.2)(eslint@8.55.0)(typescript@5.3.2)
+      eslint-plugin-import: 2.29.0(@typescript-eslint/parser@6.13.2)(eslint@8.55.0)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.55.0)
       eslint-plugin-react: 7.33.2(eslint@8.55.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@8.55.0)
@@ -2451,7 +2451,7 @@ packages:
       eslint-plugin-react-hooks: 4.6.0(eslint@8.55.0)
     dev: true
 
-  /eslint-config-xo-typescript@1.0.1(@typescript-eslint/eslint-plugin@6.13.1)(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2):
+  /eslint-config-xo-typescript@1.0.1(@typescript-eslint/eslint-plugin@6.13.2)(@typescript-eslint/parser@6.13.2)(eslint@8.55.0)(typescript@5.3.2):
     resolution: {integrity: sha512-vPQssnRSUgBFOEfB/KY12CXwltwFSn4RSCfa+w7gjBC2PFQ7Yfgmyei+1XUZ3K+8LRGef2NMJUcxts7PldhDjg==}
     engines: {node: '>=16'}
     peerDependencies:
@@ -2460,8 +2460,8 @@ packages:
       eslint: '>=8.0.0'
       typescript: '>=4.7'
     dependencies:
-      '@typescript-eslint/eslint-plugin': 6.13.1(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
-      '@typescript-eslint/parser': 6.13.1(eslint@8.55.0)(typescript@5.3.2)
+      '@typescript-eslint/eslint-plugin': 6.13.2(@typescript-eslint/parser@6.13.2)(eslint@8.55.0)(typescript@5.3.2)
+      '@typescript-eslint/parser': 6.13.2(eslint@8.55.0)(typescript@5.3.2)
       eslint: 8.55.0
       typescript: 5.3.2
     dev: true
@@ -2486,7 +2486,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-module-utils@2.8.0(@typescript-eslint/parser@6.13.1)(eslint-import-resolver-node@0.3.9)(eslint@8.55.0):
+  /eslint-module-utils@2.8.0(@typescript-eslint/parser@6.13.2)(eslint-import-resolver-node@0.3.9)(eslint@8.55.0):
     resolution: {integrity: sha512-aWajIYfsqCKRDgUfjEXNN/JlrzauMuSEy5sbd7WXbtW3EH6A6MpwEh42c7qD+MqQo9QMJ6fWLAeIJynx0g6OAw==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -2507,7 +2507,7 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 6.13.1(eslint@8.55.0)(typescript@5.3.2)
+      '@typescript-eslint/parser': 6.13.2(eslint@8.55.0)(typescript@5.3.2)
       debug: 3.2.7
       eslint: 8.55.0
       eslint-import-resolver-node: 0.3.9
@@ -2515,7 +2515,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-import@2.29.0(@typescript-eslint/parser@6.13.1)(eslint@8.55.0):
+  /eslint-plugin-import@2.29.0(@typescript-eslint/parser@6.13.2)(eslint@8.55.0):
     resolution: {integrity: sha512-QPOO5NO6Odv5lpoTkddtutccQjysJuFxoPS7fAHO+9m9udNHvTCPSAMW9zGAYj8lAIdr40I8yPCdUYrncXtrwg==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -2525,7 +2525,7 @@ packages:
       '@typescript-eslint/parser':
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 6.13.1(eslint@8.55.0)(typescript@5.3.2)
+      '@typescript-eslint/parser': 6.13.2(eslint@8.55.0)(typescript@5.3.2)
       array-includes: 3.1.7
       array.prototype.findlastindex: 1.2.3
       array.prototype.flat: 1.3.2
@@ -2534,7 +2534,7 @@ packages:
       doctrine: 2.1.0
       eslint: 8.55.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.13.1)(eslint-import-resolver-node@0.3.9)(eslint@8.55.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.13.2)(eslint-import-resolver-node@0.3.9)(eslint@8.55.0)
       hasown: 2.0.0
       is-core-module: 2.13.1
       is-glob: 4.0.3
@@ -4584,25 +4584,25 @@ packages:
       sonic-boom: 3.7.0
       thread-stream: 2.4.1
 
-  /platformatic@1.13.3(typescript@5.3.2):
-    resolution: {integrity: sha512-EB8ZpTAywFFN3vyaxh/ScYKcWSqfVIwE6tANzgkrBZqQ8y+/XsFAkCvGRgJpixzmeeciuzPKtLLUf1VQgWTm2g==}
+  /platformatic@1.13.6(typescript@5.3.2):
+    resolution: {integrity: sha512-c8KiBrgH8licX+8KIP+J3jwWoV++kUVMpWQibW3sZRpyYCqqUYxLGMA05Z4NFh6zeRmYtEgyOJcaT5ZpwjStGQ==}
     hasBin: true
     dependencies:
       '@fastify/error': 3.4.1
-      '@platformatic/authenticate': 1.13.3
-      '@platformatic/client-cli': 1.13.3
-      '@platformatic/composer': 1.13.3
-      '@platformatic/config': 1.13.3
-      '@platformatic/db': 1.13.3(typescript@5.3.2)
-      '@platformatic/deploy-client': 1.13.3(typescript@5.3.2)
-      '@platformatic/frontend-template': 1.13.3(typescript@5.3.2)
-      '@platformatic/metaconfig': 1.13.3
-      '@platformatic/runtime': 1.13.3(typescript@5.3.2)
-      '@platformatic/service': 1.13.3
-      '@platformatic/utils': 1.13.3
+      '@platformatic/authenticate': 1.13.6
+      '@platformatic/client-cli': 1.13.6
+      '@platformatic/composer': 1.13.6
+      '@platformatic/config': 1.13.6
+      '@platformatic/db': 1.13.6(typescript@5.3.2)
+      '@platformatic/deploy-client': 1.13.6(typescript@5.3.2)
+      '@platformatic/frontend-template': 1.13.6(typescript@5.3.2)
+      '@platformatic/metaconfig': 1.13.6
+      '@platformatic/runtime': 1.13.6(typescript@5.3.2)
+      '@platformatic/service': 1.13.6
+      '@platformatic/utils': 1.13.6
       colorette: 2.0.20
       commist: 3.2.0
-      create-platformatic: 1.13.3
+      create-platformatic: 1.13.6
       desm: 1.3.0
       dotenv: 16.3.1
       execa: 8.0.1
