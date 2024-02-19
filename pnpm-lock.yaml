@@ -879,7 +879,7 @@ packages:
       help-me: 5.0.0
       jsonpointer: 5.0.1
       minimist: 1.2.8
-      pino: 8.18.0
+      pino: 8.19.0
       pino-pretty: 10.3.1
       undici: 6.6.2
       yaml: 2.3.4
@@ -929,7 +929,7 @@ packages:
       mercurius: 13.3.3(graphql@16.8.1)
       minimist: 1.2.8
       ora: 6.3.1
-      pino: 8.18.0
+      pino: 8.19.0
       pino-pretty: 10.3.1
       rfdc: 1.3.1
       ua-parser-js: 1.0.37
@@ -976,7 +976,7 @@ packages:
       log-update: 6.0.0
       minimist: 1.2.8
       ora: 6.3.1
-      pino: 8.18.0
+      pino: 8.19.0
       pino-pretty: 10.3.1
       pupa: 3.1.0
       semver: 7.6.0
@@ -1042,7 +1042,7 @@ packages:
       '@platformatic/telemetry': 1.23.0
       '@platformatic/utils': 1.23.0
       camelcase: 6.3.0
-      close-with-grace: 1.2.0
+      close-with-grace: 1.3.0
       code-block-writer: 12.0.0
       commist: 3.2.0
       console-table-printer: 2.12.0
@@ -1058,7 +1058,7 @@ packages:
       help-me: 5.0.0
       minimist: 1.2.8
       ora: 6.3.1
-      pino: 8.18.0
+      pino: 8.19.0
       pino-pretty: 10.3.1
       postgrator: 7.2.0
       rfdc: 1.3.1
@@ -1124,7 +1124,7 @@ packages:
       boring-name-generator: 1.0.3
       change-case-all: 2.1.0
       fastify: 4.26.1
-      pino: 8.18.0
+      pino: 8.19.0
       undici: 6.6.2
     transitivePeerDependencies:
       - supports-color
@@ -1168,7 +1168,7 @@ packages:
       '@platformatic/telemetry': 1.23.0
       '@platformatic/utils': 1.23.0
       boring-name-generator: 1.0.3
-      close-with-grace: 1.2.0
+      close-with-grace: 1.3.0
       commist: 3.2.0
       debounce: 2.0.0
       desm: 1.3.1
@@ -1179,7 +1179,7 @@ packages:
       graphql: 16.8.1
       help-me: 5.0.0
       minimist: 1.2.8
-      pino: 8.18.0
+      pino: 8.19.0
       pino-pretty: 10.3.1
       undici: 6.6.2
       why-is-node-running: 2.2.2
@@ -1223,7 +1223,7 @@ packages:
       '@types/ws': 8.5.10
       ajv: 8.12.0
       cli-progress: 3.12.0
-      close-with-grace: 1.2.0
+      close-with-grace: 1.3.0
       code-block-writer: 12.0.0
       colorette: 2.0.20
       commist: 3.2.0
@@ -1242,7 +1242,7 @@ packages:
       minimist: 1.2.8
       openapi-schema-diff: 0.0.1
       ora: 6.3.1
-      pino: 8.18.0
+      pino: 8.19.0
       pino-pretty: 10.3.1
       rfdc: 1.3.1
       ua-parser-js: 1.0.37
@@ -1297,7 +1297,7 @@ packages:
       '@hapi/topo': 6.0.2
       '@matteo.collina/sqlite-pool': 0.3.0
       '@platformatic/utils': 1.23.0
-      async-cache-dedupe: 2.0.0
+      async-cache-dedupe: 2.1.0
       camelcase: 6.3.0
       fastify-plugin: 4.5.1
       inflected: 2.1.0
@@ -1393,14 +1393,15 @@ packages:
       fastify-html: 0.3.3
       fastify-plugin: 4.5.1
 
-  /@seriousme/openapi-schema-validator@2.1.6:
-    resolution: {integrity: sha512-Jq73VKUVzXKszM7opGYsWj+hCjJn3MhHXf76ijWPt+1HRJAwnr38flScVaorNGhP0Jt+JOq/i/NWYPmpZVQpBQ==}
+  /@seriousme/openapi-schema-validator@2.2.1:
+    resolution: {integrity: sha512-I+6l2vZ4qx+RyUo8GNnIbeqbv5ao1enSdNFPJ7x3slIVLU8aSBf228qpo+6iNWbRMK4ktF91jsv5KN7PpaJQtg==}
     hasBin: true
     dependencies:
       ajv: 8.12.0
       ajv-draft-04: 1.0.0(ajv@8.12.0)
       ajv-formats: 2.1.1(ajv@8.12.0)
       js-yaml: 4.1.0
+      minimist: 1.2.8
 
   /@sideway/address@4.1.5:
     resolution: {integrity: sha512-IqO/DUQHUkPeixNQ8n0JA6102hT9CmaljNTPmQ1u8MEhBo/R4Q8eKLN/vGZxuebwOroDB4cbpjheD4+/sKFK4Q==}
@@ -1848,8 +1849,8 @@ packages:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
     engines: {node: '>=8'}
 
-  /async-cache-dedupe@2.0.0:
-    resolution: {integrity: sha512-SrW6PbmCHRQBSpPG8mkPIZZC5AgC08sbzl56GyGemBLVdVUl8mQW4+WCYHp5XZfixIdkL40jKf3UlT/P6Q3p5w==}
+  /async-cache-dedupe@2.1.0:
+    resolution: {integrity: sha512-hBoXEwpJOUIjce7HrwbGN9RlYZM6+XblU+ClZ0AzrV4y5UGDqMR/EUAg2S2p0GF0b0IYOreFEt5RD0eiUwa2Qg==}
     dependencies:
       mnemonist: 0.39.8
       safe-stable-stringify: 2.4.3
@@ -2098,8 +2099,8 @@ packages:
     resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
     engines: {node: '>=0.8'}
 
-  /close-with-grace@1.2.0:
-    resolution: {integrity: sha512-Xga0jyAb4fX98u5pZAgqlbqHP8cHuy5M3Wto0k0L/36aP2C25Cjp51XfPw3Hz7dNC2L2/hF/PK/KJhO275L+VA==}
+  /close-with-grace@1.3.0:
+    resolution: {integrity: sha512-lvm0rmLIR5bNz4CRKW6YvCfn9Wg5Wb9A8PJ3Bb+hjyikgC1RO1W3J4z9rBXQYw97mAte7dNSQI8BmUsxdlXQyw==}
 
   /cluster-key-slot@1.1.2:
     resolution: {integrity: sha512-RMr0FhtfXemyinomL4hrWcYJxmX6deFdCxpJzhDttxgO1+bcCnkk+9drydLVDmAMG7NE6aN/fl4F7ucU/90gAA==}
@@ -2224,7 +2225,7 @@ packages:
       log-update: 6.0.0
       minimist: 1.2.8
       ora: 6.3.1
-      pino: 8.18.0
+      pino: 8.19.0
       pino-pretty: 10.3.1
       pupa: 3.1.0
       semver: 7.6.0
@@ -2476,7 +2477,7 @@ packages:
       string.prototype.trimstart: 1.0.7
       typed-array-buffer: 1.0.1
       typed-array-byte-length: 1.0.0
-      typed-array-byte-offset: 1.0.0
+      typed-array-byte-offset: 1.0.1
       typed-array-length: 1.0.4
       unbox-primitive: 1.0.2
       which-typed-array: 1.1.14
@@ -3011,7 +3012,7 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
-      '@seriousme/openapi-schema-validator': 2.1.6
+      '@seriousme/openapi-schema-validator': 2.2.1
       fastify-plugin: 4.5.1
       js-yaml: 4.1.0
       minimist: 1.2.8
@@ -3057,7 +3058,7 @@ packages:
       fast-json-stringify: 5.12.0
       find-my-way: 8.1.0
       light-my-request: 5.11.0
-      pino: 8.18.0
+      pino: 8.19.0
       process-warning: 3.0.0
       proxy-addr: 2.0.7
       rfdc: 1.3.1
@@ -4750,8 +4751,8 @@ packages:
   /pino-std-serializers@6.2.2:
     resolution: {integrity: sha512-cHjPPsE+vhj/tnhCy/wiMh3M3z3h/j15zHQX+S9GkTBgqJuTuJzYJ4gUyACLhDaJ7kk9ba9iRDmbH2tJU03OiA==}
 
-  /pino@8.18.0:
-    resolution: {integrity: sha512-Mz/gKiRyuXu4HnpHgi1YWdHQCoWMufapzooisvFn78zl4dZciAxS+YeRkUxXl1ee/SzU80YCz1zpECCh4oC6Aw==}
+  /pino@8.19.0:
+    resolution: {integrity: sha512-oswmokxkav9bADfJ2ifrvfHUwad6MLp73Uat0IkQWY3iAw5xTRoznXbXksZs8oaOUMpmhVWD+PZogNzllWpJaA==}
     hasBin: true
     dependencies:
       atomic-sleep: 1.0.0
@@ -4793,7 +4794,7 @@ packages:
       inquirer: 9.2.14
       mercurius: 13.3.3(graphql@16.8.1)
       minimist: 1.2.8
-      pino: 8.18.0
+      pino: 8.19.0
       pino-pretty: 10.3.1
       undici: 6.6.2
     transitivePeerDependencies:
@@ -5647,13 +5648,14 @@ packages:
       is-typed-array: 1.1.13
     dev: true
 
-  /typed-array-byte-offset@1.0.0:
-    resolution: {integrity: sha512-RD97prjEt9EL8YgAgpOkf3O4IF9lhJFr9g0htQkm0rchFp/Vx7LW5Q8fSXXub7BXAODyUQohRMyOc3faCPd0hg==}
+  /typed-array-byte-offset@1.0.1:
+    resolution: {integrity: sha512-tcqKMrTRXjqvHN9S3553NPCaGL0VPgFI92lXszmrE8DMhiDPLBYLlvo8Uu4WZAAX/aGqp/T1sbA4ph8EWjDF9Q==}
     engines: {node: '>= 0.4'}
     dependencies:
       available-typed-arrays: 1.0.6
       call-bind: 1.0.7
       for-each: 0.3.3
+      gopd: 1.0.1
       has-proto: 1.0.1
       is-typed-array: 1.1.13
     dev: true
