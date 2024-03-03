@@ -24,8 +24,8 @@ dependencies:
     specifier: 8.12.0
     version: 8.12.0
   fastify:
-    specifier: 4.26.1
-    version: 4.26.1
+    specifier: 4.26.2
+    version: 4.26.2
   fastify-plugin:
     specifier: 4.5.1
     version: 4.5.1
@@ -481,7 +481,7 @@ packages:
   /@fastify/restartable@2.2.0:
     resolution: {integrity: sha512-sksvEyt9SLISEiphXZpbvodLVATYJ4kaFQ1+Inb6nb9+hOqEX6Q1DEtytqpQsg5BYDhDAr+vEoXXto/CatgCHQ==}
     dependencies:
-      fastify: 4.26.1
+      fastify: 4.26.2
     transitivePeerDependencies:
       - supports-color
 
@@ -923,7 +923,7 @@ packages:
       '@platformatic/service': 1.24.0(fastify-html@0.3.3)
       '@platformatic/telemetry': 1.24.0
       '@platformatic/utils': 1.24.0
-      '@scalar/fastify-api-reference': 1.17.3(fastify-html@0.3.3)(fastify-plugin@4.5.1)(fastify@4.26.1)
+      '@scalar/fastify-api-reference': 1.17.3(fastify-html@0.3.3)(fastify-plugin@4.5.1)(fastify@4.26.2)
       ajv: 8.12.0
       commist: 3.2.0
       console-table-printer: 2.12.0
@@ -931,7 +931,7 @@ packages:
       es-main: 1.3.0
       execa: 8.0.1
       fast-deep-equal: 3.1.3
-      fastify: 4.26.1
+      fastify: 4.26.2
       fastify-openapi-glue: 4.4.3
       fastify-plugin: 4.5.1
       graphql: 16.8.1
@@ -998,7 +998,7 @@ packages:
       desm: 1.3.1
       es-main: 1.3.0
       execa: 8.0.1
-      fastify: 4.26.1
+      fastify: 4.26.2
       help-me: 5.0.0
       inquirer: 9.2.15
       log-update: 6.0.0
@@ -1029,13 +1029,13 @@ packages:
       - encoding
       - supports-color
 
-  /@platformatic/db-core@1.24.0(fastify-html@0.3.3)(fastify@4.26.1)(typescript@5.3.3):
+  /@platformatic/db-core@1.24.0(fastify-html@0.3.3)(fastify@4.26.2)(typescript@5.3.3):
     resolution: {integrity: sha512-DWiAgbvrYIjbvXK2IvD44TGeB0nRHSLh9v7aNmaLCqZfF+xM+83fuI0REF/+kOLQ9nCBJJ5PxrQECy4cAbh4jg==}
     dependencies:
       '@platformatic/sql-events': 1.24.0
       '@platformatic/sql-graphql': 1.24.0
       '@platformatic/sql-mapper': 1.24.0(typescript@5.3.3)
-      '@platformatic/sql-openapi': 1.24.0(fastify-html@0.3.3)(fastify@4.26.1)
+      '@platformatic/sql-openapi': 1.24.0(fastify-html@0.3.3)(fastify@4.26.2)
       fastify-plugin: 4.5.1
     transitivePeerDependencies:
       - bufferutil
@@ -1059,14 +1059,14 @@ packages:
       '@fastify/swagger': 8.14.0
       '@platformatic/config': 1.24.0
       '@platformatic/db-authorization': 1.24.0
-      '@platformatic/db-core': 1.24.0(fastify-html@0.3.3)(fastify@4.26.1)(typescript@5.3.3)
+      '@platformatic/db-core': 1.24.0(fastify-html@0.3.3)(fastify@4.26.2)(typescript@5.3.3)
       '@platformatic/generators': 1.24.0
       '@platformatic/service': 1.24.0(fastify-html@0.3.3)
       '@platformatic/sql-events': 1.24.0
       '@platformatic/sql-graphql': 1.24.0
       '@platformatic/sql-json-schema-mapper': 1.24.0
       '@platformatic/sql-mapper': 1.24.0(typescript@5.3.3)
-      '@platformatic/sql-openapi': 1.24.0(fastify-html@0.3.3)(fastify@4.26.1)
+      '@platformatic/sql-openapi': 1.24.0(fastify-html@0.3.3)(fastify@4.26.2)
       '@platformatic/telemetry': 1.24.0
       '@platformatic/utils': 1.24.0
       camelcase: 6.3.0
@@ -1078,8 +1078,8 @@ packages:
       env-schema: 5.2.1
       es-main: 1.3.0
       execa: 8.0.1
-      fastify: 4.26.1
-      fastify-metrics: 10.6.0(fastify@4.26.1)
+      fastify: 4.26.2
+      fastify-metrics: 10.6.0(fastify@4.26.2)
       fastify-plugin: 4.5.1
       fastify-print-routes: 3.1.1
       graphql: 16.8.1
@@ -1151,7 +1151,7 @@ packages:
       '@fastify/error': 3.4.1
       boring-name-generator: 1.0.3
       change-case-all: 2.1.0
-      fastify: 4.26.1
+      fastify: 4.26.2
       pino: 8.19.0
       undici: 6.6.2
     transitivePeerDependencies:
@@ -1161,7 +1161,7 @@ packages:
     resolution: {integrity: sha512-cgQtHdrKKnZGgwYiyeikchzzrFwOD9LhzllZOgMwutdCU2tSW1LuYQajddyg3Akf3OxkoKrQYsXKUsUPaHIw9A==}
     dependencies:
       '@mercuriusjs/subscription-client': 1.0.0(graphql@16.8.1)
-      fastify: 4.26.1
+      fastify: 4.26.2
       graphql: 16.8.1
       mercurius: 13.3.3(graphql@16.8.1)
       metaline: 1.1.0
@@ -1203,7 +1203,7 @@ packages:
       desm: 1.3.1
       es-main: 1.3.0
       fastest-levenshtein: 1.0.16
-      fastify: 4.26.1
+      fastify: 4.26.2
       fastify-undici-dispatcher: 0.5.1
       graphql: 16.8.1
       help-me: 5.0.0
@@ -1248,7 +1248,7 @@ packages:
       '@platformatic/scalar-theme': 1.24.0
       '@platformatic/telemetry': 1.24.0
       '@platformatic/utils': 1.24.0
-      '@scalar/fastify-api-reference': 1.17.3(fastify-html@0.3.3)(fastify-plugin@4.5.1)(fastify@4.26.1)
+      '@scalar/fastify-api-reference': 1.17.3(fastify-html@0.3.3)(fastify-plugin@4.5.1)(fastify@4.26.2)
       '@types/ws': 8.5.10
       ajv: 8.12.0
       cli-progress: 3.12.0
@@ -1261,8 +1261,8 @@ packages:
       env-schema: 5.2.1
       es-main: 1.3.0
       execa: 8.0.1
-      fastify: 4.26.1
-      fastify-metrics: 10.6.0(fastify@4.26.1)
+      fastify: 4.26.2
+      fastify-metrics: 10.6.0(fastify@4.26.2)
       fastify-openapi-glue: 4.4.3
       fastify-plugin: 4.5.1
       graphql: 16.8.1
@@ -1334,7 +1334,7 @@ packages:
       - pg-native
       - typescript
 
-  /@platformatic/sql-openapi@1.24.0(fastify-html@0.3.3)(fastify@4.26.1):
+  /@platformatic/sql-openapi@1.24.0(fastify-html@0.3.3)(fastify@4.26.2):
     resolution: {integrity: sha512-Xt+HqLG1dK13LkGF8dIQ+RLruZGQ1f9BIEh8S50ij+62At+AwaDhEqi69BmkrGQDj+FAS9t4MP2G5sUVStFJkQ==}
     dependencies:
       '@fastify/deepmerge': 1.3.0
@@ -1343,7 +1343,7 @@ packages:
       '@platformatic/scalar-theme': 1.24.0
       '@platformatic/sql-json-schema-mapper': 1.24.0
       '@platformatic/utils': 1.24.0
-      '@scalar/fastify-api-reference': 1.17.3(fastify-html@0.3.3)(fastify-plugin@4.5.1)(fastify@4.26.1)
+      '@scalar/fastify-api-reference': 1.17.3(fastify-html@0.3.3)(fastify-plugin@4.5.1)(fastify@4.26.2)
       camelcase: 6.3.0
       fastify-plugin: 4.5.1
       inflected: 2.1.0
@@ -1410,7 +1410,7 @@ packages:
   /@protobufjs/utf8@1.1.0:
     resolution: {integrity: sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==}
 
-  /@scalar/fastify-api-reference@1.17.3(fastify-html@0.3.3)(fastify-plugin@4.5.1)(fastify@4.26.1):
+  /@scalar/fastify-api-reference@1.17.3(fastify-html@0.3.3)(fastify-plugin@4.5.1)(fastify@4.26.2):
     resolution: {integrity: sha512-MNL/qmzh9bmw4XSItHrdlXi1N3M0Y/RPsOQdXd2novlJ99EoCtzU/3JosnIJZe5pUd2nvR9p+JV8s2+G8VN9Hg==}
     engines: {node: '>=18'}
     peerDependencies:
@@ -1418,7 +1418,7 @@ packages:
       fastify-html: ^0.3.0
       fastify-plugin: ^4.0.0
     dependencies:
-      fastify: 4.26.1
+      fastify: 4.26.2
       fastify-html: 0.3.3
       fastify-plugin: 4.5.1
 
@@ -2250,7 +2250,7 @@ packages:
       desm: 1.3.1
       es-main: 1.3.0
       execa: 8.0.1
-      fastify: 4.26.1
+      fastify: 4.26.2
       help-me: 5.0.0
       inquirer: 9.2.15
       log-update: 6.0.0
@@ -3038,12 +3038,12 @@ packages:
       fastify-plugin: 4.5.1
       ghtml: 1.0.1
 
-  /fastify-metrics@10.6.0(fastify@4.26.1):
+  /fastify-metrics@10.6.0(fastify@4.26.2):
     resolution: {integrity: sha512-QIPncCnwBOEObMn+VaRhsBC1ox8qEsaiYF2sV/A1UbXj7ic70W8/HNn/hlEC2W8JQbBeZMx++o1um2fPfhsFDQ==}
     peerDependencies:
       fastify: '>=4'
     dependencies:
-      fastify: 4.26.1
+      fastify: 4.26.2
       fastify-plugin: 4.5.1
       prom-client: 14.2.0
 
@@ -3079,15 +3079,15 @@ packages:
     dependencies:
       '@fastify/error': 3.4.1
       '@fastify/jwt': 8.0.0
-      fastify: 4.26.1
+      fastify: 4.26.2
       fastify-plugin: 4.5.1
       get-jwks: 8.3.1
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  /fastify@4.26.1:
-    resolution: {integrity: sha512-tznA/G55dsxzM5XChBfcvVSloG2ejeeotfPPJSFaWmHyCDVGMpvf3nRNbsCb/JTBF9RmQFBfuujWt3Nphjesng==}
+  /fastify@4.26.2:
+    resolution: {integrity: sha512-90pjTuPGrfVKtdpLeLzND5nyC4woXZN5VadiNQCicj/iJU4viNHKhsAnb7jmv1vu2IzkLXyBiCzdWuzeXgQ5Ug==}
     dependencies:
       '@fastify/ajv-compiler': 3.5.0
       '@fastify/error': 3.4.1
