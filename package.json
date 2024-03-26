@@ -47,7 +47,7 @@
     "npm-run-all2": "6.1.2",
     "platformatic": "1.31.0",
     "prettier": "3.2.5",
-    "sort-package-json": "2.8.0",
+    "sort-package-json": "2.9.0",
     "wait-on": "7.2.0"
   },
   "packageManager": "pnpm@8.15.5",
