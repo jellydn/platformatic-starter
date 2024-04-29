@@ -82,13 +82,8 @@ devDependencies:
 
 packages:
 
-  /@aashutoshrathi/word-wrap@1.2.6:
-    resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
-    engines: {node: '>=0.10.0'}
-    dev: true
-
-  /@apidevtools/json-schema-ref-parser@11.5.5:
-    resolution: {integrity: sha512-hv/aXDILyroHioVW27etFMV+IX6FyNn41YwbeGIAt5h/7fUTQvHI5w3ols8qYAT8aQt3kzexq5ZwxFDxNHIhdQ==}
+  /@apidevtools/json-schema-ref-parser@11.6.1:
+    resolution: {integrity: sha512-DxjgKBCoyReu4p5HMvpmgSOfRhhBcuf5V5soDDRgOTZMwsA4KSFzol1abFZgiCTE11L2kKGca5Md9GwDdXVBwQ==}
     engines: {node: '>= 16'}
     dependencies:
       '@jsdevtools/ono': 7.1.3
@@ -421,7 +416,7 @@ packages:
   /@fastify/fast-json-stringify-compiler@4.3.0:
     resolution: {integrity: sha512-aZAXGYo6m22Fk1zZzEUKBvut/CIIQe/BapEORnxiD5Qr0kPHqqI69NtEMCme74h+at72sPhbkb4ZrLd1W3KRLA==}
     dependencies:
-      fast-json-stringify: 5.14.1
+      fast-json-stringify: 5.15.0
 
   /@fastify/helmet@11.1.1:
     resolution: {integrity: sha512-pjJxjk6SLEimITWadtYIXt6wBMfFC1I6OQyH/jYVCqSAn36sgAIFjeNiibHtifjCd+e25442pObis3Rjtame6A==}
@@ -433,10 +428,10 @@ packages:
   /@fastify/http-proxy@9.5.0:
     resolution: {integrity: sha512-1iqIdV10d5k9YtfHq9ylX5zt1NiM50fG+rIX40qt00R694sqWso3ukyTFZVk33SDoSiBW8roB7n11RUVUoN+Ag==}
     dependencies:
-      '@fastify/reply-from': 9.7.0
+      '@fastify/reply-from': 9.8.0
       fast-querystring: 1.1.2
       fastify-plugin: 4.5.1
-      ws: 8.16.0
+      ws: 8.17.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -464,16 +459,15 @@ packages:
       toad-cache: 3.7.0
     dev: false
 
-  /@fastify/reply-from@9.7.0:
-    resolution: {integrity: sha512-/F1QBl3FGlTqStjmiuoLRDchVxP967TZh6FZPwQteWhdLsDec8mqSACE+cRzw6qHUj3v9hfdd7JNgmb++fyFhQ==}
+  /@fastify/reply-from@9.8.0:
+    resolution: {integrity: sha512-bPNVaFhEeNI0Lyl6404YZaPFokudCplidE3QoOcr78yOy6H9sYw97p5KPYvY/NJNUHfFtvxOaSAHnK+YSiv/Mg==}
     dependencies:
       '@fastify/error': 3.4.1
       end-of-stream: 1.4.4
       fast-content-type-parse: 1.1.0
       fast-querystring: 1.1.2
       fastify-plugin: 4.5.1
-      pump: 3.0.0
-      tiny-lru: 11.2.6
+      toad-cache: 3.7.0
       undici: 5.28.4
     dev: true
 
@@ -510,7 +504,7 @@ packages:
       json-schema-resolver: 2.0.0
       openapi-types: 12.1.3
       rfdc: 1.3.1
-      yaml: 2.4.1
+      yaml: 2.4.2
     transitivePeerDependencies:
       - supports-color
 
@@ -525,7 +519,7 @@ packages:
     dependencies:
       duplexify: 4.1.3
       fastify-plugin: 4.5.1
-      ws: 8.16.0
+      ws: 8.17.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -534,7 +528,7 @@ packages:
     resolution: {integrity: sha512-hsQYHHJme/kvP3ZS4v/WMUznPBVeeQHHwAoMy1LiN6m/HuPfbdXq1MBJ4Nt8qX1YI+eVbog4MnOsU7MTozkwYA==}
     dependencies:
       fastify-plugin: 4.5.1
-      ws: 8.16.0
+      ws: 8.17.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -668,7 +662,7 @@ packages:
     dependencies:
       '@fastify/error': 3.4.1
       graphql: 16.8.1
-      mercurius: 14.0.0(graphql@16.8.1)
+      mercurius: 14.1.0(graphql@16.8.1)
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -682,7 +676,7 @@ packages:
       '@fastify/error': 3.4.1
       graphql: 16.8.1
       secure-json-parse: 2.7.0
-      ws: 8.16.0
+      ws: 8.17.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -741,6 +735,15 @@ packages:
       '@opentelemetry/api': 1.8.0
       '@opentelemetry/semantic-conventions': 1.23.0
 
+  /@opentelemetry/core@1.24.0(@opentelemetry/api@1.8.0):
+    resolution: {integrity: sha512-FP2oN7mVPqcdxJDTTnKExj4mi91EH+DNuArKfHTjPuJWe2K1JfMIVXNfahw1h3onJxQnxS8K0stKkogX05s+Aw==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@opentelemetry/api': '>=1.0.0 <1.9.0'
+    dependencies:
+      '@opentelemetry/api': 1.8.0
+      '@opentelemetry/semantic-conventions': 1.24.0
+
   /@opentelemetry/exporter-trace-otlp-proto@0.50.0(@opentelemetry/api@1.8.0):
     resolution: {integrity: sha512-vavD9Ow6yOLiD+ocuS/oeciCsXNdsN41aYUrEljNaLXogvnkfMhJ+JLAhOnRSpzlVtRp7Ciw2BYGdYSebR0OsA==}
     engines: {node: '>=14'}
@@ -755,17 +758,17 @@ packages:
       '@opentelemetry/resources': 1.23.0(@opentelemetry/api@1.8.0)
       '@opentelemetry/sdk-trace-base': 1.23.0(@opentelemetry/api@1.8.0)
 
-  /@opentelemetry/exporter-zipkin@1.23.0(@opentelemetry/api@1.8.0):
-    resolution: {integrity: sha512-2LOGvNUGONuIcWhynFaJorVyqv03uZkURScciLmOxvBf2lWTNPEj77br1dCpShIWBM+YlrH7Tc+JXAs+GC7DqA==}
+  /@opentelemetry/exporter-zipkin@1.24.0(@opentelemetry/api@1.8.0):
+    resolution: {integrity: sha512-QeGv0PHONswmu567pf9QliJ6s6DgCu5+ziF+soNS1LTcr1VRRVLViYLmGxmzDFUC48sjNTu7sumcKT0nJXsGBw==}
     engines: {node: '>=14'}
     peerDependencies:
       '@opentelemetry/api': ^1.0.0
     dependencies:
       '@opentelemetry/api': 1.8.0
-      '@opentelemetry/core': 1.23.0(@opentelemetry/api@1.8.0)
-      '@opentelemetry/resources': 1.23.0(@opentelemetry/api@1.8.0)
-      '@opentelemetry/sdk-trace-base': 1.23.0(@opentelemetry/api@1.8.0)
-      '@opentelemetry/semantic-conventions': 1.23.0
+      '@opentelemetry/core': 1.24.0(@opentelemetry/api@1.8.0)
+      '@opentelemetry/resources': 1.24.0(@opentelemetry/api@1.8.0)
+      '@opentelemetry/sdk-trace-base': 1.24.0(@opentelemetry/api@1.8.0)
+      '@opentelemetry/semantic-conventions': 1.24.0
 
   /@opentelemetry/otlp-exporter-base@0.50.0(@opentelemetry/api@1.8.0):
     resolution: {integrity: sha512-JUmjmrCmE1/fc4LjCQMqLfudgSl5OpUkzx7iA94b4jgeODM7zWxUoVXL7/CT7fWf47Cn+pmKjMvTCSESqZZ3mA==}
@@ -811,6 +814,16 @@ packages:
       '@opentelemetry/core': 1.23.0(@opentelemetry/api@1.8.0)
       '@opentelemetry/semantic-conventions': 1.23.0
 
+  /@opentelemetry/resources@1.24.0(@opentelemetry/api@1.8.0):
+    resolution: {integrity: sha512-mxC7E7ocUS1tLzepnA7O9/G8G6ZTdjCH2pXme1DDDuCuk6n2/53GADX+GWBuyX0dfIxeMInIbJAdjlfN9GNr6A==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@opentelemetry/api': '>=1.0.0 <1.9.0'
+    dependencies:
+      '@opentelemetry/api': 1.8.0
+      '@opentelemetry/core': 1.24.0(@opentelemetry/api@1.8.0)
+      '@opentelemetry/semantic-conventions': 1.24.0
+
   /@opentelemetry/sdk-logs@0.50.0(@opentelemetry/api-logs@0.50.0)(@opentelemetry/api@1.8.0):
     resolution: {integrity: sha512-PeUEupBB29p9nlPNqXoa1PUWNLsZnxG0DCDj3sHqzae+8y76B/A5hvZjg03ulWdnvBLYpnJslqzylG9E0IL87g==}
     engines: {node: '>=14'}
@@ -845,8 +858,23 @@ packages:
       '@opentelemetry/resources': 1.23.0(@opentelemetry/api@1.8.0)
       '@opentelemetry/semantic-conventions': 1.23.0
 
+  /@opentelemetry/sdk-trace-base@1.24.0(@opentelemetry/api@1.8.0):
+    resolution: {integrity: sha512-H9sLETZ4jw9UJ3totV8oM5R0m4CW0ZIOLfp4NV3g0CM8HD5zGZcaW88xqzWDgiYRpctFxd+WmHtGX/Upoa2vRg==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@opentelemetry/api': '>=1.0.0 <1.9.0'
+    dependencies:
+      '@opentelemetry/api': 1.8.0
+      '@opentelemetry/core': 1.24.0(@opentelemetry/api@1.8.0)
+      '@opentelemetry/resources': 1.24.0(@opentelemetry/api@1.8.0)
+      '@opentelemetry/semantic-conventions': 1.24.0
+
   /@opentelemetry/semantic-conventions@1.23.0:
     resolution: {integrity: sha512-MiqFvfOzfR31t8cc74CTP1OZfz7MbqpAnLCra8NqQoaHJX6ncIRTdYOQYBDQ2uFISDq0WY8Y9dDTWvsgzzBYRg==}
+    engines: {node: '>=14'}
+
+  /@opentelemetry/semantic-conventions@1.24.0:
+    resolution: {integrity: sha512-yL0jI6Ltuz8R+Opj7jClGrul6pOoYrdfVmzQS4SITXRPH7I5IRZbrwe/6/v8v4WYMa6MYZG480S1+uc/IGfqsA==}
     engines: {node: '>=14'}
 
   /@pkgjs/parseargs@0.11.0:
@@ -865,7 +893,7 @@ packages:
       es-main: 1.3.0
       minimist: 1.2.8
       open: 8.4.2
-      ws: 8.16.0
+      ws: 8.17.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -887,23 +915,23 @@ packages:
       help-me: 5.0.0
       jsonpointer: 5.0.1
       minimist: 1.2.8
-      pino: 8.20.0
+      pino: 8.21.0
       pino-pretty: 11.0.0
-      undici: 6.13.0
-      yaml: 2.4.1
+      undici: 6.14.1
+      yaml: 2.4.2
     dev: true
 
   /@platformatic/client@1.36.2:
     resolution: {integrity: sha512-jtWU5LYcMKZi6e3kfWK6/meTdhTitfIM1mz2ch2onHUbBCN29+2GImp7WzFFIvRgvaorKI0CxD1A7nYX8Tcf5g==}
     dependencies:
-      '@apidevtools/json-schema-ref-parser': 11.5.5
+      '@apidevtools/json-schema-ref-parser': 11.6.1
       '@fastify/error': 3.4.1
       abstract-logging: 2.0.1
       ajv: 8.12.0
       camelcase: 6.3.0
       desm: 1.3.1
       jsonpointer: 5.0.1
-      undici: 6.13.0
+      undici: 6.14.1
 
   /@platformatic/composer@1.36.2:
     resolution: {integrity: sha512-8psGcUaIzBCqvsMGlb666ygRSG+8aYZ80bFwBf6m677QkPsRZQwO2FJo0Al1ZT/BtdQK91K500aTiNBz0uKd8A==}
@@ -911,7 +939,7 @@ packages:
     dependencies:
       '@fastify/error': 3.4.1
       '@fastify/http-proxy': 9.5.0
-      '@fastify/reply-from': 9.7.0
+      '@fastify/reply-from': 9.8.0
       '@fastify/static': 7.0.3
       '@fastify/swagger': 8.14.0
       '@platformatic/config': 1.36.2
@@ -935,14 +963,14 @@ packages:
       graphql: 16.8.1
       help-me: 5.0.0
       json-schema-traverse: 1.0.0
-      mercurius: 14.0.0(graphql@16.8.1)
+      mercurius: 14.1.0(graphql@16.8.1)
       minimist: 1.2.8
       ora: 6.3.1
-      pino: 8.20.0
+      pino: 8.21.0
       pino-pretty: 11.0.0
       rfdc: 1.3.1
       ua-parser-js: 1.0.37
-      undici: 6.13.0
+      undici: 6.14.1
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -961,7 +989,7 @@ packages:
       minimist: 1.2.8
       pupa: 3.1.0
       semver: 7.6.0
-      undici: 6.13.0
+      undici: 6.14.1
 
   /@platformatic/control@1.36.2:
     resolution: {integrity: sha512-Yd35GoksEDarROpVQ3PWjkI7TQnaplzv7b7EALmokQRvnHuGKJw+ksd7dc0F/p0XEJ6vZcCSMHPptdkBEmLOqQ==}
@@ -970,11 +998,11 @@ packages:
       '@fastify/error': 3.4.1
       commist: 3.2.0
       help-me: 5.0.0
-      pino: 8.20.0
+      pino: 8.21.0
       pino-pretty: 11.0.0
       table: 6.8.2
-      undici: 6.13.0
-      ws: 8.16.0
+      undici: 6.14.1
+      ws: 8.17.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -997,16 +1025,16 @@ packages:
       execa: 8.0.1
       fastify: 4.26.2
       help-me: 5.0.0
-      inquirer: 9.2.19
+      inquirer: 9.2.20
       log-update: 6.0.0
       minimist: 1.2.8
       ora: 6.3.1
-      pino: 8.20.0
+      pino: 8.21.0
       pino-pretty: 11.0.0
       pupa: 3.1.0
       semver: 7.6.0
       strip-ansi: 7.1.0
-      undici: 6.13.0
+      undici: 6.14.1
       which: 3.0.1
     transitivePeerDependencies:
       - supports-color
@@ -1021,7 +1049,7 @@ packages:
       fastify-user: 0.3.3
       get-jwks: 9.0.1
       leven: 3.1.0
-      undici: 6.13.0
+      undici: 6.14.1
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -1081,7 +1109,7 @@ packages:
       help-me: 5.0.0
       minimist: 1.2.8
       ora: 6.3.1
-      pino: 8.20.0
+      pino: 8.21.0
       pino-pretty: 11.0.0
       postgrator: 7.2.0
       rfdc: 1.3.1
@@ -1105,7 +1133,7 @@ packages:
       '@platformatic/service': 1.36.2
       pretty-bytes: 6.1.1
       tar: 7.0.1
-      undici: 6.13.0
+      undici: 6.14.1
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -1128,7 +1156,7 @@ packages:
       help-me: 5.0.0
       jsonpointer: 5.0.1
       minimist: 1.2.8
-      undici: 6.13.0
+      undici: 6.14.1
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -1145,8 +1173,8 @@ packages:
       boring-name-generator: 1.0.3
       change-case-all: 2.1.0
       fastify: 4.26.2
-      pino: 8.20.0
-      undici: 6.13.0
+      pino: 8.21.0
+      undici: 6.14.1
     transitivePeerDependencies:
       - supports-color
 
@@ -1158,7 +1186,7 @@ packages:
       graphql: 16.8.1
       mercurius: 13.4.1(graphql@16.8.1)
       metaline: 1.1.0
-      undici: 6.13.0
+      undici: 6.14.1
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -1193,14 +1221,14 @@ packages:
       graphql: 16.8.1
       help-me: 5.0.0
       minimist: 1.2.8
-      pino: 8.20.0
+      pino: 8.21.0
       pino-pretty: 11.0.0
       pino-roll: 1.1.0
       semgrator: 0.3.0
       tail-file-stream: 0.1.0
-      undici: 6.13.0
+      undici: 6.14.1
       why-is-node-running: 2.2.2
-      ws: 8.16.0
+      ws: 8.17.0
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -1254,16 +1282,16 @@ packages:
       fastify-plugin: 4.5.1
       graphql: 16.8.1
       help-me: 5.0.0
-      mercurius: 14.0.0(graphql@16.8.1)
+      mercurius: 14.1.0(graphql@16.8.1)
       minimist: 1.2.8
       openapi-schema-diff: 0.0.1
       ora: 6.3.1
-      pino: 8.20.0
+      pino: 8.21.0
       pino-pretty: 11.0.0
       rfdc: 1.3.1
       semgrator: 0.3.0
       ua-parser-js: 1.0.37
-      undici: 6.13.0
+      undici: 6.14.1
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -1292,7 +1320,7 @@ packages:
       graphql-scalars: 1.23.0(graphql@16.8.1)
       graphql-type-json: 0.3.2(graphql@16.8.1)
       inflected: 2.1.0
-      mercurius: 14.0.0(graphql@16.8.1)
+      mercurius: 14.1.0(graphql@16.8.1)
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -1342,12 +1370,12 @@ packages:
     dependencies:
       '@fastify/swagger': 8.14.0
       '@opentelemetry/api': 1.8.0
-      '@opentelemetry/core': 1.23.0(@opentelemetry/api@1.8.0)
+      '@opentelemetry/core': 1.24.0(@opentelemetry/api@1.8.0)
       '@opentelemetry/exporter-trace-otlp-proto': 0.50.0(@opentelemetry/api@1.8.0)
-      '@opentelemetry/exporter-zipkin': 1.23.0(@opentelemetry/api@1.8.0)
-      '@opentelemetry/resources': 1.23.0(@opentelemetry/api@1.8.0)
-      '@opentelemetry/sdk-trace-base': 1.23.0(@opentelemetry/api@1.8.0)
-      '@opentelemetry/semantic-conventions': 1.23.0
+      '@opentelemetry/exporter-zipkin': 1.24.0(@opentelemetry/api@1.8.0)
+      '@opentelemetry/resources': 1.24.0(@opentelemetry/api@1.8.0)
+      '@opentelemetry/sdk-trace-base': 1.24.0(@opentelemetry/api@1.8.0)
+      '@opentelemetry/semantic-conventions': 1.24.0
       fast-uri: 2.3.0
       fastify-plugin: 4.5.1
     transitivePeerDependencies:
@@ -1360,7 +1388,7 @@ packages:
       '@fastify/error': 3.4.1
       leven: 3.1.0
       minimatch: 8.0.4
-      undici: 6.13.0
+      undici: 6.14.1
 
   /@protobufjs/aspromise@1.1.2:
     resolution: {integrity: sha512-j+gKExEuLmKwvz3OgROXtrJ2UG2x8Ch2YZUxahh+s1F2HZ+wAceUNLkvy6zKCPVRkU++ZWQrdxsUeQXmcg4uoQ==}
@@ -2233,16 +2261,16 @@ packages:
       execa: 8.0.1
       fastify: 4.26.2
       help-me: 5.0.0
-      inquirer: 9.2.19
+      inquirer: 9.2.20
       log-update: 6.0.0
       minimist: 1.2.8
       ora: 6.3.1
-      pino: 8.20.0
+      pino: 8.21.0
       pino-pretty: 11.0.0
       pupa: 3.1.0
       semver: 7.6.0
       strip-ansi: 7.1.0
-      undici: 6.13.0
+      undici: 6.14.1
       which: 3.0.1
     transitivePeerDependencies:
       - supports-color
@@ -2551,8 +2579,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /es-iterator-helpers@1.0.18:
-    resolution: {integrity: sha512-scxAJaewsahbqTYrGKJihhViaM6DDZDDoucfvzNbK0pOren1g/daDQ3IAhzn+1G14rBG7w+i5N+qul60++zlKA==}
+  /es-iterator-helpers@1.0.19:
+    resolution: {integrity: sha512-zoMwbCcH5hwUkKJkT8kDIBZSz9I6mVG//+lDCinLCGov4+r7NIy0ld8o03M0cJxl2spVf6ESYVS6/gpIfq1FFw==}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.7
@@ -2791,7 +2819,7 @@ packages:
       axobject-query: 3.2.1
       damerau-levenshtein: 1.0.8
       emoji-regex: 9.2.2
-      es-iterator-helpers: 1.0.18
+      es-iterator-helpers: 1.0.19
       eslint: 8.57.0
       hasown: 2.0.2
       jsx-ast-utils: 3.3.5
@@ -2822,7 +2850,7 @@ packages:
       array.prototype.toreversed: 1.1.2
       array.prototype.tosorted: 1.1.3
       doctrine: 2.1.0
-      es-iterator-helpers: 1.0.18
+      es-iterator-helpers: 1.0.19
       eslint: 8.57.0
       estraverse: 5.3.0
       jsx-ast-utils: 3.3.5
@@ -2897,7 +2925,7 @@ packages:
       lodash.merge: 4.6.2
       minimatch: 3.1.2
       natural-compare: 1.4.0
-      optionator: 0.9.3
+      optionator: 0.9.4
       strip-ansi: 6.0.1
       text-table: 0.2.0
     transitivePeerDependencies:
@@ -3002,8 +3030,8 @@ packages:
     resolution: {integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==}
     dev: true
 
-  /fast-json-stringify@5.14.1:
-    resolution: {integrity: sha512-J1Grbf0oSXV3lKsBf3itz1AvRk43qVrx3Ac10sNvi3LZaz1by4oDdYKFrJycPhS8+Gb7y8rgV/Jqw1UZVjyNvw==}
+  /fast-json-stringify@5.15.0:
+    resolution: {integrity: sha512-BUEAAyDKb64u+kmkINYfXUUiKjBKerSmVu/dzotfaWSHBxR44JFrOZgkhMO6VxDhDfiuAoi8mx4drd5nvNdA4Q==}
     dependencies:
       '@fastify/merge-json-schemas': 0.1.1
       ajv: 8.12.0
@@ -3085,7 +3113,7 @@ packages:
   /fastify-undici-dispatcher@0.6.0:
     resolution: {integrity: sha512-xSt3eCZHsZOh5cDBbEObWHIYYz+g8QmyqFgxVypTjxvE74QOcpx9KGonrHQkKKCnkY31CmXFoBgZjSvwIDZWPQ==}
     dependencies:
-      undici: 6.13.0
+      undici: 6.14.1
     dev: true
 
   /fastify-user@0.3.3:
@@ -3109,10 +3137,10 @@ packages:
       abstract-logging: 2.0.1
       avvio: 8.3.0
       fast-content-type-parse: 1.1.0
-      fast-json-stringify: 5.14.1
+      fast-json-stringify: 5.15.0
       find-my-way: 8.1.0
       light-my-request: 5.13.0
-      pino: 8.20.0
+      pino: 8.21.0
       process-warning: 3.0.0
       proxy-addr: 2.0.7
       rfdc: 1.3.1
@@ -3294,7 +3322,7 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       jwk-to-pem: 2.0.5
-      lru-cache: 10.2.0
+      lru-cache: 10.2.2
       node-fetch: 2.7.0
     transitivePeerDependencies:
       - encoding
@@ -3304,7 +3332,7 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       jwk-to-pem: 2.0.5
-      lru-cache: 10.2.0
+      lru-cache: 10.2.2
       node-fetch: 2.7.0
     transitivePeerDependencies:
       - encoding
@@ -3436,7 +3464,7 @@ packages:
       graphql: '>=15'
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.8.1)
-      fast-json-stringify: 5.14.1
+      fast-json-stringify: 5.15.0
       generate-function: 2.3.1
       graphql: 16.8.1
       lodash.memoize: 4.1.2
@@ -3606,8 +3634,8 @@ packages:
   /ini@1.3.8:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
 
-  /inquirer@9.2.19:
-    resolution: {integrity: sha512-WpxOT71HGsFya6/mj5PUue0sWwbpbiPfAR+332zLj/siB0QA1PZM8v3GepegFV1Op189UxHUCF6y8AySdtOMVA==}
+  /inquirer@9.2.20:
+    resolution: {integrity: sha512-SFwJJPS+Ms75NV+wzFBHjirG4z3tzvis31h+9NyH1tqjIu2c7vCavlXILZ73q/nPYy8/aw4W+DNzLH5MjfYXiA==}
     engines: {node: '>=18'}
     dependencies:
       '@inquirer/figures': 1.0.1
@@ -3924,8 +3952,8 @@ packages:
     resolution: {integrity: sha512-8wb9Yw966OSxApiCt0K3yNJL8pnNeIv+OEq2YMidz4FKP6nonSRoOXc80iXY4JaN2FC11B9qsNmDsm+ZOfMROA==}
     dev: true
 
-  /joi@17.12.3:
-    resolution: {integrity: sha512-2RRziagf555owrm9IRVtdKynOBeITiDpuZqIpgwqXShPncPKNiRQoiGsl/T8SQdq+8ugRzH2LqY67irr2y/d+g==}
+  /joi@17.13.0:
+    resolution: {integrity: sha512-9qcrTyoBmFZRNHeVP4edKqIUEgFzq7MHvTNSDuHSqkpOPtiBkgNgcmTSqmiw1kw9tdKaiddvIDv/eCJDxmqWCA==}
     dependencies:
       '@hapi/hoek': 9.3.0
       '@hapi/topo': 5.1.0
@@ -4132,8 +4160,8 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /lru-cache@10.2.0:
-    resolution: {integrity: sha512-2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==}
+  /lru-cache@10.2.2:
+    resolution: {integrity: sha512-9hp3Vp2/hFQUiIwKo8XCeFVnrg8Pk3TYNPIR7tJADKi5YfcF7vEaK7avFHTlSy3kOKYaJQaalfEo6YuXdceBOQ==}
     engines: {node: 14 || >=16.14}
 
   /lru-cache@6.0.0:
@@ -4171,14 +4199,14 @@ packages:
       single-user-cache: 0.6.0
       tiny-lru: 11.2.6
       undici: 5.28.3
-      ws: 8.16.0
+      ws: 8.17.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
     dev: true
 
-  /mercurius@14.0.0(graphql@16.8.1):
-    resolution: {integrity: sha512-eGqBuc8ZfnBbJDnnedZWx0mPJ2ZQZz2HLmPCxRdMa5RZnRP9Uxn4Ew1x1OQ49MvNbut9xfvHCXKlr8uI6GOyZg==}
+  /mercurius@14.1.0(graphql@16.8.1):
+    resolution: {integrity: sha512-A83Z+s4wVRJI/sqN5ZmyB7ISma9atAk4aRipnklSCvQ62hioJ00N9wwR3QRh5mY5lKbKG6rRn/iF8VlU6FsisQ==}
     engines: {node: '>=14.19.3'}
     peerDependencies:
       graphql: ^16.0.0
@@ -4196,8 +4224,8 @@ packages:
       secure-json-parse: 2.7.0
       single-user-cache: 0.6.0
       tiny-lru: 11.2.6
-      undici: 5.28.3
-      ws: 8.16.0
+      undici: 5.28.4
+      ws: 8.17.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -4403,8 +4431,8 @@ packages:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
     engines: {node: '>= 0.6'}
 
-  /node-abi@3.60.0:
-    resolution: {integrity: sha512-zcGgwoXbzw9NczqbGzAWL/ToDYAxv1V8gL1D67ClbdkIfeeDBbY0GelZtC25ayLvVjr2q2cloHeQV1R0QAWqRQ==}
+  /node-abi@3.62.0:
+    resolution: {integrity: sha512-CPMcGa+y33xuL1E0TcNIu4YyaZCxnnvkVaEXrsosR3FxN+fV8xvb7Mzpb7IgKler10qeMkE6+Dp8qJhpzdq35g==}
     engines: {node: '>=10'}
     dependencies:
       semver: 7.6.0
@@ -4556,16 +4584,16 @@ packages:
   /openapi-types@12.1.3:
     resolution: {integrity: sha512-N4YtSYJqghVu4iek2ZUvcN/0aqH1kRDuNqzcycDxhOUpg7GdvLa2F3DgS6yBNhInhv2r/6I0Flkn7CqL8+nIcw==}
 
-  /optionator@0.9.3:
-    resolution: {integrity: sha512-JjCoypp+jKn1ttEFExxhetCKeJt9zhAgAve5FXHixTvFDW/5aEktX9bufBKLRRMdU7bNtpLfcGu94B3cdEJgjg==}
+  /optionator@0.9.4:
+    resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
     engines: {node: '>= 0.8.0'}
     dependencies:
-      '@aashutoshrathi/word-wrap': 1.2.6
       deep-is: 0.1.4
       fast-levenshtein: 2.0.6
       levn: 0.4.1
       prelude-ls: 1.2.1
       type-check: 0.4.0
+      word-wrap: 1.2.5
     dev: true
 
   /ora@5.4.1:
@@ -4681,7 +4709,7 @@ packages:
     resolution: {integrity: sha512-7xTavNy5RQXnsjANvVvMkEjvloOinkAjv/Z6Ildz9v2RinZ4SBKTWFOVRbaF8p0vpHnyjV/UwNDdKuUv6M5qcA==}
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
-      lru-cache: 10.2.0
+      lru-cache: 10.2.2
       minipass: 7.0.4
 
   /path-type@4.0.0:
@@ -4763,8 +4791,8 @@ packages:
     hasBin: true
     dev: true
 
-  /pino-abstract-transport@1.1.0:
-    resolution: {integrity: sha512-lsleG3/2a/JIWUtf9Q5gUNErBqwIu1tUKTT3dUzaf5DySw9ra1wcqKjJjLX1VTY64Wk1eEOYsVGSaGfCK85ekA==}
+  /pino-abstract-transport@1.2.0:
+    resolution: {integrity: sha512-Guhh8EZfPCfH+PMXAb6rKOjGQEoy0xlAIn+irODG5kgfYV+BQ0rGYYWTIel3P5mmyXqkYkPmdIkywsn6QKUR1Q==}
     dependencies:
       readable-stream: 4.5.2
       split2: 4.2.0
@@ -4781,7 +4809,7 @@ packages:
       joycon: 3.1.1
       minimist: 1.2.8
       on-exit-leak-free: 2.1.2
-      pino-abstract-transport: 1.1.0
+      pino-abstract-transport: 1.2.0
       pump: 3.0.0
       readable-stream: 4.5.2
       secure-json-parse: 2.7.0
@@ -4797,21 +4825,21 @@ packages:
   /pino-std-serializers@6.2.2:
     resolution: {integrity: sha512-cHjPPsE+vhj/tnhCy/wiMh3M3z3h/j15zHQX+S9GkTBgqJuTuJzYJ4gUyACLhDaJ7kk9ba9iRDmbH2tJU03OiA==}
 
-  /pino@8.20.0:
-    resolution: {integrity: sha512-uhIfMj5TVp+WynVASaVEJFTncTUe4dHBq6CWplu/vBgvGHhvBvQfxz+vcOrnnBQdORH3izaGEurLfNlq3YxdFQ==}
+  /pino@8.21.0:
+    resolution: {integrity: sha512-ip4qdzjkAyDDZklUaZkcRFb2iA118H9SgRh8yzTkSQK8HilsOJF7rSY8HoW5+I0M46AZgX/pxbprf2vvzQCE0Q==}
     hasBin: true
     dependencies:
       atomic-sleep: 1.0.0
       fast-redact: 3.5.0
       on-exit-leak-free: 2.1.2
-      pino-abstract-transport: 1.1.0
+      pino-abstract-transport: 1.2.0
       pino-std-serializers: 6.2.2
       process-warning: 3.0.0
       quick-format-unescaped: 4.0.4
       real-require: 0.2.0
       safe-stable-stringify: 2.4.3
       sonic-boom: 3.8.1
-      thread-stream: 2.4.1
+      thread-stream: 2.7.0
 
   /platformatic@1.36.2(typescript@5.4.5):
     resolution: {integrity: sha512-UHKzPYJlFGUTSKm+0I9y79vUm6uFNc3ffZoChrtQDSBxudkMh6zQQnhptUCXVZhubCg31pEUN+zBQUoKdQ4vdA==}
@@ -4835,14 +4863,14 @@ packages:
       desm: 1.3.1
       dotenv: 16.4.5
       execa: 8.0.1
-      fast-json-stringify: 5.14.1
+      fast-json-stringify: 5.15.0
       graphql: 16.8.1
       help-me: 5.0.0
-      inquirer: 9.2.19
+      inquirer: 9.2.20
       minimist: 1.2.8
-      pino: 8.20.0
+      pino: 8.21.0
       pino-pretty: 11.0.0
-      undici: 6.13.0
+      undici: 6.14.1
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -4892,7 +4920,7 @@ packages:
       minimist: 1.2.8
       mkdirp-classic: 0.5.3
       napi-build-utils: 1.0.2
-      node-abi: 3.60.0
+      node-abi: 3.62.0
       pump: 3.0.0
       rc: 1.2.8
       simple-get: 4.0.1
@@ -5606,8 +5634,8 @@ packages:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: true
 
-  /thread-stream@2.4.1:
-    resolution: {integrity: sha512-d/Ex2iWd1whipbT681JmTINKw0ZwOUBZm7+Gjs64DHuX34mmw8vJL2bFAaNacaW72zYiTJxSHi5abUuOi5nsfg==}
+  /thread-stream@2.7.0:
+    resolution: {integrity: sha512-qQiRWsU/wvNolI6tbbCKd9iKaTnCXsTwVxhhKM6nctPdujTyztjlbUkUTUymidWcMnZ5pWR0ej4a0tjsW021vw==}
     dependencies:
       real-require: 0.2.0
 
@@ -5771,17 +5799,17 @@ packages:
     engines: {node: '>=14.0'}
     dependencies:
       '@fastify/busboy': 2.1.1
+    dev: true
 
   /undici@5.28.4:
     resolution: {integrity: sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==}
     engines: {node: '>=14.0'}
     dependencies:
       '@fastify/busboy': 2.1.1
-    dev: true
 
-  /undici@6.13.0:
-    resolution: {integrity: sha512-Q2rtqmZWrbP8nePMq7mOJIN98M0fYvSgV89vwl/BQRT4mDOeY2GXZngfGpcBBhtky3woM7G24wZV3Q304Bv6cw==}
-    engines: {node: '>=18.0'}
+  /undici@6.14.1:
+    resolution: {integrity: sha512-mAel3i4BsYhkeVPXeIPXVGPJKeBzqCieZYoFsbWfUzd68JmHByhc1Plit5WlylxXFaGpgkZB8mExlxnt+Q1p7A==}
+    engines: {node: '>=18.17'}
 
   /unicorn-magic@0.1.0:
     resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
@@ -5809,7 +5837,7 @@ packages:
     hasBin: true
     dependencies:
       axios: 1.6.8
-      joi: 17.12.3
+      joi: 17.13.0
       lodash: 4.17.21
       minimist: 1.2.8
       rxjs: 7.8.1
@@ -5904,6 +5932,11 @@ packages:
       stackback: 0.0.2
     dev: true
 
+  /word-wrap@1.2.5:
+    resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
   /wrap-ansi@6.2.0:
     resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}
     engines: {node: '>=8'}
@@ -5941,8 +5974,8 @@ packages:
   /wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
-  /ws@8.16.0:
-    resolution: {integrity: sha512-HS0c//TP7Ina87TfiPUz1rQzMhHrl/SG2guqRcTOIUYD2q8uhUdNHZYJUaQ8aTGPzCh+c6oawMKW35nFl1dxyQ==}
+  /ws@8.17.0:
+    resolution: {integrity: sha512-uJq6108EgZMAl20KagGkzCKfMEjxmKvZHG7Tlq0Z6nOky7YF7aq4mOx6xK8TJ/i1LeK4Qus7INktacctDgY8Ow==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -5970,8 +6003,8 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /yaml@2.4.1:
-    resolution: {integrity: sha512-pIXzoImaqmfOrL7teGUBt/T7ZDnyeGBWyXQBvOVhLkWLN37GXv8NMLK406UY6dS51JfcQHsmcW5cJ441bHg6Lg==}
+  /yaml@2.4.2:
+    resolution: {integrity: sha512-B3VqDZ+JAg1nZpaEmWtTXUlBneoGx6CPM9b0TENK6aoSu5t73dItudwdgmi6tHlIZZId4dZ9skcAQ2UbcyAeVA==}
     engines: {node: '>= 14'}
     hasBin: true
 
