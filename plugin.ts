@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/triple-slash-reference
 /// <reference path="./global.d.ts" />
 import Ajv from "ajv";
 import type { FastifyInstance, FastifyPluginOptions } from "fastify";

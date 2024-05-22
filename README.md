@@ -70,6 +70,14 @@ Now that every is set up you can commit and push your changes to your repo. Ever
 
 We use GitHub Actions for continuous integration and deployment. Anything that gets into the `main` branch will be deployed to production after running tests/build/etc.
 
+## Pre-commit
+
+This project uses [pre-commit](https://pre-commit.com/) to run checks before committing your code. To install it, run:
+
+```sh
+pre-commit install
+```
+
 ## Useful references
 
 - [Quick Start Guide](https://oss.platformatic.dev/docs/getting-started/quick-start-guide)
