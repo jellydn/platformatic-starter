@@ -1,4 +1,4 @@
-import type { PlatformaticApp, PlatformaticDBMixin, PlatformaticDBConfig, Entity, Entities, EntityHooks } from '@platformatic/db'
+import type { Entities, Entity, EntityHooks, PlatformaticApp, PlatformaticDBConfig, PlatformaticDBMixin } from '@platformatic/db'
 import { EntityTypes, Movie,Quote } from './types'
 
 declare module 'fastify' {

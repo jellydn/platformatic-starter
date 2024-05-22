@@ -1,5 +1,5 @@
+import type { FastifyInstance } from "fastify";
 import fp from "fastify-plugin";
-import { type FastifyInstance } from "fastify";
 
 /**
  * Display all routes in the console. This is useful for debugging.

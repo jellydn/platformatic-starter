@@ -182,3 +182,4 @@ Huynh
 kofi
 buymeacoffee
 automerge
+biomejs
