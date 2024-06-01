@@ -35,7 +35,7 @@
     "concurrently": "8.2.2",
     "npm-run-all2": "6.2.0",
     "platformatic": "1.44.0",
-    "prettier": "3.2.5",
+    "prettier": "3.3.0",
     "sort-package-json": "2.10.0",
     "wait-on": "7.2.0"
   },
