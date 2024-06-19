@@ -31,7 +31,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.8.1",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
-    "@types/node": "20.14.5",
+    "@types/node": "20.14.6",
     "concurrently": "8.2.2",
     "npm-run-all2": "6.2.0",
     "platformatic": "1.46.0",
