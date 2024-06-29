@@ -27,8 +27,8 @@ importers:
         specifier: 8.16.0
         version: 8.16.0
       fastify:
-        specifier: 4.28.0
-        version: 4.28.0
+        specifier: 4.28.1
+        version: 4.28.1
       fastify-plugin:
         specifier: 4.5.1
         version: 4.5.1
@@ -1173,8 +1173,8 @@ packages:
   fastify-user@0.3.3:
     resolution: {integrity: sha512-M6gUmTPtVaqnuKNv0nHMejJs67AsLduYgKX1yblQkZLq131JRDrGn9ueOHUPRyRK2oLhB0F1PE/AttCiyaz9Ug==}
 
-  fastify@4.28.0:
-    resolution: {integrity: sha512-HhW7UHW07YlqH5qpS0af8d2Gl/o98DhJ8ZDQWHRNDnzeOhZvtreWsX8xanjGgXmkYerGbo8ax/n40Dpwqkot8Q==}
+  fastify@4.28.1:
+    resolution: {integrity: sha512-kFWUtpNr4i7t5vY2EJPCN2KgMVpuqfU4NjnJNCgiNB900oiDeYqaNDRcAfeBbOF5hGixixxcKnOU4KN9z6QncQ==}
 
   fastparallel@2.4.1:
     resolution: {integrity: sha512-qUmhxPgNHmvRjZKBFUNI0oZuuH9OlSIOXmJ98lhKPxMZZ7zS/Fi0wRHOihDSz0R1YiIOjxzOY4bq65YTcdBi2Q==}
@@ -2824,7 +2824,7 @@ snapshots:
 
   '@fastify/restartable@2.3.0':
     dependencies:
-      fastify: 4.28.0
+      fastify: 4.28.1
 
   '@fastify/send@2.1.0':
     dependencies:
@@ -3097,7 +3097,7 @@ snapshots:
       es-main: 1.3.0
       execa: 8.0.1
       fast-deep-equal: 3.1.3
-      fastify: 4.28.0
+      fastify: 4.28.1
       fastify-openapi-glue: 4.6.1
       fastify-plugin: 4.5.1
       graphql: 16.9.0
@@ -3229,8 +3229,8 @@ snapshots:
       env-schema: 5.2.1
       es-main: 1.3.0
       execa: 8.0.1
-      fastify: 4.28.0
-      fastify-metrics: 11.0.0(fastify@4.28.0)
+      fastify: 4.28.1
+      fastify-metrics: 11.0.0(fastify@4.28.1)
       fastify-plugin: 4.5.1
       fastify-print-routes: 3.2.0
       graphql: 16.9.0
@@ -3295,14 +3295,14 @@ snapshots:
       '@fastify/error': 3.4.1
       boring-name-generator: 1.0.3
       change-case-all: 2.1.0
-      fastify: 4.28.0
+      fastify: 4.28.1
       pino: 8.21.0
       undici: 6.19.2
 
   '@platformatic/graphql-composer@0.7.0':
     dependencies:
       abstract-logger: 0.2.5
-      fastify: 4.28.0
+      fastify: 4.28.1
       graphql: 16.9.0
       mercurius: 14.1.0(graphql@16.9.0)
       metaline: 1.1.0
@@ -3333,7 +3333,7 @@ snapshots:
       dotenv-tool: 0.1.1
       es-main: 1.3.0
       fastest-levenshtein: 1.0.16
-      fastify: 4.28.0
+      fastify: 4.28.1
       fastify-undici-dispatcher: 0.6.0
       graphql: 16.9.0
       help-me: 5.0.0
@@ -3389,8 +3389,8 @@ snapshots:
       env-schema: 5.2.1
       es-main: 1.3.0
       execa: 8.0.1
-      fastify: 4.28.0
-      fastify-metrics: 11.0.0(fastify@4.28.0)
+      fastify: 4.28.1
+      fastify-metrics: 11.0.0(fastify@4.28.1)
       fastify-openapi-glue: 4.6.1
       fastify-plugin: 4.5.1
       graphql: 16.9.0
@@ -4102,9 +4102,9 @@ snapshots:
     dependencies:
       reusify: 1.0.4
 
-  fastify-metrics@11.0.0(fastify@4.28.0):
+  fastify-metrics@11.0.0(fastify@4.28.1):
     dependencies:
-      fastify: 4.28.0
+      fastify: 4.28.1
       fastify-plugin: 4.5.1
       prom-client: 15.1.2
 
@@ -4131,13 +4131,13 @@ snapshots:
     dependencies:
       '@fastify/error': 3.4.1
       '@fastify/jwt': 8.0.1
-      fastify: 4.28.0
+      fastify: 4.28.1
       fastify-plugin: 4.5.1
       get-jwks: 8.3.1
     transitivePeerDependencies:
       - encoding
 
-  fastify@4.28.0:
+  fastify@4.28.1:
     dependencies:
       '@fastify/ajv-compiler': 3.6.0
       '@fastify/error': 3.4.1
