@@ -19,14 +19,14 @@
   "dependencies": {
     "@fastify/helmet": "11.1.1",
     "@fastify/rate-limit": "9.1.0",
-    "@platformatic/db": "1.47.0",
-    "@platformatic/sql-graphql": "1.47.0",
-    "@platformatic/sql-mapper": "1.47.0",
+    "@platformatic/db": "1.48.0",
+    "@platformatic/sql-graphql": "1.48.0",
+    "@platformatic/sql-mapper": "1.48.0",
     "ajv": "8.16.0",
     "fastify": "4.28.1",
     "fastify-plugin": "4.5.1",
     "fluent-json-schema": "4.2.1",
-    "typescript": "5.5.2"
+    "typescript": "5.5.3"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
@@ -34,7 +34,7 @@
     "@types/node": "20.14.9",
     "concurrently": "8.2.2",
     "npm-run-all2": "6.2.0",
-    "platformatic": "1.47.0",
+    "platformatic": "1.48.0",
     "prettier": "3.3.2",
     "sort-package-json": "2.10.0",
     "wait-on": "7.2.0"
