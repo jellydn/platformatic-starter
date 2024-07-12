@@ -22,7 +22,7 @@
     "@platformatic/db": "1.49.1",
     "@platformatic/sql-graphql": "1.49.1",
     "@platformatic/sql-mapper": "1.49.1",
-    "ajv": "8.16.0",
+    "ajv": "8.17.1",
     "fastify": "4.28.1",
     "fastify-plugin": "4.5.1",
     "fluent-json-schema": "4.2.1",
