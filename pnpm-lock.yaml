@@ -46,8 +46,8 @@ importers:
         specifier: 4.3.0
         version: 4.3.0(prettier@3.3.3)
       '@types/node':
-        specifier: 20.14.10
-        version: 20.14.10
+        specifier: 20.14.11
+        version: 20.14.11
       concurrently:
         specifier: 8.2.2
         version: 8.2.2
@@ -604,8 +604,8 @@ packages:
   '@types/mysql@2.15.26':
     resolution: {integrity: sha512-DSLCOXhkvfS5WNNPbfn2KdICAmk8lLc+/PNvnPnF7gOdMZCxopXduqv0OQ13y/yA/zXTSikZZqVgybUxOEg6YQ==}
 
-  '@types/node@20.14.10':
-    resolution: {integrity: sha512-MdiXf+nDuMvY0gJKxyfZ7/6UFsETO7mGKF54MVD/ekJS6HdFtpZFBgrh6Pseu64XTb2MLyFPlbW6hj8HYRQNOQ==}
+  '@types/node@20.14.11':
+    resolution: {integrity: sha512-kprQpL8MMeszbz6ojB5/tU8PLN4kesnN8Gjzw349rDlNgsSzg90lAVj3llK99Dh7JON+t9AuscPPFW6mPbTnSA==}
 
   '@types/ws@8.5.11':
     resolution: {integrity: sha512-4+q7P5h3SpJxaBft0Dzpbr6lmMaqh0Jr2tbhJZ/luAwvD7ohSCniYkwz/pLxuT2h0EOa6QADgJj1Ko+TzRfZ+w==}
@@ -3130,7 +3130,7 @@ snapshots:
       '@platformatic/config': 1.49.1
       '@platformatic/generators': 1.49.1
       '@platformatic/utils': 1.49.1
-      '@types/node': 20.14.10
+      '@types/node': 20.14.11
       boring-name-generator: 1.0.3
       chalk: 5.3.0
       columnify: 1.6.0
@@ -3537,21 +3537,21 @@ snapshots:
 
   '@types/better-sqlite3@7.6.11':
     dependencies:
-      '@types/node': 20.14.10
+      '@types/node': 20.14.11
 
   '@types/json-schema@7.0.15': {}
 
   '@types/mysql@2.15.26':
     dependencies:
-      '@types/node': 20.14.10
+      '@types/node': 20.14.11
 
-  '@types/node@20.14.10':
+  '@types/node@20.14.11':
     dependencies:
       undici-types: 5.26.5
 
   '@types/ws@8.5.11':
     dependencies:
-      '@types/node': 20.14.10
+      '@types/node': 20.14.11
 
   abort-controller@3.0.0:
     dependencies:
@@ -3840,7 +3840,7 @@ snapshots:
       '@platformatic/config': 1.49.1
       '@platformatic/create-platformatic-auto': 1.49.1
       '@platformatic/utils': 1.49.1
-      '@types/node': 20.14.10
+      '@types/node': 20.14.11
       boring-name-generator: 1.0.3
       chalk: 5.3.0
       columnify: 1.6.0
@@ -5016,7 +5016,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.14.10
+      '@types/node': 20.14.11
       long: 5.2.3
 
   proxy-addr@2.0.7:
