@@ -36,10 +36,10 @@
     "npm-run-all2": "6.2.2",
     "platformatic": "1.52.2",
     "prettier": "3.3.3",
-    "sort-package-json": "2.10.0",
+    "sort-package-json": "2.10.1",
     "wait-on": "7.2.0"
   },
-  "packageManager": "pnpm@9.7.1",
+  "packageManager": "pnpm@9.8.0",
   "engines": {
     "node": "^18.8.0 || ^20.6.0"
   }
