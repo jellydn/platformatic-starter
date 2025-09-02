@@ -34,7 +34,7 @@
     "@types/node": "20.17.32",
     "concurrently": "9.1.2",
     "npm-run-all2": "6.2.6",
-    "platformatic": "1.53.4",
+    "platformatic": "2.75.0",
     "prettier": "3.5.3",
     "sort-package-json": "2.15.1",
     "wait-on": "7.2.0"
