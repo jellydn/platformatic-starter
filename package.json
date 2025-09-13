@@ -37,7 +37,7 @@
     "platformatic": "1.53.4",
     "prettier": "3.6.2",
     "sort-package-json": "2.15.1",
-    "wait-on": "7.2.0"
+    "wait-on": "8.0.5"
   },
   "packageManager": "pnpm@9.15.9",
   "engines": {
