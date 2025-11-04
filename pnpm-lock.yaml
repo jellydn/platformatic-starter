@@ -46,8 +46,8 @@ importers:
         specifier: 4.3.0
         version: 4.3.0(prettier@3.6.2)
       '@types/node':
-        specifier: 20.19.21
-        version: 20.19.21
+        specifier: 20.19.24
+        version: 20.19.24
       concurrently:
         specifier: 9.2.1
         version: 9.2.1
@@ -611,8 +611,8 @@ packages:
   '@types/mysql@2.15.26':
     resolution: {integrity: sha512-DSLCOXhkvfS5WNNPbfn2KdICAmk8lLc+/PNvnPnF7gOdMZCxopXduqv0OQ13y/yA/zXTSikZZqVgybUxOEg6YQ==}
 
-  '@types/node@20.19.21':
-    resolution: {integrity: sha512-CsGG2P3I5y48RPMfprQGfy4JPRZ6csfC3ltBZSRItG3ngggmNY/qs2uZKp4p9VbrpqNNSMzUZNFZKzgOGnd/VA==}
+  '@types/node@20.19.24':
+    resolution: {integrity: sha512-FE5u0ezmi6y9OZEzlJfg37mqqf6ZDSF2V/NLjUyGrR9uTZ7Sb9F7bLNZ03S4XVUNRWGA7Ck4c1kK+YnuWjl+DA==}
 
   '@types/ws@8.5.12':
     resolution: {integrity: sha512-3tPRkv1EtkDpzlgyKyI8pGsGZAGPEaXeu0DOj5DI25Ja91bdAYddYHbADRYVrZMRbfW+1l5YwXVDKohDJNQxkQ==}
@@ -3427,21 +3427,21 @@ snapshots:
 
   '@types/better-sqlite3@7.6.11':
     dependencies:
-      '@types/node': 20.19.21
+      '@types/node': 20.19.24
 
   '@types/json-schema@7.0.15': {}
 
   '@types/mysql@2.15.26':
     dependencies:
-      '@types/node': 20.19.21
+      '@types/node': 20.19.24
 
-  '@types/node@20.19.21':
+  '@types/node@20.19.24':
     dependencies:
       undici-types: 6.21.0
 
   '@types/ws@8.5.12':
     dependencies:
-      '@types/node': 20.19.21
+      '@types/node': 20.19.24
 
   '@unhead/schema@1.11.5':
     dependencies:
@@ -3734,7 +3734,7 @@ snapshots:
       '@platformatic/config': 1.53.4
       '@platformatic/generators': 1.53.4
       '@platformatic/utils': 1.53.4
-      '@types/node': 20.19.21
+      '@types/node': 20.19.24
       boring-name-generator: 1.0.3
       chalk: 5.3.0
       columnify: 1.6.0
@@ -4843,7 +4843,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.19.21
+      '@types/node': 20.19.24
       long: 5.2.3
 
   proxy-addr@2.0.7:
