@@ -29,7 +29,7 @@
     "typescript": "5.9.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.3.7",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "@types/node": "20.19.25",
     "concurrently": "9.2.1",
