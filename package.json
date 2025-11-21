@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@trivago/prettier-plugin-sort-imports": "4.3.0",
+    "@trivago/prettier-plugin-sort-imports": "6.0.0",
     "@types/node": "20.19.25",
     "concurrently": "9.2.1",
     "npm-run-all2": "6.2.6",
