@@ -24,7 +24,7 @@
     "@platformatic/sql-mapper": "1.53.4",
     "ajv": "8.17.1",
     "fastify": "4.29.1",
-    "fastify-plugin": "4.5.1",
+    "fastify-plugin": "5.1.0",
     "fluent-json-schema": "4.2.1",
     "typescript": "5.9.3"
   },
