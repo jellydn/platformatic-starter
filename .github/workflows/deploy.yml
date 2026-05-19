@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.13.0
+        uses: styfle/cancel-workflow-action@0.13.1
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
@@ -18,7 +18,7 @@ jobs:
       - name: ⎔ Setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 20.20.1
+          node-version: 20.20.2
 
       - name: 📥 Install pnpm
         run: npm install -g pnpm
@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.13.0
+        uses: styfle/cancel-workflow-action@0.13.1
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
@@ -44,7 +44,7 @@ jobs:
       - name: 🛠 Setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 20.20.1
+          node-version: 20.20.2
 
       - name: 📥 Install pnpm
         run: npm install -g pnpm
@@ -62,7 +62,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.13.0
+        uses: styfle/cancel-workflow-action@0.13.1
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
@@ -123,7 +123,7 @@ jobs:
 
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.13.0
+        uses: styfle/cancel-workflow-action@0.13.1
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4

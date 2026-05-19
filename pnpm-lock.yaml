@@ -24,8 +24,8 @@ importers:
         specifier: 1.53.4
         version: 1.53.4(typescript@5.9.3)
       ajv:
-        specifier: 8.18.0
-        version: 8.18.0
+        specifier: 8.20.0
+        version: 8.20.0
       fastify:
         specifier: 4.29.1
         version: 4.29.1
@@ -44,10 +44,10 @@ importers:
         version: 1.9.4
       '@trivago/prettier-plugin-sort-imports':
         specifier: 4.3.0
-        version: 4.3.0(prettier@3.8.1)
+        version: 4.3.0(prettier@3.8.3)
       '@types/node':
-        specifier: 20.19.37
-        version: 20.19.37
+        specifier: 20.19.41
+        version: 20.19.41
       concurrently:
         specifier: 9.2.1
         version: 9.2.1
@@ -58,8 +58,8 @@ importers:
         specifier: 1.53.4
         version: 1.53.4(typescript@5.9.3)
       prettier:
-        specifier: 3.8.1
-        version: 3.8.1
+        specifier: 3.8.3
+        version: 3.8.3
       sort-package-json:
         specifier: 2.15.1
         version: 2.15.1
@@ -611,8 +611,8 @@ packages:
   '@types/mysql@2.15.26':
     resolution: {integrity: sha512-DSLCOXhkvfS5WNNPbfn2KdICAmk8lLc+/PNvnPnF7gOdMZCxopXduqv0OQ13y/yA/zXTSikZZqVgybUxOEg6YQ==}
 
-  '@types/node@20.19.37':
-    resolution: {integrity: sha512-8kzdPJ3FsNsVIurqBs7oodNnCEVbni9yUEkaHbgptDACOPW04jimGagZ51E6+lXUwJjgnBw+hyko/lkFWCldqw==}
+  '@types/node@20.19.41':
+    resolution: {integrity: sha512-ECymXOukMnOoVkC2bb1Vc/w/836DXncOg5m8Xj1RH7xSHZJWNYY6Zh7EH477vcnD5egKNNfy2RpNOmuChhFPgQ==}
 
   '@types/ws@8.5.12':
     resolution: {integrity: sha512-3tPRkv1EtkDpzlgyKyI8pGsGZAGPEaXeu0DOj5DI25Ja91bdAYddYHbADRYVrZMRbfW+1l5YwXVDKohDJNQxkQ==}
@@ -669,8 +669,8 @@ packages:
       ajv:
         optional: true
 
-  ajv@8.18.0:
-    resolution: {integrity: sha512-PlXPeEWMXMZ7sPYOHqmDyCJzcfNrUr3fGNKtezX14ykXOEIvyK81d+qydx89KY5O71FKMPaQ2vBfBFI5NHR63A==}
+  ajv@8.20.0:
+    resolution: {integrity: sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==}
 
   ansi-escapes@4.3.2:
     resolution: {integrity: sha512-gKXj5ALrKWQLsYG9jlTRmR/xKluxHV+Z9QEwNIgCfM1/uwPMCuzVVnh5mwTd+OuBZcwSIMbqssNWRm1lE51QaQ==}
@@ -1904,8 +1904,8 @@ packages:
     resolution: {integrity: sha512-ESF23V4SKG6lVSGZgYNpbsiaAkdab6ZgOxe52p7+Kid3W3u3bxR4Vfd/o21dmN7jSt0IwgZ4v5MUd26FEtXE9w==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.8.1:
-    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
+  prettier@3.8.3:
+    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2340,6 +2340,7 @@ packages:
 
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   wait-on@7.2.0:
@@ -2670,8 +2671,8 @@ snapshots:
 
   '@fastify/ajv-compiler@3.6.0':
     dependencies:
-      ajv: 8.18.0
-      ajv-formats: 2.1.1(ajv@8.18.0)
+      ajv: 8.20.0
+      ajv-formats: 2.1.1(ajv@8.20.0)
       fast-uri: 2.4.0
 
   '@fastify/autoload@5.10.0': {}
@@ -2978,7 +2979,7 @@ snapshots:
       '@apidevtools/json-schema-ref-parser': 11.7.0
       '@fastify/error': 3.4.1
       abstract-logging: 2.0.1
-      ajv: 8.18.0
+      ajv: 8.20.0
       camelcase: 6.3.0
       desm: 1.3.1
       jsonpointer: 5.0.1
@@ -2999,7 +3000,7 @@ snapshots:
       '@platformatic/telemetry': 1.53.4
       '@platformatic/utils': 1.53.4
       '@scalar/fastify-api-reference': 1.25.11
-      ajv: 8.18.0
+      ajv: 8.20.0
       commist: 3.2.0
       console-table-printer: 2.12.1
       desm: 1.3.1
@@ -3031,7 +3032,7 @@ snapshots:
       '@fastify/error': 3.4.1
       '@platformatic/utils': 1.53.4
       abstract-logging: 2.0.1
-      ajv: 8.18.0
+      ajv: 8.20.0
       dotenv: 16.4.5
       jsonpath: 1.1.1
       minimist: 1.2.8
@@ -3243,7 +3244,7 @@ snapshots:
       '@platformatic/utils': 1.53.4
       '@scalar/fastify-api-reference': 1.25.11
       '@types/ws': 8.5.12
-      ajv: 8.18.0
+      ajv: 8.20.0
       cli-progress: 3.12.0
       close-with-grace: 1.3.0
       code-block-writer: 13.0.2
@@ -3402,9 +3403,9 @@ snapshots:
 
   '@seriousme/openapi-schema-validator@2.2.3':
     dependencies:
-      ajv: 8.18.0
-      ajv-draft-04: 1.0.0(ajv@8.18.0)
-      ajv-formats: 3.0.1(ajv@8.18.0)
+      ajv: 8.20.0
+      ajv-draft-04: 1.0.0(ajv@8.20.0)
+      ajv-formats: 3.0.1(ajv@8.20.0)
       js-yaml: 4.1.0
       minimist: 1.2.8
 
@@ -3416,7 +3417,7 @@ snapshots:
 
   '@sideway/pinpoint@2.0.0': {}
 
-  '@trivago/prettier-plugin-sort-imports@4.3.0(prettier@3.8.1)':
+  '@trivago/prettier-plugin-sort-imports@4.3.0(prettier@3.8.3)':
     dependencies:
       '@babel/generator': 7.17.7
       '@babel/parser': 7.25.6
@@ -3424,27 +3425,27 @@ snapshots:
       '@babel/types': 7.17.0
       javascript-natural-sort: 0.7.1
       lodash: 4.17.21
-      prettier: 3.8.1
+      prettier: 3.8.3
     transitivePeerDependencies:
       - supports-color
 
   '@types/better-sqlite3@7.6.11':
     dependencies:
-      '@types/node': 20.19.37
+      '@types/node': 20.19.41
 
   '@types/json-schema@7.0.15': {}
 
   '@types/mysql@2.15.26':
     dependencies:
-      '@types/node': 20.19.37
+      '@types/node': 20.19.41
 
-  '@types/node@20.19.37':
+  '@types/node@20.19.41':
     dependencies:
       undici-types: 6.21.0
 
   '@types/ws@8.5.12':
     dependencies:
-      '@types/node': 20.19.37
+      '@types/node': 20.19.41
 
   '@unhead/schema@1.11.5':
     dependencies:
@@ -3476,19 +3477,19 @@ snapshots:
       clean-stack: 2.2.0
       indent-string: 4.0.0
 
-  ajv-draft-04@1.0.0(ajv@8.18.0):
+  ajv-draft-04@1.0.0(ajv@8.20.0):
     optionalDependencies:
-      ajv: 8.18.0
+      ajv: 8.20.0
 
-  ajv-formats@2.1.1(ajv@8.18.0):
+  ajv-formats@2.1.1(ajv@8.20.0):
     optionalDependencies:
-      ajv: 8.18.0
+      ajv: 8.20.0
 
-  ajv-formats@3.0.1(ajv@8.18.0):
+  ajv-formats@3.0.1(ajv@8.20.0):
     optionalDependencies:
-      ajv: 8.18.0
+      ajv: 8.20.0
 
-  ajv@8.18.0:
+  ajv@8.20.0:
     dependencies:
       fast-deep-equal: 3.1.3
       fast-uri: 3.0.1
@@ -3737,7 +3738,7 @@ snapshots:
       '@platformatic/config': 1.53.4
       '@platformatic/generators': 1.53.4
       '@platformatic/utils': 1.53.4
-      '@types/node': 20.19.37
+      '@types/node': 20.19.41
       boring-name-generator: 1.0.3
       chalk: 5.3.0
       columnify: 1.6.0
@@ -3839,7 +3840,7 @@ snapshots:
 
   env-schema@5.2.1:
     dependencies:
-      ajv: 8.18.0
+      ajv: 8.20.0
       dotenv: 16.4.5
       dotenv-expand: 10.0.0
 
@@ -3913,8 +3914,8 @@ snapshots:
   fast-json-stringify@5.16.1:
     dependencies:
       '@fastify/merge-json-schemas': 0.1.1
-      ajv: 8.18.0
-      ajv-formats: 3.0.1(ajv@8.18.0)
+      ajv: 8.20.0
+      ajv-formats: 3.0.1(ajv@8.20.0)
       fast-deep-equal: 3.1.3
       fast-uri: 2.4.0
       json-schema-ref-resolver: 1.0.1
@@ -4821,7 +4822,7 @@ snapshots:
 
   prelude-ls@1.1.2: {}
 
-  prettier@3.8.1: {}
+  prettier@3.8.3: {}
 
   process-warning@3.0.0: {}
 
@@ -4846,7 +4847,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.19.37
+      '@types/node': 20.19.41
       long: 5.2.3
 
   proxy-addr@2.0.7:
@@ -5133,7 +5134,7 @@ snapshots:
 
   table@6.8.2:
     dependencies:
-      ajv: 8.18.0
+      ajv: 8.20.0
       lodash.truncate: 4.4.2
       slice-ansi: 4.0.0
       string-width: 4.2.3
