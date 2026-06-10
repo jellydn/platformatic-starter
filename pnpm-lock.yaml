@@ -44,10 +44,10 @@ importers:
         version: 1.9.4
       '@trivago/prettier-plugin-sort-imports':
         specifier: 4.3.0
-        version: 4.3.0(prettier@3.8.3)
+        version: 4.3.0(prettier@3.8.4)
       '@types/node':
-        specifier: 20.19.41
-        version: 20.19.41
+        specifier: 20.19.42
+        version: 20.19.42
       concurrently:
         specifier: 9.2.1
         version: 9.2.1
@@ -58,8 +58,8 @@ importers:
         specifier: 1.53.4
         version: 1.53.4(typescript@5.9.3)
       prettier:
-        specifier: 3.8.3
-        version: 3.8.3
+        specifier: 3.8.4
+        version: 3.8.4
       sort-package-json:
         specifier: 2.15.1
         version: 2.15.1
@@ -611,8 +611,8 @@ packages:
   '@types/mysql@2.15.26':
     resolution: {integrity: sha512-DSLCOXhkvfS5WNNPbfn2KdICAmk8lLc+/PNvnPnF7gOdMZCxopXduqv0OQ13y/yA/zXTSikZZqVgybUxOEg6YQ==}
 
-  '@types/node@20.19.41':
-    resolution: {integrity: sha512-ECymXOukMnOoVkC2bb1Vc/w/836DXncOg5m8Xj1RH7xSHZJWNYY6Zh7EH477vcnD5egKNNfy2RpNOmuChhFPgQ==}
+  '@types/node@20.19.42':
+    resolution: {integrity: sha512-5L7SUaFC1RyDraj2yRhyBzHTobyXHmohD100CChNtyPyleoq37Mqab5Gn8XEKI04dfN/oqPdpHk38MgcQWHbZg==}
 
   '@types/ws@8.5.12':
     resolution: {integrity: sha512-3tPRkv1EtkDpzlgyKyI8pGsGZAGPEaXeu0DOj5DI25Ja91bdAYddYHbADRYVrZMRbfW+1l5YwXVDKohDJNQxkQ==}
@@ -1904,8 +1904,8 @@ packages:
     resolution: {integrity: sha512-ESF23V4SKG6lVSGZgYNpbsiaAkdab6ZgOxe52p7+Kid3W3u3bxR4Vfd/o21dmN7jSt0IwgZ4v5MUd26FEtXE9w==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.8.3:
-    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
+  prettier@3.8.4:
+    resolution: {integrity: sha512-N2MylSdi48+5N/6S5j+maeHbUSIzzZ5uOcX5Hm4QpV8Dkb1HFjfAKTKX6yNPJQD9AhcT3ifHNB66tWTTJDi11Q==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3417,7 +3417,7 @@ snapshots:
 
   '@sideway/pinpoint@2.0.0': {}
 
-  '@trivago/prettier-plugin-sort-imports@4.3.0(prettier@3.8.3)':
+  '@trivago/prettier-plugin-sort-imports@4.3.0(prettier@3.8.4)':
     dependencies:
       '@babel/generator': 7.17.7
       '@babel/parser': 7.25.6
@@ -3425,27 +3425,27 @@ snapshots:
       '@babel/types': 7.17.0
       javascript-natural-sort: 0.7.1
       lodash: 4.17.21
-      prettier: 3.8.3
+      prettier: 3.8.4
     transitivePeerDependencies:
       - supports-color
 
   '@types/better-sqlite3@7.6.11':
     dependencies:
-      '@types/node': 20.19.41
+      '@types/node': 20.19.42
 
   '@types/json-schema@7.0.15': {}
 
   '@types/mysql@2.15.26':
     dependencies:
-      '@types/node': 20.19.41
+      '@types/node': 20.19.42
 
-  '@types/node@20.19.41':
+  '@types/node@20.19.42':
     dependencies:
       undici-types: 6.21.0
 
   '@types/ws@8.5.12':
     dependencies:
-      '@types/node': 20.19.41
+      '@types/node': 20.19.42
 
   '@unhead/schema@1.11.5':
     dependencies:
@@ -3738,7 +3738,7 @@ snapshots:
       '@platformatic/config': 1.53.4
       '@platformatic/generators': 1.53.4
       '@platformatic/utils': 1.53.4
-      '@types/node': 20.19.41
+      '@types/node': 20.19.42
       boring-name-generator: 1.0.3
       chalk: 5.3.0
       columnify: 1.6.0
@@ -4822,7 +4822,7 @@ snapshots:
 
   prelude-ls@1.1.2: {}
 
-  prettier@3.8.3: {}
+  prettier@3.8.4: {}
 
   process-warning@3.0.0: {}
 
@@ -4847,7 +4847,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.19.41
+      '@types/node': 20.19.42
       long: 5.2.3
 
   proxy-addr@2.0.7:
