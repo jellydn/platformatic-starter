@@ -44,13 +44,13 @@ importers:
         version: 1.9.4
       '@trivago/prettier-plugin-sort-imports':
         specifier: 4.3.0
-        version: 4.3.0(prettier@3.8.4)
+        version: 4.3.0(prettier@3.9.5)
       '@types/node':
         specifier: 20.19.43
         version: 20.19.43
       concurrently:
-        specifier: 9.2.3
-        version: 9.2.3
+        specifier: 9.2.4
+        version: 9.2.4
       npm-run-all2:
         specifier: 6.2.6
         version: 6.2.6
@@ -58,8 +58,8 @@ importers:
         specifier: 1.53.4
         version: 1.53.4(typescript@5.9.3)
       prettier:
-        specifier: 3.8.4
-        version: 3.8.4
+        specifier: 3.9.5
+        version: 3.9.5
       sort-package-json:
         specifier: 2.15.1
         version: 2.15.1
@@ -888,8 +888,8 @@ packages:
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
-  concurrently@9.2.3:
-    resolution: {integrity: sha512-ihjs0E2SxvDgq/MK418hX6YycQgKhsqxpbZuZbHo0yKfqDWdymWMjWYIpCIzqDDLLKClHlXev8whW/8WXmJ0BA==}
+  concurrently@9.2.4:
+    resolution: {integrity: sha512-TZ0CEhyzvFjgtAvHTusDMgj7wNdihCh7LLLrzdUOXIhdlnL2JBBGA9eJxR24rtqgmdjh3OA3hrN1rCHj6HM8qA==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1904,8 +1904,8 @@ packages:
     resolution: {integrity: sha512-ESF23V4SKG6lVSGZgYNpbsiaAkdab6ZgOxe52p7+Kid3W3u3bxR4Vfd/o21dmN7jSt0IwgZ4v5MUd26FEtXE9w==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.8.4:
-    resolution: {integrity: sha512-N2MylSdi48+5N/6S5j+maeHbUSIzzZ5uOcX5Hm4QpV8Dkb1HFjfAKTKX6yNPJQD9AhcT3ifHNB66tWTTJDi11Q==}
+  prettier@3.9.5:
+    resolution: {integrity: sha512-/FVl766LpUfB5vXgCYOYa0MeV/441Ia99AeICQIQFTY/Nw0roZwULcXpku5i1/m5kt/baz+s4Zogspd839HSMg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2085,8 +2085,8 @@ packages:
   shell-quote@1.8.1:
     resolution: {integrity: sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==}
 
-  shell-quote@1.8.4:
-    resolution: {integrity: sha512-VsC6n6vz1ihYYyZZwX7YZSF5l5x36ca17OC+a69h94YqB7X6XLwf+5MOgynYir2SLFUbl8gIYvBo8K8RoNQ6bQ==}
+  shell-quote@1.9.0:
+    resolution: {integrity: sha512-Iov+JwFv/2HcTpcwNMKd8+IWNb8tboQJNQTkAY/LLVK7gGH9jy+LGkVqPxfekHl+yMmiqXszdGWXgkfml7hjqA==}
     engines: {node: '>= 0.4'}
 
   siginfo@2.0.0:
@@ -3417,7 +3417,7 @@ snapshots:
 
   '@sideway/pinpoint@2.0.0': {}
 
-  '@trivago/prettier-plugin-sort-imports@4.3.0(prettier@3.8.4)':
+  '@trivago/prettier-plugin-sort-imports@4.3.0(prettier@3.9.5)':
     dependencies:
       '@babel/generator': 7.17.7
       '@babel/parser': 7.25.6
@@ -3425,7 +3425,7 @@ snapshots:
       '@babel/types': 7.17.0
       javascript-natural-sort: 0.7.1
       lodash: 4.17.21
-      prettier: 3.8.4
+      prettier: 3.9.5
     transitivePeerDependencies:
       - supports-color
 
@@ -3705,11 +3705,11 @@ snapshots:
 
   concat-map@0.0.1: {}
 
-  concurrently@9.2.3:
+  concurrently@9.2.4:
     dependencies:
       chalk: 4.1.2
       rxjs: 7.8.2
-      shell-quote: 1.8.4
+      shell-quote: 1.9.0
       supports-color: 8.1.1
       tree-kill: 1.2.2
       yargs: 17.7.2
@@ -4822,7 +4822,7 @@ snapshots:
 
   prelude-ls@1.1.2: {}
 
-  prettier@3.8.4: {}
+  prettier@3.9.5: {}
 
   process-warning@3.0.0: {}
 
@@ -4991,7 +4991,7 @@ snapshots:
 
   shell-quote@1.8.1: {}
 
-  shell-quote@1.8.4: {}
+  shell-quote@1.9.0: {}
 
   siginfo@2.0.0: {}
 
